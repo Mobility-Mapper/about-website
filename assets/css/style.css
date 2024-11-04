@@ -1,3 +1,15 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans');
+
+:root {
+    --primary-font: 'Open Sans', sans-serif;
+    /* --secondary-font: ,; */
+    --primary-color: #BD582C; /* Orange */
+    --secondary-color: #D7B8AB; /* Light Orange */
+    --tertiary-color: #432B20; /* Dark brown */
+}
+
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--primary-font), sans-serif;
+    color: var(--tertiary-color);
 }
