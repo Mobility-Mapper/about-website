@@ -13,3 +13,15 @@ body {
     font-family: var(--primary-font), sans-serif;
     color: var(--tertiary-color);
 }
+
+
+/* Hero section */
+#hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/woman-wheelchair-using-smartphone-optimised.jpg");
+    background-size: cover; /* Resize the image to cover the entire container */
+    background-repeat: no-repeat;
+    background-position: 75% center; /* Position the image to the right */
+}
+
