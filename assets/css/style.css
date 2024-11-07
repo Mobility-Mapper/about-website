@@ -64,8 +64,25 @@ a {
     color: rgba(var(--tertiary-color), 1);
 }
 
-#navbar .logo {
-    width: 150px
+.navbar {
+    min-height: 70px; /* Larger height */
+}
+
+
+
+.navbar .logo {
+    height: 40px
+}
+
+.navbar-brand {
+    padding: 0; /* Remove padding */
+    font-size: 1.5rem; /* Increase brand size */
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.3rem; /* Increase link size */
+    padding-top: 0.3rem; /* Adjust padding for alignment */
+    padding-bottom: 0.3rem;
 }
 
 /* Hero section */
@@ -113,7 +130,7 @@ h2 height = 1.2*1.3rem = 1.56rem  + 0.3rem + 0.5rem = 2.36rem
 }
 
 #cover-text > h3 {
-    font-size: calc(1.1rem + .6vw); /* Responsive font size */
+    font-size: calc(1rem + .6vw); /* Responsive font size */
     /* Mobile view settings */
     color: rgba(var(--tertiary-color), 1);
 }
@@ -137,6 +154,13 @@ h2 height = 1.2*1.3rem = 1.56rem  + 0.3rem + 0.5rem = 2.36rem
     }
 }
 
+@media screen and (max-width: 768px) {
+    .container {
+        /* remove max width for small screens */
+        max-width: none;
+    }
+}
+
 /* Media query: tablet layout (768px and up) */
 @media screen and (min-width: 768px) {
 
@@ -155,7 +179,6 @@ h2 height = 1.2*1.3rem = 1.56rem  + 0.3rem + 0.5rem = 2.36rem
     }
 
     #cover-text {
-        text-align: left;
         padding-top: 0; /* Bring text up */
         background-color: rgba(189, 88, 44, 0.8);
     }
@@ -174,6 +197,9 @@ h2 height = 1.2*1.3rem = 1.56rem  + 0.3rem + 0.5rem = 2.36rem
 /* Media query: desktop layout (992px and up) */
 @media screen and (min-width: 992px) {
 
+    #cover-text {
+        text-align: left;
+    }
     /* Bring social media icons into hero image, below the call to action buttons */
     #follow-social-media {
         position: absolute;
