@@ -21,7 +21,6 @@ body {
     color: var(--tertiary-color);
 }
 
-
 /* Hero section */
 #hero {
     width: 100%; /* Full width */
@@ -59,9 +58,10 @@ h2 height = 1.2*(1.3rem + .9vw) = 1.56rem + 1.08vw + 0.3rem + 0.5rem = 2.36rem +
     color: #ffffff;
 }
 
-#cover-text > h3 {
-    color: #ffffff; 
-    font-size: 1.1em; /* Responsive font-size */
+#cover-text-call {
+    /* Push cover-text below #hero image for mobile view */
+    position: relative;
+    top: 1000px;
 }
 
 #cover-text {
@@ -69,10 +69,12 @@ h2 height = 1.2*(1.3rem + .9vw) = 1.56rem + 1.08vw + 0.3rem + 0.5rem = 2.36rem +
     color: white;
     width: 100%;
     padding: 10px 20px 10px 10px; /* Top, right, bottom, left */
-    /* Push cover-text below #hero image for mobile view */
-    position: relative;
-    top: 1000px;
     text-align: center;
+}
+
+#cover-text > h3 {
+    color: #ffffff; 
+    font-size: 1.1em; /* Responsive font-size */
 }
 
 /* Media query: small screen (576px and up) */
@@ -89,16 +91,20 @@ h2 height = 1.2*(1.3rem + .9vw) = 1.56rem + 1.08vw + 0.3rem + 0.5rem = 2.36rem +
         width: 45%;
     }
 
-    #cover-text {
+    #cover-text-call {
         /* Bring up into #hero image */
         top: calc(2.36rem + 20px + 30px); /* directly below cover-title: cover-title height + distance of cover-text from top of page */
+    }
+
+    #cover-text {
         width: 45%;
         text-align: left;
         padding-top: 0;
+    }
 }
 
 /* Media query: desktop layout (992px and up) */
-@media screen and (min-width: 992px) {
+/* @media screen and (min-width: 992px) { */
     /* #hero {
         height: 1000px;
     }    */
@@ -114,5 +120,4 @@ h2 height = 1.2*(1.3rem + .9vw) = 1.56rem + 1.08vw + 0.3rem + 0.5rem = 2.36rem +
         /* text-align: left; */
         /* padding-top: 0; */
     /* } */ 
-}
 }
