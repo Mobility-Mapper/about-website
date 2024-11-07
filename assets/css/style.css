@@ -9,6 +9,13 @@
     --tertiary-color: #432B20; /* Dark brown */
 }
 
+/* Asterisk wildcard selector to override default styles added by the browser */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Ensures that when we set the height or width to an element, it will be applied to the entire element, including the border. */
+}
+
 body {
     font-family: var(--primary-font), sans-serif;
     color: var(--tertiary-color);
@@ -17,11 +24,95 @@ body {
 
 /* Hero section */
 #hero {
-    width: 100%;
-    height: 100vh;
+    width: 100%; /* Full width */
+    /* height changes with screen witdth */
+    height: 1000px; /* Default height */
     background-image: url("../images/woman-wheelchair-using-smartphone-optimised.jpg");
     background-size: cover; /* Resize the image to cover the entire container */
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; /* Do not repeat the image */
     background-position: 75% center; /* Position the image to the right */
+    position: relative; /* For adding hero text relative to the hero image */
 }
 
+/* Container for home page title */
+#cover-title {
+    background-color: rgba(189, 88, 44, 0.8);
+    position: absolute;
+    top: 30px; /* 30px from the top of the #hero container */
+    width: 160px;
+    padding: 10px 20px 10px 10px; /* Top, right, bottom, left */
+}
+/*
+cover-title height = h2 height + cover-title padding-top + bottom 
+                   = (2.36rem + 1.08vw) + 20px 
+*/
+
+/* 
+h2 height = 1.2*(1.3rem + .9vw) = 1.56rem + 1.08vw + 0.3rem + 0.5rem = 2.36rem + 1.08vw
+ */
+#cover-title > h2 {
+    font-size: 1.3rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #ffffff;
+}
+
+#cover-text > h3 {
+    color: #ffffff; 
+    font-size: 1.1em; /* Responsive font-size */
+}
+
+#cover-text {
+    background-color: rgba(189, 88, 44, 0.8);
+    color: white;
+    width: 100%;
+    padding: 10px 20px 10px 10px; /* Top, right, bottom, left */
+    /* Push cover-text below #hero image for mobile view */
+    position: relative;
+    top: 1000px;
+    text-align: center;
+}
+
+/* Media query: small screen (576px and up) */
+@media screen and (min-width: 576px) {
+    #cover-title {
+        display: inline-block;
+        width: auto;
+    }
+}
+
+/* Media query: tablet layout (768px and up) */
+@media screen and (min-width: 768px) {
+    #cover-title {
+        width: 45%;
+    }
+
+    #cover-text {
+        /* Bring up into #hero image */
+        top: calc(2.36rem + 20px + 30px); /* directly below cover-title: cover-title height + distance of cover-text from top of page */
+        width: 45%;
+        text-align: left;
+        padding-top: 0;
+}
+
+/* Media query: desktop layout (992px and up) */
+@media screen and (min-width: 992px) {
+    /* #hero {
+        height: 1000px;
+    }    */
+
+    /* #cover-title {
+        width: 45%;
+    }
+
+    /* #cover-text {
+        /* Bring up into #hero image */
+        /* top: calc(2.36rem + 20px + 30px); /* directly below cover-title: cover-title height + distance of cover-text from top of page */
+        /* width: 45%; */
+        /* text-align: left; */
+        /* padding-top: 0; */
+    /* } */ 
+}
+}
