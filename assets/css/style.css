@@ -7,13 +7,11 @@
 :root {
     --primary-font: 'Open Sans', sans-serif;
     /* --secondary-font: ,; */
-    --primary-color: 189, 88, 44;
-    /* Orange */
-    --secondary-color: 215, 184, 171;
-    /* Light Orange */
+    --primary-color: 189, 88, 44;     /* Orange */
+    --secondary-color: 234, 186, 165; /* Light Orange */
     --tertiary-color: 67, 43, 32;
     /* Dark brown */
-    --green-color: #A2AF92
+    --green-color: #A2AF92;
 }
 
 /* Asterisk wildcard selector to override default styles added by the browser */
@@ -200,6 +198,10 @@ h2 height = 1.2*1.3rem = 1.56rem  + 0.3rem + 0.5rem = 2.36rem
 
 .card-text {
     font-size: calc(1.1rem + .3vw);
+}
+
+footer {
+    background-color: rgba(var(--secondary-color), 1);
 }
 
 /* Media query: small screen (576px and up) */
