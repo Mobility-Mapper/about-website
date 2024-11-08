@@ -57,16 +57,16 @@
 
         <!-- Hero image with cover title -->
         <section id="hero">
-            <div id="cover-title" class="px-2 ms-md-2 ps-md-3">
+            <div id="cover-title" class="px-2">
                 <h2>Your path to accessibility</h2>
             </div>
         </section>
 
         <!-- Sits below hero image for small screen sizes, moves up to left-hand-side of hero image for medium screns-->
-        <div class="py-4 py-md-0 ms-md-2" id="cover-text-call">
+        <div class="py-4 py-md-0" id="cover-text-call">
 
             <!-- Cover text -->
-            <div class="p-2" id="cover-text">
+            <div class="p-2 pt-md-0" id="cover-text">
                 <h3 class="pb-2">Mobility Mapper is a free route-finder and navigation app specifically designed for
                     users of wheeled mobility devices, including wheelchairs, mobility scooters, and tricycles.</h3>
                 <h3>Mobility Mapper will enable you to generate accessible, barrier-free routes based on your
@@ -74,7 +74,7 @@
             </div>
 
             <!-- Call to action buttons -->
-            <div class="my-3" id="cover-call-to-action">
+            <div class="my-3 mt-md-4" id="cover-call-to-action">
                 <!-- Subscribe, opens modal -->
                 <!-- Button to Open the Modal -->
                 <button type="button" class="btn btn-lg custom-button-filled mb-3" data-bs-toggle="modal"
@@ -109,22 +109,23 @@
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Moves up onto her image for large screens -->
-        <div id="follow-social-media" class="my-4 text-center">
-            <h3 class="mb-3">Follow us on social media</h3>
-            <div class="social-media-icons">
-                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-facebook"></i>
-                </a>
-                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-instagram"></i>
-                </a>
-                <a href="https://www.x.com/">
-                    <i class="bi bi-twitter-x"></i>
-                </a>
+            <!-- Moves up onto hero image on md screens -->
+            <div id="follow-social-media" class="text-center my-4">
+                <h3 class="mb-3">Follow us on social media</h3>
+                <div class="social-media-icons">
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="https://www.x.com/">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+                </div>
             </div>
+
         </div>
     </header>
 
@@ -277,8 +278,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-<!-- Custom js, determines position of bottom of #cover-title-->
-        <script src="./assets/js/index.js"></script>
+    <!-- Custom js, determines position of bottom of #cover-title-->
+    <script src="./assets/js/index.js"></script>
 </body>
 
 </html>

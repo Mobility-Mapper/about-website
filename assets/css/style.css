@@ -226,22 +226,27 @@ footer {
 
     /* Hero section */
 #hero {
-    /* height: 600px; */
-    /* background-position: 35% center; */
+    height: 710px;
+    background-position: 85% 100%;
 }
 
     #cover-title {
-        width: 50%;
-        top: 50px; /* moves down for med screens */
+        width: calc(60vw - 100px);
+        top: calc(20vw - 100px); /* moves down for med screens */
         text-align: center;
+        margin-left: 2vw;
     }
 
     /* Container for cover text and call to action buttons */
     #cover-text-call {
-        width: 50%;
+        width: calc(60vw - 100px);
         /* Bring upwards into #hero image */
         position: absolute;
         background-color: transparent;
+        margin-left: 2vw;
+        /* Add a border */
+        /* border: 1px solid blue; */
+        /* height: 550px; */
     }
 
     #cover-text {
@@ -271,13 +276,6 @@ footer {
 
     #cover-text {
         text-align: left;
-    }
-
-    /* Bring social media icons into hero image, below the call to action buttons */
-    #follow-social-media {
-        position: absolute;
-        top: 80%;
-        width: 45%;
     }
 
 }
