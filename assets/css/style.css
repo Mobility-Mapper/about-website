@@ -166,7 +166,7 @@ h2 height = 1.2*1.3rem = 1.56rem  + 0.3rem + 0.5rem = 2.36rem
      /* Bring to front */
 /* } */
 
-#social-media-icons i {
+.social-media-icons i {
     font-size: 1.5rem;
     color: rgba(var(--tertiary-color), 1);
     margin: 0 10px;
