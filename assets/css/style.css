@@ -160,21 +160,22 @@ h2 height = 1.2*1.3rem + 1.2*0.6vh + 0.3rem + 0.5rem = 1.56rem + 0.72vh + 0.8rem
     color: rgba(var(--tertiary-color), 1);
 }
 
-/* #follow-social-media {
-     /* Bring to front */
-/* } */
-
+/* #follow-social-media h3 { */
+     /* font-weight: bold; */
+/* }
+*/
 .social-media-icons i {
     font-size: 1.5rem;
     color: rgba(var(--tertiary-color), 1);
     margin: 0 10px;
 }
 
+/*
 #key-features .card {
     border-color: var(--green-color);
     margin-bottom: 1.5rem;
     /* Add spacing between cards */
-}
+/* } */
 
 .brown-text {
     color: rgba(var(--tertiary-color), 1)
@@ -263,6 +264,16 @@ footer {
     /* Push buttons below container so they have no background colour */
     #cover-call-to-action {
         background-color: transparent;
+    }
+
+    #follow-social-media h3, #follow-social-media a {
+        /* Make text easier to read */
+        background-color: rgba(250, 246, 235, 0.8)
+    }
+
+    #follow-social-media h3 {
+        /* stop background colour spreading across width of container */
+        display: inline-block;
     }
 
     /* Make all key features cards the same height for consistency */
