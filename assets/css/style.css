@@ -7,18 +7,21 @@
 :root {
     --primary-font: 'Open Sans', sans-serif;
     /* --secondary-font: ,; */
-    --primary-color: 189, 88, 44; /* Orange */
-    --secondary-color: 215, 184, 171; /* Light Orange */
-    --tertiary-color: 67, 43, 32; /* Dark brown */
+    --primary-color: 189, 88, 44;
+    /* Orange */
+    --secondary-color: 215, 184, 171;
+    /* Light Orange */
+    --tertiary-color: 67, 43, 32;
+    /* Dark brown */
     --green-color: #A2AF92
-
 }
 
 /* Asterisk wildcard selector to override default styles added by the browser */
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box; /* Ensures that when we set the height or width to an element, it will be applied to the entire element, including the border. */
+    box-sizing: border-box;
+    /* Ensures that when we set the height or width to an element, it will be applied to the entire element, including the border. */
 }
 
 body {
@@ -38,25 +41,32 @@ a {
 
 .custom-button-filled {
     width: 90%;
-    border: 1px solid rgba(var(--tertiary-color),0.8);
+    border: 1px solid rgba(var(--tertiary-color), 0.8);
     background-color: rgba(var(--primary-color), 0.8);
     color: white;
     display: block;
-    margin: 10px auto; /* Center horizontally and add vertical spacing */
-    text-align: center; /* Align text to the left */
-    position: relative; /* For positioning the icon */
-    padding-right: 40px; /* Add padding to the right to make space for the icon */
+    margin: 10px auto;
+    /* Center horizontally and add vertical spacing */
+    text-align: center;
+    /* Align text to the left */
+    position: relative;
+    /* For positioning the icon */
+    padding-right: 40px;
+    /* Add padding to the right to make space for the icon */
 }
+
 .custom-button-filled:hover {
     background-color: #C2BC80;
     color: white;
     display: block;
-    margin: 10px auto; /* Center horizontally and add vertical spacing */
+    margin: 10px auto;
+    /* Center horizontally and add vertical spacing */
 }
 
 .custom-button-filled i {
     position: absolute;
-    right: 10px; /* Adjust as needed */
+    right: 10px;
+    /* Adjust as needed */
     top: 50%;
     transform: translateY(-50%);
 }
@@ -66,7 +76,8 @@ a {
 }
 
 .navbar {
-    min-height: 70px; /* Larger height */
+    min-height: 70px;
+    /* Larger height */
 }
 
 
@@ -76,35 +87,48 @@ a {
 }
 
 .navbar-brand {
-    padding: 0; /* Remove padding */
-    font-size: 1.5rem; /* Increase brand size */
+    padding: 0;
+    /* Remove padding */
+    font-size: 1.5rem;
+    /* Increase brand size */
 }
 
 .navbar-nav .nav-link {
-    font-size: 1.3rem; /* Increase link size */
-    padding-top: 0.3rem; /* Adjust padding for alignment */
+    font-size: 1.3rem;
+    /* Increase link size */
+    padding-top: 0.3rem;
+    /* Adjust padding for alignment */
     padding-bottom: 0.3rem;
 }
 
 /* Hero section */
 #hero {
-    width: 100%; /* Full width */
+    width: 100%;
+    /* Full width */
     /* height changes with screen witdth */
-    height: 1000px; /* Default height */
+    height: 1000px;
+    /* Default height */
     background-image: url("../images/woman-wheelchair-using-smartphone-optimised.jpg");
-    background-size: cover; /* Resize the image to cover the entire container */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-position: 75% center; /* Position the image to the right */
-    position: relative; /* For adding hero text relative to the hero image */
+    background-size: cover;
+    /* Resize the image to cover the entire container */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-position: 75% center;
+    /* Position the image to the right */
+    position: relative;
+    /* For adding hero text relative to the hero image */
 }
 
 /* Container for home page title (main heading) */
 #cover-title {
     background-color: rgba(var(--primary-color), 0.8);
     position: absolute;
-    top: 30px; /* 30px from the top of the #hero container */
-    width: 170px; /* Fixed width, wraps text */
-    padding: 10px 20px 10px 10px; /* Top, right, bottom, left */
+    top: 30px;
+    /* 30px from the top of the #hero container */
+    width: 170px;
+    /* Fixed width, wraps text */
+    padding: 10px 20px 10px 10px;
+    /* Top, right, bottom, left */
 }
 
 /* Container for cover text and call to action buttons */
@@ -117,7 +141,7 @@ a {
 cover-title height = h2 height + cover-title padding-top + bottom = 2.36rem + 20px 
 h2 height = 1.2*1.3rem = 1.56rem  + 0.3rem + 0.5rem = 2.36rem
  */
-#cover-title > h2 {
+#cover-title>h2 {
     /* Override Bootstrap styles */
     font-size: calc(1.3rem + .6vw);
     margin-top: 0.3rem;
@@ -126,12 +150,14 @@ h2 height = 1.2*1.3rem = 1.56rem  + 0.3rem + 0.5rem = 2.36rem
 
 #cover-text {
     width: 100%;
-    padding: 10px 20px 10px 10px; /* Top, right, bottom, left */
+    padding: 10px 20px 10px 10px;
+    /* Top, right, bottom, left */
     text-align: center;
 }
 
-#cover-text > h3 {
-    font-size: calc(1rem + .6vw); /* Responsive font size */
+#cover-text>h3 {
+    font-size: calc(1rem + .6vw);
+    /* Responsive font size */
     /* Mobile view settings */
     color: rgba(var(--tertiary-color), 1);
 }
@@ -146,8 +172,10 @@ h2 height = 1.2*1.3rem = 1.56rem  + 0.3rem + 0.5rem = 2.36rem
     margin: 0 10px;
 }
 
-.card {
-    border-color: var(--green-color); 
+#key-features .card {
+    border-color: var(--green-color);
+    margin-bottom: 1.5rem;
+    /* Add spacing between cards */
 }
 
 .brown-text {
@@ -155,14 +183,28 @@ h2 height = 1.2*1.3rem = 1.56rem  + 0.3rem + 0.5rem = 2.36rem
 }
 
 .green-underline {
-    border-bottom: 0.5rem solid var(--green-color); /* Custom color */
-    padding-bottom: 5px; /* Adds spacing between the text and line */
-    display: inline-block; /* Ensures the line doesn't stretch full-width */
-    padding: 0 20px 0.5rem 20px; /* makes the line wider than the text */
+    border-bottom: 0.5rem solid var(--green-color);
+    /* Custom color */
+    padding-bottom: 5px;
+    /* Adds spacing between the text and line */
+    display: inline-block;
+    /* Ensures the line doesn't stretch full-width */
+    padding: 0 20px 0.5rem 20px;
+    /* makes the line wider than the text */
+}
+
+.card-title {
+    color: #746241;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: calc(1.1rem + .3vw);
 }
 
 /* Media query: small screen (576px and up) */
 @media screen and (min-width: 576px) {
+
     /* Spread title to one line (no wrapping) */
     #cover-title {
         display: inline-block;
@@ -184,29 +226,36 @@ h2 height = 1.2*1.3rem = 1.56rem  + 0.3rem + 0.5rem = 2.36rem
         width: 45%;
     }
 
-    /* Container for cover text and call to action buttons */    
+    /* Container for cover text and call to action buttons */
     #cover-text-call {
         width: 45%;
         /* Bring upwards into #hero image */
         position: absolute;
-        top: 20%; /* 20% from the top of the page, need to change this */
+        top: 20%;
+        /* 20% from the top of the page, need to change this */
         /* top: -calc(1.2*1.3rem + 1.2*0.6vw + 0.8rem + 20px + 30px); directly below cover-title: cover-title height + distance of cover-text from top of page     */
         background-color: transparent;
     }
 
     #cover-text {
-        padding-top: 0; /* Bring text up */
+        padding-top: 0;
+        /* Bring text up */
         background-color: rgba(189, 88, 44, 0.8);
     }
 
-    #cover-text > h3 {
-        color: #ffffff; 
+    #cover-text>h3 {
+        color: #ffffff;
         /* font-size: 1.1em; */
     }
 
     /* Push buttons below container so they have no background colour */
     #cover-call-to-action {
         background-color: transparent;
+    }
+
+    /* Make all key features cards the same height for consistency */
+    #key-features .card-body {
+        min-height: 170px;
     }
 }
 
@@ -216,6 +265,7 @@ h2 height = 1.2*1.3rem = 1.56rem  + 0.3rem + 0.5rem = 2.36rem
     #cover-text {
         text-align: left;
     }
+
     /* Bring social media icons into hero image, below the call to action buttons */
     #follow-social-media {
         position: absolute;
@@ -223,4 +273,13 @@ h2 height = 1.2*1.3rem = 1.56rem  + 0.3rem + 0.5rem = 2.36rem
         width: 45%;
     }
 
+}
+
+/* Media query: large desktop layout (1200px and up) */
+@media screen and (min-width: 1200px) {
+
+    /* Make all key features cards the same height for consistency */
+    #key-features .card-body {
+        min-height: 230px;
+    }
 }
