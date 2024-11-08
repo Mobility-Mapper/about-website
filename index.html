@@ -54,23 +54,23 @@
 
     <!-- Header -->
     <header>
+
+        <!-- Hero image with cover title -->
         <section id="hero">
-            <div id="cover-title">
+            <div id="cover-title" class="px-2 ms-md-2 ps-md-3">
                 <h2>Your path to accessibility</h2>
             </div>
         </section>
 
-        <!-- Sits below hero image for small screen sizes-->
-        <div class="p-3" id="cover-text-call">
+        <!-- Sits below hero image for small screen sizes, moves up to left-hand-side of hero image for medium screns-->
+        <div class="py-4 py-md-0 ms-md-2" id="cover-text-call">
 
+            <!-- Cover text -->
             <div class="p-2" id="cover-text">
-                <h3>Mobility Mapper is a free route-finder and navigation app specifically designed for users of
-                    wheeled
-                    mobility devices, including wheelchairs, mobility scooters, and tricycles.</h3>
-                <br>
+                <h3 class="pb-2">Mobility Mapper is a free route-finder and navigation app specifically designed for
+                    users of wheeled mobility devices, including wheelchairs, mobility scooters, and tricycles.</h3>
                 <h3>Mobility Mapper will enable you to generate accessible, barrier-free routes based on your
-                    specific
-                    needs, and the limitations of your wheeled mobility device.</h3>
+                    specific needs, and the limitations of your wheeled mobility device.</h3>
             </div>
 
             <!-- Call to action buttons -->
@@ -111,9 +111,9 @@
             </div>
         </div>
 
-
-        <div id="follow-social-media" class="mt-4 text-center">
-            <h3>Follow us on social media</h3>
+        <!-- Moves up onto her image for large screens -->
+        <div id="follow-social-media" class="my-4 text-center">
+            <h3 class="mb-3">Follow us on social media</h3>
             <div class="social-media-icons">
                 <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
                     <i class="bi bi-facebook"></i>
@@ -143,7 +143,7 @@
                         <img src="./assets/images/stairs.jpg" class="card-img-top"
                             alt="A man in a wheelchair at the bottom of a set of steps, looking up at them. He is facing away from us.">
                         <div class="card-body">
-                            <h3 class="card-title brown-text">Avoid barriers</h3>
+                            <h3 class="card-title">Avoid barriers</h3>
                             <p class="card-text brown-text">
                                 Mobility Mapper generates routes that don't involve barriers, such as steps, steep
                                 hills, narrow paths, rough surfaces, high curbs, and gates designed to block motorbikes.
@@ -157,7 +157,7 @@
                         <img src="./assets/images/dropped_kerb_london.png" class="card-img-top"
                             alt="A dropped kerb on a path next to a road.">
                         <div class="card-body">
-                            <h3 class="card-title brown-text">Locate dropped kerbs and ramps</h3>
+                            <h3 class="card-title">Locate dropped kerbs and ramps</h3>
                             <p class="card-text brown-text">
                                 Dropped kerbs and ramps are marked on the map, so you can easily find exit and entry
                                 points.
@@ -171,7 +171,7 @@
                         <img src="./assets/images/device_dimensions.png" class="card-img-top"
                             alt="A man in a wheelchair looking at the path ahead of him. There is an orange, double-ended arrow spanning the width of the wheelchair, and an orange triangle under the wheelchair, representing a slope.">
                         <div class="card-body">
-                            <h3 class="card-title brown-text">Tailor routes to your needs</h3>
+                            <h3 class="card-title">Tailor routes to your needs</h3>
                             <p class="card-text brown-text">
                                 Generate accessible routes based on your specific needs of the user (e.g maximum
                                 incline, no cobbles), and the limitations of your mobility device (e.g. minimum path
@@ -186,8 +186,8 @@
                         <img src="./assets/images/accessible_toilet.jpg" class="card-img-top"
                             alt="A row of three beach huts that have been made into accessible toilets. The doors are wide, and there is a ramp leading up to them.">
                         <div class="card-body">
-                            <h3 class="card-title brown-text">Locate accessible points of interest</h3>
-                            <p class="card-text brown-text">
+                            <h3 class="card-title">Locate accessible points of interest</h3>
+                            <p class="card-text">
                                 Accessible points of interest are displayed on the map, including toilets, cafes, shops,
                                 and nature spots.
                             </p>
@@ -200,9 +200,10 @@
                         <img src="./assets/images/locate_dropped_kerbs.png" class="card-img-top"
                             alt="A map with a large orange Mobility Mapper marker, indicating the location of a dropped kerb or barrier.">
                         <div class="card-body">
-                            <h3 class="card-title brown-text">Report barriers and dropped kerbs</h3>
+                            <h3 class="card-title">Report barriers and dropped kerbs</h3>
                             <p class="card-text brown-text">
-                                If you come across a barrier, ramp or dropped curb that is not marked on the map, you can report it on the app.
+                                If you come across a barrier, ramp or dropped curb that is not marked on the map, you
+                                can report it on the app.
                             </p>
                         </div>
                     </div>
@@ -213,9 +214,10 @@
                         <img src="./assets/images/Matt_Walker.png" class="card-img-top"
                             alt="Two smiling men in wheelchairs facing us and giving each other a fist bump.">
                         <div class="card-body">
-                            <h3 class="card-title brown-text">Connect with other wheelers</h3>
+                            <h3 class="card-title">Connect with other wheelers</h3>
                             <p class="card-text brown-text">
-                                An integrated social network enables you to connect with other wheelers, and share information on accessible locations and favourite routes.                            </p>
+                                An integrated social network enables you to connect with other wheelers, and share
+                                information on accessible locations and favourite routes. </p>
                         </div>
                     </div>
                 </div>
@@ -223,41 +225,49 @@
             </div>
         </section>
 
-        <section id="seeking-funding" class="my-2 text-center">
-            <h2 class="m-3">We are currently seeking funding and partnerships!</h2>
-            <p class="m-3">Please check out our page for potential funders and partners. Whether you are an organisation or individual, you can help us accelerate the development of Mobility Mapper.</p>
+        <section id="seeking-funding" class="m-2 text-center">
+            <h2 class="my-3">We are currently seeking funding and partnerships!</h2>
+            <p class="my-3">Please check out our page for potential funders and partners. Whether you are an
+                organisation or individual, you can help us accelerate the development of Mobility Mapper.</p>
             <!-- Go to partnerships page -->
-            <button type="button" class="btn btn-lg custom-button-filled my-4" data-bs-target="parnerships.html">Go to the funding and partnerships page<i class="bi bi-arrow-right-circle"></i></button>
+            <button type="button" class="btn btn-lg custom-button-filled my-4" data-bs-target="parnerships.html">Go to
+                the funding and partnerships page<i class="bi bi-arrow-right-circle"></i></button>
         </section>
 
     </main>
 
     <!-- Footer -->
     <footer class="mt-5">
-        <div class="container py-4">
-            <div class="row px-3">
-                <div class="col-4 col-md-2">Home</div>
-                <div class="col-4 col-md-2">Subscribe</div>
-                <div class="col-4 col-md-2">Contact</div>
-                <div class="col-4 col-md-2">Top of page</div>
-                <div class="col-4 col-md-2">Partnerships</div>
-                <div class="col-4 col-md-2">Key Features</div>
 
-                <div class="col-12 social-media-icons text-center my-4">
-                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-                        <i class="bi bi-facebook"></i>
-                    </a>
-                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-                        <i class="bi bi-instagram"></i>
-                    </a>
-                    <a href="https://www.x.com/">
-                        <i class="bi bi-twitter-x"></i>
-                    </a>
-                </div>
-                <div class="col-12 text-center">
-                    <p mb-0>&copy; Mobility Mapper 2024</p>
-                </div>
+        <!-- Footer navigation -->
+        <div class="container py-4">
+            <!--equal spacing between the text links-->
+            <div class="row d-flex justify-content-center align-items-center gap-1 gap-md-3 px-2">
+                <div class="col-auto"><a href="index.html">Home</a></div>
+                <div class="col-auto"><a href="#myModal">Subscribe</a></div>
+                <div class="col-auto"><a href="contact.html">Contact</a></div>
+                <div class="col-auto"><a href="index.html">Top of page</a></div>
+                <div class="col-auto"><a href="partnerships.html">Partnerships</a></div>
+                <div class="col-auto"><a href="#key-features">Key Features</a></div>
             </div>
+        </div>
+
+        <!-- Social media icons -->
+        <div class="social-media-icons text-center pb-4">
+            <a href="https://www.facebook.com/profile.php?id=61556696245180" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/mobilitymapper/" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.x.com/MobilityMapper">
+                <i class="bi bi-twitter-x"></i>
+            </a>
+        </div>
+
+        <!--Copyright -->
+        <div class="text-center pb-3">
+            <p>&copy; Mobility Mapper 2024</p>
         </div>
 
     </footer>
@@ -267,6 +277,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+<!-- Custom js, determines position of bottom of #cover-title-->
+        <script src="./assets/js/index.js"></script>
 </body>
 
 </html>

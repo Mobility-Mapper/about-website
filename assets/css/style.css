@@ -32,6 +32,10 @@ h1 {
     display: none;
 }
 
+p {
+    font-size: calc(1.1rem + .2vw)
+}
+
 a {
     text-decoration: none;
     color: var(--tertiary-color);
@@ -78,8 +82,6 @@ a {
     /* Larger height */
 }
 
-
-
 .navbar .logo {
     height: 40px
 }
@@ -104,14 +106,14 @@ a {
     width: 100%;
     /* Full width */
     /* height changes with screen witdth */
-    height: 1000px;
+    height: 600px;
     /* Default height */
     background-image: url("../images/woman-wheelchair-using-smartphone-optimised.jpg");
     background-size: cover;
     /* Resize the image to cover the entire container */
     background-repeat: no-repeat;
     /* Do not repeat the image */
-    background-position: 75% center;
+    background-position: 95% 100%;
     /* Position the image to the right */
     position: relative;
     /* For adding hero text relative to the hero image */
@@ -121,12 +123,10 @@ a {
 #cover-title {
     background-color: rgba(var(--primary-color), 0.8);
     position: absolute;
-    top: 30px;
-    /* 30px from the top of the #hero container */
-    width: 170px;
-    /* Fixed width, wraps text */
-    padding: 10px 20px 10px 10px;
-    /* Top, right, bottom, left */
+    top: 30px;    /* 30px from the top of the #hero container */
+    width: 170px; /* Fixed width, wraps text */
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 /* Container for cover text and call to action buttons */
@@ -137,7 +137,7 @@ a {
 
 /*
 cover-title height = h2 height + cover-title padding-top + bottom = 2.36rem + 20px 
-h2 height = 1.2*1.3rem = 1.56rem  + 0.3rem + 0.5rem = 2.36rem
+h2 height = 1.2*1.3rem + 1.2*0.6vh + 0.3rem + 0.5rem = 1.56rem + 0.72vh + 0.8rem
  */
 #cover-title>h2 {
     /* Override Bootstrap styles */
@@ -192,7 +192,7 @@ h2 height = 1.2*1.3rem = 1.56rem  + 0.3rem + 0.5rem = 2.36rem
 }
 
 .card-title {
-    color: #746241;
+    color: #313829;
     font-weight: bold;
 }
 
@@ -224,18 +224,23 @@ footer {
 /* Media query: tablet layout (768px and up) */
 @media screen and (min-width: 768px) {
 
+    /* Hero section */
+#hero {
+    /* height: 600px; */
+    /* background-position: 35% center; */
+}
+
     #cover-title {
-        width: 45%;
+        width: 50%;
+        top: 50px; /* moves down for med screens */
+        text-align: center;
     }
 
     /* Container for cover text and call to action buttons */
     #cover-text-call {
-        width: 45%;
+        width: 50%;
         /* Bring upwards into #hero image */
         position: absolute;
-        top: 20%;
-        /* 20% from the top of the page, need to change this */
-        /* top: -calc(1.2*1.3rem + 1.2*0.6vw + 0.8rem + 20px + 30px); directly below cover-title: cover-title height + distance of cover-text from top of page     */
         background-color: transparent;
     }
 
