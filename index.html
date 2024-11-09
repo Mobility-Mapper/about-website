@@ -24,7 +24,7 @@
 
     <!-- Navbar, expands on tablets-->
     <nav class="navbar navbar-expand-md" id="navbar">
-        <div class="container">
+        <div class="container" id="nav-container">
             <a class="navbar-brand" href="index.html">
                 <img src="./assets/images/logo_with_name_no_background.png" alt="Mobility Mapper logo" class="logo">
             </a>
@@ -53,20 +53,22 @@
     </nav>
 
     <!-- Header -->
-    <header>
+    <header class="container">
 
         <!-- Hero image with cover title -->
         <section id="hero">
+            <!-- only for sm screens -->
             <div id="cover-title" class="px-2">
                 <h2>Your path to accessibility</h2>
             </div>
         </section>
 
-        <!-- Sits below hero image for small screen sizes, moves up to left-hand-side of hero image for medium screns-->
+        <!-- Below hero image for small screen sizes, moves up onto left-hand-side of hero image for medium screns-->
         <div class="py-4 py-md-0" id="cover-text-call">
 
             <!-- Cover text -->
-            <div class="p-2 pt-md-0" id="cover-text">
+            <div id="cover-text">
+                <h2 id="cover-title-md">Your path to accessibility</h2> <!-- for md screens -->
                 <h3 class="pb-2">Mobility Mapper is a free route-finder and navigation app specifically designed for
                     users of wheeled mobility devices, including wheelchairs, mobility scooters, and tricycles.</h3>
                 <h3>Mobility Mapper will enable you to generate accessible, barrier-free routes based on your
@@ -74,14 +76,12 @@
             </div>
 
             <!-- Call to action buttons -->
-            <div class="my-3 mt-md-4" id="cover-call-to-action">
-                <!-- Subscribe, opens modal -->
-                <!-- Button to Open the Modal -->
+            <div id="cover-call-to-action">
+                <!-- Subscribe button opens a form in a modal -->
                 <button type="button" class="btn btn-lg custom-button-filled mb-3" data-bs-toggle="modal"
-                    data-bs-target="#myModal">Subscribe
-                    to email updates <i class="bi bi-arrow-right-circle"></i></button>
+                    data-bs-target="#myModal">Subscribe to email updates <i class="bi bi-arrow-right-circle"></i></button>
                 <!-- Go to partnerships page -->
-                <button type="button" class="btn btn-lg custom-button-filled mb-" data-bs-target="parnerships.html">Help
+                <button type="button" class="btn btn-lg custom-button-filled" data-bs-target="parnerships.html">Help
                     fund Mobility Mapper <i class="bi bi-arrow-right-circle"></i></button>
             </div>
 
@@ -110,7 +110,7 @@
                 </div>
             </div>
 
-            <div id="follow-social-media" class="text-center my-4">
+            <div id="follow-social-media" class="text-center">
                 <h3 class="mb-3">Follow us on social media</h3>
                 <div class="social-media-icons">
                     <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
@@ -277,8 +277,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <!-- Custom js, determines position of bottom of #cover-title-->
-    <script src="./assets/js/index.js"></script>
 </body>
 
 </html>
