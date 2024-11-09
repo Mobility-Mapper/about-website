@@ -264,18 +264,18 @@
                     <p class="responsive-p">Subscribe to our newsletter for the latest updates on the development of Mobility Mapper.</p>
 
                     <!-- Form -->
-                    <form class="row g-3">
+                    <form id="subscribe-form" class="row g-3">
 
                         <!-- Name -->
                         <div class="col-12 col-lg-6">
-                            <label for="name-modal" class="form-label responsive-p">Name</label>
-                            <input type="text" class="form-control" id="name-modal">
+                            <label for="name" class="form-label responsive-p">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Name">
                         </div>
 
                         <!-- Email -->
                         <div class="col-12 col-lg-6">
-                            <label for="email-modal" class="form-label responsive-p">Email</label>
-                            <input type="email" class="form-control" id="email-modal">
+                            <label for="email" class="form-label responsive-p">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email">
                         </div>
 
                         <!--Submit button-->
@@ -294,6 +294,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <!-- Email subscription js-->
+        <script src="./assets/js/subscribe.js"></script>
 </body>
 
 </html>
