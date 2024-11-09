@@ -44,7 +44,7 @@ h1 {
 }
 
 p {
-	font-size: calc(1.1rem + .2vw)
+	font-size: calc(1.1rem)
 }
 
 a {
@@ -186,17 +186,19 @@ a {
 	margin: 0 10px;
 }
 
-/*
+/* Key Features Section */
+
 #key-features .card {
     border-color: var(--green-color);
     margin-bottom: 1.5rem;
     /* Add spacing between cards */
-/* } */
+}
 
 .brown-text {
 	color: rgba(var(--tertiary-color), 1)
 }
 
+/* Section title underline */
 .green-underline {
 	border-bottom: 0.5rem solid var(--green-color);
 	/* Custom color */
@@ -208,15 +210,22 @@ a {
 	/* makes the line wider than the text */
 }
 
+/* Card title font */
 .card-title {
 	color: #313829;
 	font-weight: bold;
 }
 
+/* Card text font */
 .card-text {
 	font-size: calc(1.1rem + .3vw);
 }
 
+/* Seeking funding section */
+
+
+
+/* Footer section */
 footer {
 	background-color: rgba(var(--secondary-color), 1);
 }
@@ -247,6 +256,8 @@ footer {
 
 /* Media query: tablet layout (768px and up) */
 @media screen and (min-width: 768px) {
+
+	/* Navigation */
 
 	#nav-container {
 		/* align logo with cover text box */
@@ -348,10 +359,28 @@ footer {
 		display: inline-block;
 	}
 
+	/* Key features section */
+
 	/* Make all key features cards the same height for consistency */
-	#key-features .card-body {
-		min-height: 170px;
-	}
+	
+	/* Ensure the row uses flexbox to align items */
+    #key-features .row {
+        display: flex;
+        flex-wrap: wrap; /* Ensure items wrap if necessary */
+        align-items: stretch; /* Make all cards the same height */
+    }
+
+    /* Make the card-body just under the height of its parent so there is a vertical gap between the cards */
+    #key-features .card {
+        display: flex;
+        flex-direction: column;
+        height: 96%;
+    }
+
+    #key-features .card-body {
+        flex-grow: 1; /* Make the card-body take up all available space */
+    }
+
 }
 
 /* Media query: desktop layout (992px and up) */
