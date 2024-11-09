@@ -72,7 +72,7 @@ a {
 
 .custom-button-filled:hover {
 	background-color: #C2BC80;
-	color: white;
+	color: black;
 	display: block;
 	margin: 10px auto;
 	/* Center horizontally and add vertical spacing */
@@ -199,8 +199,8 @@ a {
 }
 
 /* Section title underline */
-.green-underline {
-	border-bottom: 0.5rem solid var(--green-color);
+.orange-underline {
+	border-bottom: 0.5rem solid #E09878;
 	/* Custom color */
 	padding-bottom: 5px;
 	/* Adds spacing between the text and line */
@@ -212,7 +212,7 @@ a {
 
 /* Card title font */
 .card-title {
-	color: #313829;
+	color: rgb(var(--primary-color));
 	font-weight: bold;
 	/* center */
 	text-align: center;
@@ -224,7 +224,9 @@ a {
 }
 
 /* Seeking funding section */
-
+#seeking-funding p {
+	font-size: calc(1.1rem + .3vw);
+}
 
 
 /* Footer section */
@@ -274,12 +276,12 @@ footer {
 		grid-template-rows: auto;
 	}
 
-	.custom-button-filled {
+	#cover-call-to-action .custom-button-filled {
 		background-color: rgba(231, 228, 204, 0.90);
 		color: black;
 	}
 
-	.custom-button-filled:hover {
+	#cover-call-to-action .custom-button-filled:hover {
 		background-color: #6D6834;
 		color: white;
 	}
