@@ -19,8 +19,8 @@
 </head>
 
 <body>
-    <!-- Header - to make non visible later -->
-    <h1>Mobility Mapper</h1>
+    <!-- For SEO only, not visible -->
+    <h1 class="invisible">Mobility Mapper</h1>
 
     <!-- Navbar, expands on tablets-->
     <nav class="navbar navbar-expand-md" id="navbar">
@@ -78,36 +78,11 @@
             <!-- Call to action buttons -->
             <div id="cover-call-to-action">
                 <!-- Subscribe button opens a form in a modal -->
-                <button type="button" class="btn btn-lg custom-button-filled mb-3" data-bs-toggle="modal"
-                    data-bs-target="#myModal">Subscribe to email updates <i class="bi bi-arrow-right-circle"></i></button>
+                <button type="button" class="btn btn-lg custom-button mb-3" data-bs-toggle="modal"
+                    data-bs-target="#modal">Subscribe to email updates <i class="bi bi-arrow-right-circle"></i></button>
                 <!-- Go to partnerships page -->
-                <button type="button" class="btn btn-lg custom-button-filled" data-bs-target="parnerships.html">Help
+                <button type="button" class="btn btn-lg custom-button" data-bs-target="parnerships.html">Help
                     fund Mobility Mapper <i class="bi bi-arrow-right-circle"></i></button>
-            </div>
-
-            <!-- TODO: The Modal -->
-            <div class="modal" id="myModal">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-
-                        <!-- Modal Header -->
-                        <div class="modal-header">
-                            <h4 class="modal-title">Modal Heading</h4>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                        </div>
-
-                        <!-- Modal body -->
-                        <div class="modal-body">
-                            Modal body..
-                        </div>
-
-                        <!-- Modal footer -->
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                        </div>
-
-                    </div>
-                </div>
             </div>
 
             <div id="follow-social-media" class="text-center">
@@ -227,10 +202,10 @@
 
         <section id="seeking-funding" class="my-2 text-center container">
             <h2 class="my-3">We are currently seeking funding and partnerships!</h2>
-            <p class="my-3">Please check out our page for potential funders and partners. Whether you are an
+            <p class="my-3 responsive-p">Please check out our page for potential funders and partners. Whether you are an
                 organisation or individual, you can help us accelerate the development of Mobility Mapper.</p>
             <!-- Go to partnerships page -->
-            <button type="button" class="btn btn-lg custom-button-filled my-4" data-bs-target="parnerships.html">Go to
+            <button type="button" class="btn btn-lg custom-button my-4" data-bs-target="parnerships.html">Go to
                 the funding and partnerships page<i class="bi bi-arrow-right-circle"></i></button>
         </section>
 
@@ -244,7 +219,7 @@
             <!--equal spacing between the text links-->
             <div class="row d-flex justify-content-center align-items-center gap-1 gap-md-3 px-2">
                 <div class="col-auto"><a href="index.html">Home</a></div>
-                <div class="col-auto"><a href="#myModal">Subscribe</a></div>
+                <div class="col-auto"><a href="#modal">Subscribe</a></div>
                 <div class="col-auto"><a href="contact.html">Contact</a></div>
                 <div class="col-auto"><a href="index.html">Top of page</a></div>
                 <div class="col-auto"><a href="partnerships.html">Partnerships</a></div>
@@ -272,6 +247,48 @@
 
     </footer>
 
+    <!-- Modal -->
+    <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modal-label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- Modal header -->
+                <div class="modal-header">
+                    <img src="./assets/images/marker_300_x_501.png" alt="Mobility Mapper marker" class="modal-marker">
+                    <h1 class="modal-title" id="modal-label">Subscribe</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <p class="responsive-p">Subscribe to our newsletter for the latest updates on the development of Mobility Mapper.</p>
+
+                    <!-- Form -->
+                    <form class="row g-3">
+
+                        <!-- Name -->
+                        <div class="col-12 col-lg-6">
+                            <label for="name-modal" class="form-label responsive-p">Name</label>
+                            <input type="text" class="form-control" id="name-modal">
+                        </div>
+
+                        <!-- Email -->
+                        <div class="col-12 col-lg-6">
+                            <label for="email-modal" class="form-label responsive-p">Email</label>
+                            <input type="email" class="form-control" id="email-modal">
+                        </div>
+
+                        <!--Submit button-->
+                        <div class="col-12 mt-4 mb-1">
+                            <button type="submit" class="btn modal-button">Submit</button>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     <!-- Bootstrap JS Links -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
