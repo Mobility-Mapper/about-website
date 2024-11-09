@@ -214,6 +214,8 @@ a {
 .card-title {
 	color: #313829;
 	font-weight: bold;
+	/* center */
+	text-align: center;
 }
 
 /* Card text font */
