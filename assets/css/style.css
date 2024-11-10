@@ -51,8 +51,6 @@ a {
 	display: none;
 }
 
-
-
 .navbar {
 	min-height: 70px;
 }
@@ -73,6 +71,10 @@ a {
 }
 
 /* Hero section */
+
+/* Hero image */
+
+/* Both pages hero image */
 .hero {
 	width: 100%;
 	height: 600px;
@@ -81,24 +83,19 @@ a {
 	position: relative; /* For adding hero text relative to the hero image */
 }
 
-/* Home page hero section */
+/* Home page hero image */
 #hero-home {
 	background-image: url("../images/woman-wheelchair-using-smartphone-optimised.jpg");
 	background-position: 95% 100%;
 }
 
-/* Partnerships page hero section */
+/* Partnerships page hero image */
 #hero-partnerships {
 	background-image: url("../images/partnerships.jpg");
 	background-position: 100% 100%;
 }
 
 /* Cover text */
-
-/* Container for cover text and call to action buttons */
-.cover-text-call {
-	background-color: rgba(var(--secondary-color), 1);
-}
 
 /* Container for cover text title for small screens */
 .cover-title-sm {
@@ -110,15 +107,20 @@ a {
 	padding-bottom: 10px;
 }
 
+/* Container for cover text and call to action buttons for small screens*/
+#cover-text-call, #cover-text-call-partnership {
+	background-color: rgb(var(--secondary-color));
+}
+
 /* Cover text title for small screens */
-.cover-title-sm > h2 {
+.cover-title-sm h2 {
 	font-size: calc(1.3rem + .6vw);
 	margin-top: 0.3rem;
 	color: white;
 }
 
 /* Cover text for all screens */
-.cover-text > h3 {
+.cover-text h3 {
 	font-size: calc(1rem + .6vw);
 	color: rgba(var(--tertiary-color), 1);
 }
@@ -131,8 +133,11 @@ a {
 .cover-text {
 	color: white;
 	width: 100%;
-	padding: 10px 20px 10px 10px; /* Top, right, bottom, left */
 	text-align: center;
+}
+
+#contents-list li {
+	margin-bottom: 0.5rem;
 }
 
 #follow-social-media {
@@ -157,6 +162,19 @@ a {
 	color: black;
 }
 
+.business-button {
+	border: 1px solid rgba(var(--tertiary-color), 0.8);
+	background-color: rgba(var(--primary-color), 0.8);
+	color: white;
+	margin: 10px auto; /* Center button horizontally and add vertical spacing */
+	font-size: calc(1rem + .6vw); /* Responsive font size */
+}
+
+.business-button:hover {
+	background-color: #C2BC80;
+	color: black;
+}
+
 /* Position arrow icon on the right of the text */
 .custom-button i {
 	position: absolute;
@@ -165,13 +183,7 @@ a {
 	transform: translateY(-50%);
 }
 
-.business-button {
-	border: 1px solid rgba(var(--tertiary-color), 0.8);
-	background-color: rgba(var(--primary-color), 0.8);
-	color: white;
-	margin: 10px auto; /* Center button horizontally and add vertical spacing */
-	font-size: calc(1rem + .6vw); /* Responsive font size */
-}
+
 
 /* Social media icons*/
 .social-media-icon {
@@ -304,8 +316,8 @@ footer {
 		background-position: 85% 100%;
 	}
 
-	/* Cover text and call to action buttons */
-	.cover-text-call {
+	/* Cover text and call to action buttons for md+ screens */
+	#cover-text-call {
 		/* Bring upwards into #hero image */
 		position: absolute;
 		top: 50%;
@@ -320,9 +332,28 @@ footer {
         justify-content: space-between; /* Space out children evenly */
 	}
 
-	.cover-text {
-		padding: 10px 20px 0px 10px; /* Top, right, bottom, left */
+	#cover-text-call-partnership {
+		/* Bring upwards into #hero image */
+		/* Center in container */
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 10; /* Ensure it appears above the hero background */
+		width: 60vw; /* responsive width */
+		background-color: transparent;
+		display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Space out children evenly */
+		padding-top: 4rem;
 		background-color: rgba(189, 88, 44, 0.85);
+
+	}
+
+	.cover-text {
+		background-color: rgba(189, 88, 44, 0.85);
+		/* rounded corners */
+		border-radius: 10px;
 	}
 
 	.cover-title-sm {
@@ -335,8 +366,34 @@ footer {
 		display: block;
 	}
 
-	.cover-text > h2 {
+	.cover-text h2 {
 		font-size: calc(1.3rem + .6vw);
+	}
+
+	/* centre contents list */
+	#contents-list {
+		display: flex;
+		justify-content: center; /* Center the list horizontally */
+	}
+	
+	#contents-list ul {
+		list-style-type: disc; /* Ensure bullets are displayed */
+		padding-left: 0; /* Remove default padding */
+	}
+	
+	#contents-list ul li {
+		display: list-item; /* Retain bullets while keeping items inline */
+		text-align: left; /* Ensure text is left-aligned */
+		width: auto; /* Prevent items from taking full width */
+		margin-bottom: 0.5rem; /* Add spacing between list items */
+	}
+	
+	.business-button {
+		background-color: #865640da;
+	}
+	
+	.business-button:hover {
+		background-color: #C2BC80;
 	}
 
 	/* Center the call-to-action buttons vertically */
@@ -346,7 +403,7 @@ footer {
 		padding: 0;
     }
 
-	.cover-text>h3 {
+	.cover-text h3 {
 		color: #ffffff;
 	}
 
