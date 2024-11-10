@@ -29,7 +29,7 @@ html {
 }
 
 header.container {
-	--bs-gutter-x: 0; /* Override Bootstrap gutter for the #hero section */
+	--bs-gutter-x: 0; /* Override Bootstrap gutter for the header */
 	padding: 0;
 }
 
@@ -51,47 +51,10 @@ a {
 	display: none;
 }
 
-.custom-button {
-	/* width: 90%; */
-	border: 1px solid rgba(var(--tertiary-color), 0.8);
-	background-color: rgba(var(--primary-color), 0.8);
-	color: white;
-	display: block;
-	margin: 10px auto;
-	/* Center horizontally and add vertical spacing */
-	text-align: center;
-	/* Align text to the left */
-	position: relative;
-	/* For positioning the icon */
-	padding-right: 3rem;
-	/* Add padding to the right to make space for the icon */
-	font-size: calc(1rem + .6vw);
-	/* Responsive font size */
-}
 
-.custom-button:hover {
-	background-color: #C2BC80;
-	color: black;
-	display: block;
-	margin: 10px auto;
-	/* Center horizontally and add vertical spacing */
-}
-
-.custom-button i {
-	position: absolute;
-	right: 10px;
-	/* Adjust as needed */
-	top: 50%;
-	transform: translateY(-50%);
-}
-
-.brown-text {
-	color: rgba(var(--tertiary-color), 1);
-}
 
 .navbar {
 	min-height: 70px;
-	/* Larger height */
 }
 
 .navbar .logo {
@@ -100,86 +63,118 @@ a {
 
 .navbar-brand {
 	padding: 0;
-	/* Remove padding */
 	font-size: 1.5rem;
-	/* Increase brand size */
 }
 
 .navbar-nav .nav-link {
 	font-size: 1.3rem;
-	/* Increase link size */
 	padding-top: 0.3rem;
-	/* Adjust padding for alignment */
 	padding-bottom: 0.3rem;
 }
 
 /* Hero section */
-#hero {
+.hero {
 	width: 100%;
-	/* Full width */
-	/* height changes with screen width */
 	height: 600px;
-	/* Default height */
-	background-image: url("../images/woman-wheelchair-using-smartphone-optimised.jpg");
 	background-size: cover;
-	/* Resize the image to cover the entire container */
 	background-repeat: no-repeat;
-	/* Do not repeat the image */
-	background-position: 95% 100%;
-	/* Position the image to the right */
-	position: relative;
-	/* For adding hero text relative to the hero image */
+	position: relative; /* For adding hero text relative to the hero image */
 }
 
-/* Container for home page title (main heading) */
-#cover-title {
+/* Home page hero section */
+#hero-home {
+	background-image: url("../images/woman-wheelchair-using-smartphone-optimised.jpg");
+	background-position: 95% 100%;
+}
+
+/* Partnerships page hero section */
+#hero-partnerships {
+	background-image: url("../images/partnership_4.jpg");
+	background-position: 100% 100%;
+}
+
+/* Cover text */
+
+/* Container for cover text and call to action buttons */
+.cover-text-call {
+	background-color: rgba(var(--secondary-color), 1);
+}
+
+/* Container for cover text title for small screens */
+.cover-title-sm {
 	background-color: rgba(var(--primary-color), 0.8);
 	position: absolute;
-	top: 30px;
-	/* 30px from the top of the #hero container */
+	top: 30px; /* 30px from the top of the hero image */
 	width: 170px;
-	/* Fixed width, wraps text */
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
 
-#cover-title-md {
-	display: none;
-}
-
-/* Container for cover text and call to action buttons */
-#cover-text-call {
-	/* cover-text is below #hero image for mobile view */
-	background-color: rgba(var(--secondary-color), 1);
-}
-
-/* Cover text title font */
-#cover-title>h2 {
-	/* Override Bootstrap styles */
+/* Cover text title for small screens */
+.cover-title-sm > h2 {
 	font-size: calc(1.3rem + .6vw);
 	margin-top: 0.3rem;
 	color: white;
 }
 
-#cover-text {
-	color: white;
-	width: 100%;
-	padding: 10px 20px 10px 10px;
-	/* Top, right, bottom, left */
-	text-align: center;
-}
-
-/* Cover text font */
-#cover-text>h3 {
+/* Cover text for all screens */
+.cover-text > h3 {
 	font-size: calc(1rem + .6vw);
 	color: rgba(var(--tertiary-color), 1);
+}
+
+/* Only show on medium screens */
+.cover-title-md {
+	display: none;
+}
+
+.cover-text {
+	color: white;
+	width: 100%;
+	padding: 10px 20px 10px 10px; /* Top, right, bottom, left */
+	text-align: center;
 }
 
 #follow-social-media {
 	padding-top: 1rem;
 }
 
-.social-media-icons i {
+/* Custom buttons */
+.custom-button {
+	border: 1px solid rgba(var(--tertiary-color), 0.8);
+	background-color: rgba(var(--primary-color), 0.8);
+	color: white;
+	display: block;
+	margin: 10px auto; /* Center horizontally and add vertical spacing */
+	text-align: center;
+	position: relative; /* For positioning the icon */
+	padding-right: 3rem; /* Add padding to the right to make space for the icon */
+	font-size: calc(1rem + .6vw); /* Responsive font size */
+}
+
+.custom-button:hover {
+	background-color: #C2BC80;
+	color: black;
+}
+
+/* Position arrow icon on the right of the text */
+.custom-button i {
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.business-button {
+	border: 1px solid rgba(var(--tertiary-color), 0.8);
+	background-color: rgba(var(--primary-color), 0.8);
+	color: white;
+	margin: 10px auto; /* Center button horizontally and add vertical spacing */
+	font-size: calc(1rem + .6vw); /* Responsive font size */
+}
+
+/* Social media icons*/
+.social-media-icon {
 	font-size: 1.5rem;
 	color: rgba(var(--tertiary-color), 1);
 	margin: 0 10px;
@@ -191,10 +186,6 @@ a {
     border-color: var(--green-color);
     margin-bottom: 1.5rem;
     /* Add spacing between cards */
-}
-
-.brown-text {
-	color: rgba(var(--tertiary-color), 1)
 }
 
 /* Section title underline */
@@ -256,11 +247,15 @@ footer {
 	margin-right: 1rem;
 }
 
+/* Partnerships Page */
+
+
+
 /* Media query: small screen (576px and up) */
 @media screen and (min-width: 576px) {
 
 	/* Spread title to one line (no wrapping) */
-	#cover-title {
+	.cover-title-sm {
 		display: inline-block;
 		width: auto;
 	}
@@ -285,54 +280,32 @@ footer {
 
 	/* Navigation */
 
-	#nav-container {
+	.nav-container {
 		/* align logo with cover text box */
 		padding-left: 2vw;
 		padding-right: 2vw;
 	}
 
-	/* Bring cover text up onto #hero image */
+	/* Bring cover text up onto hero image */
 	header {
 		position: relative;
 		display: grid;
 		grid-template-rows: auto;
 	}
 
-	#cover-call-to-action .custom-button {
-		background-color: rgba(231, 228, 204, 0.90);
-		color: black;
-	}
-
-	#cover-call-to-action .custom-button:hover {
-		background-color: #6D6834;
-		color: white;
-	}
-
 	/* Hero section */
-	#hero {
+	.hero {
 		height: 740px;
 		padding: 0;
-		background-position: 85% 100%;
 		position: relative;
 	}
 
-	#cover-title {
-		/* Hide for md screens */
-		display: none;
-	}
-
-	#cover-title-md {
-		/* show  for md screens */
-		display: block;
-	}
-
-	#cover-text>h2 {
-		/* Override Bootstrap styles */
-		font-size: calc(1.3rem + .6vw);
+	#hero-home {
+		background-position: 85% 100%;
 	}
 
 	/* Cover text and call to action buttons */
-	#cover-text-call {
+	.cover-text-call {
 		/* Bring upwards into #hero image */
 		position: absolute;
 		top: 50%;
@@ -341,16 +314,29 @@ footer {
 		left: 2vw;
 		width: calc(60vw - 100px); /* responsive width */
 		background-color: transparent;
-		/* border: 1px solid blue; */
 		min-height: 600px;
 		display: flex;
         flex-direction: column;
         justify-content: space-between; /* Space out children evenly */
 	}
 
-	#cover-text {
+	.cover-text {
 		padding: 10px 20px 0px 10px; /* Top, right, bottom, left */
 		background-color: rgba(189, 88, 44, 0.85);
+	}
+
+	.cover-title-sm {
+		/* Hide for md screens */
+		display: none;
+	}
+
+	.cover-title-md {
+		/* show  for md screens */
+		display: block;
+	}
+
+	.cover-text > h2 {
+		font-size: calc(1.3rem + .6vw);
 	}
 
 	/* Center the call-to-action buttons vertically */
@@ -360,8 +346,18 @@ footer {
 		padding: 0;
     }
 
-	#cover-text>h3 {
+	.cover-text>h3 {
 		color: #ffffff;
+	}
+
+	.cover-text-call .custom-button {
+		background-color: rgba(231, 228, 204, 0.90);
+		color: black;
+	}
+
+	.cover-text-call .custom-button:hover {
+		background-color: #6D6834;
+		color: white;
 	}
 
 	/* Push buttons below container so they have no background colour */
@@ -413,7 +409,7 @@ footer {
 @media screen and (min-width: 992px) {
 	
 	header.container {
-		--bs-gutter-x: 0; /* Override Bootstrap gutter for the #hero section */
+		--bs-gutter-x: 0; /* Override Bootstrap gutter for the header */
 	}
 
 	#cover-text-call {
@@ -425,7 +421,7 @@ footer {
 /* Media query: large desktop layout (1200px and up) */
 @media screen and (min-width: 1200px) {
 
-	#hero {
+	.hero {
 		height: 900px;
 
 	}
