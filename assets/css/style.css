@@ -135,14 +135,7 @@ a {
 	font-size: calc(1.3rem + .6vw);
 }
 
-.green-backround {
-	background-color: rgba(99, 112, 82, 0.8);
-}
 
-#stuck-at-home h3 {
-	font-size: calc(1rem + .6vw);
-	color: white;
-}
 
 /* Only show on medium screens */
 .cover-title-md {
@@ -271,6 +264,12 @@ main .card {
 	font-weight: bold;
 }
 
+.green-backround {
+	background-color: rgba(99, 112, 82, 0.8);
+}
+
+
+
 #stuck-at-home {
 	width: 100%;
 	height: 1000px;
@@ -283,14 +282,20 @@ main .card {
 
 #stuck-text-1 {
 	position: absolute;
-	width: 95vw;
+	left: 0;
+	width: 95%;
 }
 
 #stuck-text-2 {
 	position: absolute;
 	bottom: 1rem;
 	right: 0;
-	width: 90vw;
+	width: 90%;
+}
+
+#stuck-at-home h3 {
+	font-size: calc(1rem + .6vw);
+	color: white;
 }
 
 /* Footer section */
@@ -508,6 +513,17 @@ footer {
     #key-features .card-body {
         flex-grow: 1; /* Make the card-body take up all available space */
     }
+
+	/* Partnerships page stuck at home section */
+
+	/* reduce width */
+	#stuck-text-1 {
+		width: 70%;
+	}
+	
+	#stuck-text-2 {
+		width: 65%;
+	}
 
 }
 
