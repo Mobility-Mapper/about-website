@@ -120,9 +120,17 @@ a {
 }
 
 /* Cover text for all screens */
+.cover-text h2 {
+	color: rgba(var(--tertiary-color), 1);
+}
+
 .cover-text h3 {
 	font-size: calc(1rem + .6vw);
 	color: rgba(var(--tertiary-color), 1);
+}
+
+#thanks{
+	font-size: calc(1.3rem + .6vw);
 }
 
 /* Only show on medium screens */
@@ -192,12 +200,30 @@ a {
 	margin: 0 10px;
 }
 
-/* Key Features Section */
+/* centre contents list */
+#contents-list {
+	display: flex;
+	justify-content: center; /* Center the list horizontally */
+}
 
-#key-features .card {
+#contents-list ul {
+	list-style-type: disc; /* Ensure bullets are displayed */
+	padding-left: 0; /* Remove default padding */
+}
+
+#contents-list ul li {
+	display: list-item; /* Retain bullets while keeping items inline */
+	text-align: left; /* Ensure text is left-aligned */
+	width: auto; /* Prevent items from taking full width */
+	margin-bottom: 0.5rem; /* Add spacing between list items */
+}
+
+/* Key Features (home) and Problems (partnerships) Section */
+
+main .card {
     border-color: var(--green-color);
     margin-bottom: 1.5rem;
-    /* Add spacing between cards */
+ /* Add spacing between cards */
 }
 
 /* Section title underline */
@@ -227,6 +253,11 @@ a {
 
 .responsive-p {
 	font-size: calc(1.1rem + .3vw);
+}
+
+/* Emphasise 'Futhermore' to catch the attention of the reader  */
+#furthermore {
+	font-weight: bold;
 }
 
 
@@ -347,7 +378,6 @@ footer {
         justify-content: space-between; /* Space out children evenly */
 		padding-top: 4rem;
 		background-color: rgba(189, 88, 44, 0.85);
-
 	}
 
 	.cover-text {
@@ -368,26 +398,13 @@ footer {
 
 	.cover-text h2 {
 		font-size: calc(1.3rem + .6vw);
+		color: white;
 	}
 
-	/* centre contents list */
-	#contents-list {
-		display: flex;
-		justify-content: center; /* Center the list horizontally */
+	#thanks{
+		font-size: calc(1rem + .6vw);
 	}
-	
-	#contents-list ul {
-		list-style-type: disc; /* Ensure bullets are displayed */
-		padding-left: 0; /* Remove default padding */
-	}
-	
-	#contents-list ul li {
-		display: list-item; /* Retain bullets while keeping items inline */
-		text-align: left; /* Ensure text is left-aligned */
-		width: auto; /* Prevent items from taking full width */
-		margin-bottom: 0.5rem; /* Add spacing between list items */
-	}
-	
+
 	.business-button {
 		background-color: #865640da;
 	}
@@ -492,6 +509,18 @@ footer {
 	#key-features .card-body {
 		min-height: 230px;
 	}
+
+	/* Reduce font-size for card titles and padding for the last card to fit text on one line */
+	#problem .card-title {
+		font-size: 1.6rem;
+	}
+
+	#a-frame {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+
 }
 
 /* Media query: extra large desktop layout (1400px and up) */
