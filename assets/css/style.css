@@ -215,6 +215,11 @@ a {
 	margin-bottom: 0.5rem; /* Add spacing between list items */
 }
 
+ul.custom-bullets {
+	padding-left: 0;
+	/* Remove default padding for small screens */
+}
+
 /* Custom bullet points with wheel icon */
 ul.custom-bullets > li {
     background-image: url('../images/wheel_bullet.png');
@@ -531,6 +536,10 @@ footer {
 		width: 65%;
 	}
 
+	/* ul.custom-bullets {
+		/* Return to bootstrap padding */
+		/* padding-left: 2rem;	 */
+	/* } */ 
 }
 
 /* Media query: desktop layout (992px and up) */
