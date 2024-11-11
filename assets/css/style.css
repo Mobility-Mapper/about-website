@@ -317,11 +317,30 @@ main .card {
 	color: white;
 }
 
+/* Ensure that market column stretch to full height */
+#market .col-12 {
+    display: flex;
+    align-items: stretch;
+}
+
 /* Custom borders for market sections */
 #market-border-green {
 	border: 2px solid #C1CAB6;
 	border-radius: 10px;
 	height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;	/* Space out children evenly */
+}
+
+#market-size-box {
+	max-width: 400px;
+	/* Make the rows equal height */
+	display: grid;
+	grid-auto-rows: 1fr;
+    align-items: center; /* Vertically centers the grid items */
+    justify-content: center; /* Horizontally centers the grid items */
+    height: 100%;	
 }
 
 #market-border-orange {
@@ -340,14 +359,9 @@ main .card {
 .center-contents {
     display: flex;
     justify-content: center;
+	height: 100%
 }
 
-#market-size-box {
-	max-width: 400px;
-	/* Make the rows equal height */
-	display: grid;
-	grid-auto-rows: 1fr;
-}
 
 /* speech bubble for market validation text */
 .speech-bubble {
