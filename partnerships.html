@@ -205,10 +205,10 @@
         </section>
 
         <!-- Our Solution -->
-        <section id="solution">
+        <section class="mb-4" id="solution">
             <div class="container text-center mt-5">
                 <h2 class="display-6 orange-underline">Our Solution</h2>
-                
+
                 <div class="bullet-list mx-1 mx-md-3">
                     <ul class="text-start responsive-p my-3 custom-bullets">
                         <li>A route-finder and navigation app designed specifically for wheelers</li>
@@ -243,55 +243,74 @@
         </section>
 
         <!-- Market -->
-         <section>
+        <section>
             <div class="container">
-                <div class="row g-3 text-center">
+                <div class="row text-center g-3" id="market">
 
                     <!-- Market size -->
-                    <div class="col-12 col-md-6 market-border-green px-3 pt-4 pb-3">
-                        <h2 class="display-6 green-underline mb-4">Market Size</h2>
+                    <div class="col-12 col-md-6" id="market-size">
 
-                        <div class="row align-items-center mb-3">
-                            <div class="col-5 ">
-                                <h3 class="green-box m-0">1 in 8</h3>
+                        <!-- flex classes required to centre content -->
+                        <div id="market-border-green" class="px-3 pt-4 pb-3 d-flex flex-column align-items-center">
+
+                            <div>
+                                <h2 class="display-6 green-underline mb-3">Market Size</h2>
                             </div>
-                            <div class="col-7 text-start">
-                                <p class="responsive-p my-0">people are mobility impaired</p>
+
+                            <div id="market-size-box"> <!--required to restrict width of content -->
+                                <!-- 1 in 8 -->
+                                    <div class="row align-items-center mb-3">
+                                        <div class="col-5">
+                                            <h3 class="green-box m-0">1 in 8</h3>
+                                        </div>
+                                        <div class="col-7 text-start">
+                                            <p class="responsive-p my-0">people are mobility impaired</p>
+                                        </div>
+                                    </div>
+
+                                <!-- 8 million -->
+                                <div class="row align-items-center mb-3 mb-md-3">
+                                    <div class="col-5">
+                                        <h3 class="green-box m-0">8 Million</h3>
+                                    </div>
+                                    <div class="col-7 text-start">
+                                        <p class="responsive-p my-0">people in the UK are mobility impaired
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- 1 billion -->
+                                <div class="row align-items-center mb-3 mb-md-4">
+                                    <div class="col-5">
+                                        <h3 class="green-box m-0">1 Billion</h3>
+                                    </div>
+                                    <div class="col-7 text-start">
+                                        <p class="responsive-p my-0">people in the world are mobility impaired</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="row align-items-center mb-3">
-                            <div class="col-5">
-                                <h3 class="green-box m-0">8 Million</h3>
-                            </div>
-                            <div class="col-7 text-start">
-                                <p class="responsive-p my-0">people in the UK are mobility impaired
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="row align-items-center mb-3">
-                            <div class="col-5">
-                                <h3 class="green-box m-0">1 Billion</h3>
-                            </div>
-                            <div class="col-7 text-start">
-                                <p class="responsive-p my-0">people in the world are mobility impaired</p>
-                            </div>
-                        </div>
-
                     </div>
 
                     <!-- Market validation -->
-                    <div class="col-12 col-md-6 market-border-orange px-1 pt-4 pb-4">
-                        <h2 class="display-6 orange-underline mb-2">Market Validation</h2>
-                        <div class="center-contents mt-3 mx-0">
-                            <p class="responsive-p speech-bubble">The Disabled Citizens’ Inquiry by Sustrans (2023) found 80% of mobility impaired people would find a wayfinding and journey planning tool where they can share information, experiences and rate routes or destinations useful for them to wheel more.</p>
+                    <div class="col-12 col-md-6 ">
+                        <div id="market-border-orange" class="px-1 py-4">
+                            <h2 class="display-6 orange-underline mb-3">Market Validation</h2>
+                            <div class="center-contents mt-3 mx-1 mx-md-2">
+                                <p class="responsive-p speech-bubble">The Disabled Citizens' Inquiry by Sustrans (2023)
+                                    found 80% of mobility impaired people would find a wayfinding and journey planning
+                                    tool
+                                    where they can share information, experiences and rate routes or destinations useful
+                                    for
+                                    them to wheel more.</p>
+                            </div>
                         </div>
                     </div>
+                </div>
 
-                </div>    
             </div>
-         </section>
+            </div>
+        </section>
 
     </main>
 

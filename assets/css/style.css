@@ -318,12 +318,13 @@ main .card {
 }
 
 /* Custom borders for market sections */
-.market-border-green {
+#market-border-green {
 	border: 2px solid #C1CAB6;
 	border-radius: 10px;
+	height: 100%;
 }
 
-.market-border-orange {
+#market-border-orange {
 	border: 2px solid #EABAA5;
 	border-radius: 10px;
 }
@@ -341,13 +342,20 @@ main .card {
     justify-content: center;
 }
 
+#market-size-box {
+	max-width: 400px;
+	/* Make the rows equal height */
+	display: grid;
+	grid-auto-rows: 1fr;
+}
+
 /* speech bubble for market validation text */
 .speech-bubble {
     position: relative; /* allows the use of the ::after pseudo-element for the speech bubble tail. */
     background-color: #EABAA5; /* Bubble background color */
     border-radius: 15px; /* Rounded corners */
     padding: 20px;
-    max-width: 400px; /* Adjust the width as needed */
+    max-width: 400px; 
     /* margin: 20px auto; Center the bubble */
 }
 
@@ -569,6 +577,15 @@ footer {
         flex-wrap: wrap; /* Ensure items wrap if necessary */
         align-items: stretch; /* Make all cards the same height */
     }
+
+	#market {
+		/* display: flex; */
+		/* flex-wrap: wrap; Ensure items wrap if necessary */
+		align-items: stretch; /* Make all cards the same height */
+	}
+
+
+
 
     /* Make the card-body just under the height of its parent so there is a vertical gap between the cards */
     #key-features .card {
