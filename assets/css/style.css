@@ -317,12 +317,6 @@ main .card {
 	color: white;
 }
 
-/* Ensure that market column stretch to full height */
-#market .col-12 {
-    display: flex;
-    align-items: stretch;
-}
-
 /* Custom borders for market sections */
 #market-border-green {
 	border: 2px solid #C1CAB6;
@@ -333,19 +327,19 @@ main .card {
     justify-content: space-between;	/* Space out children evenly */
 }
 
+#market-border-orange {
+	border: 2px solid #EABAA5;
+	border-radius: 10px;
+}
+
 #market-size-box {
 	max-width: 400px;
-	/* Make the rows equal height */
+	/* Make the 3 rows equal height */
 	display: grid;
 	grid-auto-rows: 1fr;
     align-items: center; /* Vertically centers the grid items */
     justify-content: center; /* Horizontally centers the grid items */
     height: 100%;	
-}
-
-#market-border-orange {
-	border: 2px solid #EABAA5;
-	border-radius: 10px;
 }
 
 .green-box {
@@ -361,7 +355,6 @@ main .card {
     justify-content: center;
 	height: 100%
 }
-
 
 /* speech bubble for market validation text */
 .speech-bubble {
@@ -386,6 +379,25 @@ main .card {
     width: 0;
 }
 
+/* Differentiators section */
+.equal-height-rows-container {
+    display: grid;
+    grid-template-rows: repeat(10, 1fr); /* Creates 10 equally sized rows */
+    gap: 10px; /* Optional spacing between rows */
+    height: 600px; /* Set a height for the container */
+    border: 2px solid #C1CAB6;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.row-item {
+    display: flex;
+    align-items: center; /* Vertically center content within each row */
+    justify-content: center; /* Horizontally center content */
+    background-color: #EABAA5;
+    padding: 10px;
+    border-radius: 5px;
+}
 
 /* Footer section */
 footer {
