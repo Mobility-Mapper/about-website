@@ -10,16 +10,20 @@
 	/* Colour palette */
 	--color-orange-1: #f5ddd2; 
 	--color-orange-2: #eabaa5; 
+	--color-orange-2-b: #ebbaa6d9; /* hero cover text background */
 	--color-orange-3: #e09878; /* svg icon border-color */
 	--color-orange-4: #bd582c; /* main colour */
 	--color-orange-4-a: #bd582ccc; /* hero cover text background */
 	--color-orange-5: #8e4221; 
-	--color-orange-6: #5f2c16; 
+	--color-orange-6: #5f2c16;
+	
+	
 
 	--color-coffee-1: #ebdcd5;
 	--color-coffee-2: #D7B8AB;
 	--color-coffee-3: #C29580;
 	--color-coffee-4: #865640;
+	--color-coffee-4-a: #865640da; /* business button background-color */
 	--color-coffee-5: #644030;
 	--color-coffee-6: #432b20; /* font-color */
 	--color-coffee-6-a: #432b20cc; /* buton border-color */
@@ -27,7 +31,8 @@
 	--color-green-1: #E0E4DB;
 	--color-green-2: #C1CAB6;
 	--color-green-3: #A2AF92; /* card border-color */
-	--color-green-4: #637052;
+	--color-green-4: #637052; 
+	--color-green-4-a: #637052cc;/* background-color */
 	--color-green-5: #4A543E;
 	--color-green-6: #313829;
 
@@ -38,6 +43,13 @@
 	--color-brown-5: #746241;
 	--color-brown-6: #4E422C;
 
+	--color-sage-1: #F3F2E6;
+	--color-sage-2: #E7E4CC;
+	--color-sage-2-a: #E7E4CCE6; /* cover text md button background-color */
+	--color-sage-3: #DAD7B3;
+	--color-sage-4: #C2BC80;
+	--color-sage-5: #A39B4E;
+	--color-sage-6: #6D6834;
 }
 
 html {
@@ -63,8 +75,18 @@ body {
 	color: var(--color-coffee-6);
 }
 
-p {
-	font-size: calc(1.1rem)
+/* Fonts - override Bootstrap sizes */
+h2 {
+	font-size: calc(1.3rem + .6vw);
+}
+
+h3 {
+	font-size: calc(1rem + .6vw);
+}
+
+p, li {
+	font-size: calc(1.1rem + .3vw);
+	color: #432b20;
 }
 
 a {
@@ -72,9 +94,45 @@ a {
 	color: var(--color-coffee-6);
 }
 
+.font-white {
+	color: white;
+}
+
+.font-dark-brown {
+	color: var(--color-coffee-6);
+}
+
+/* Global classes */
+
+/* Visibility */
 .invisible {
 	display: none;
 }
+
+.btn {
+	cursor: pointer;
+    transition: background-color 0.3s ease;
+	font-size: calc(1.1rem + .3vw);
+}
+
+/* background colours */
+
+.background-orange-2 {
+	background-color: var(--color-orange-2);
+}
+
+.background-orange-2-b {
+	background-color: var(--color-orange-2-b); /* opacity 85% */
+}
+
+.background-orange-4-a {
+background-color: var(--color-orange-4-a);
+}
+
+.background-green-4-a {
+	background-color: var(--color-green-4-a);
+}
+
 
 .navbar {
 	min-height: 70px;
@@ -96,8 +154,6 @@ a {
 }
 
 /* Hero section */
-
-/* Hero image */
 
 /* Both pages hero image */
 .hero {
@@ -124,73 +180,62 @@ a {
 
 /* Container for cover text title for small screens */
 .cover-title-sm {
-	background-color: var(--color-orange-4-a);
 	position: absolute;
-	top: 30px; /* 30px from the top of the hero image */
 	width: 170px;
-	padding-top: 10px;
-	padding-bottom: 10px;
 }
 
-/* Container for cover text and call to action buttons for small screens*/
-#cover-text-call, #cover-text-call-partnership {
-	background-color: var(--color-orange-2);
-}
-
-/* Cover text title for small screens */
-.cover-title-sm h2 {
-	font-size: calc(1.3rem + .6vw);
-	margin-top: 0.3rem;
-	color: white;
-}
-
-/* Cover text for all screens */
-.cover-text h2 {
-	color: var(--color-coffee-6);
-}
-
-.cover-text h3 {
-	font-size: calc(1rem + .6vw);
-	color: var(--color-coffee-6);
-}
-
-#thanks{
-	font-size: calc(1.3rem + .6vw);
-}
-
-
-
-/* Only show on medium screens */
+/* Only show cover-title-md on medium screens */
 .cover-title-md {
 	display: none;
 }
 
-.cover-text {
-	color: white;
-	width: 100%;
-	text-align: center;
+#cover-text-call-partnership {
+	/* Centre contents */
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    margin: 0 auto;
 }
 
-#follow-social-media {
-	padding-top: 1rem;
+/* call-to-action buttons */
+
+/* Container for call-toaction-buttons */
+#cover-call-to-action {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem; /* Spacing between the buttons */
+	margin: 0 auto; /* centers container */
 }
 
 /* Custom buttons */
-.custom-button {
+.button-orange {
 	border: 1px solid var(--color-coffee-6-a);
+	border-radius: 5px;
 	background-color: var(--color-orange-4-a);
 	color: white;
-	display: block;
-	margin: 10px auto; /* Center horizontally and add vertical spacing */
-	text-align: center;
-	position: relative; /* For positioning the icon */
-	padding-right: 3rem; /* Add padding to the right to make space for the icon */
-	font-size: calc(1rem + .6vw); /* Responsive font size */
+	display: flex;
+	align-items: center; 
+    justify-content: center;
+    padding: 10px 20px;
 }
 
-.custom-button:hover {
+.button-orange:hover {
 	background-color: #C2BC80;
 	color: black;
+}
+
+/* Position arrow icon on the right of the text */
+.button-orange i {
+	margin-left: auto; /* Pushes the icon to the right */
+	display: flex;
+    align-items: center;
+	padding-left: 1rem; /* adds space between icon and text */
+}
+
+#seeking-funding .button-orange {
+	margin: 0 auto; /* Center the button */
 }
 
 .business-button {
@@ -198,20 +243,11 @@ a {
 	background-color: var(--color-orange-4-a);
 	color: white;
 	margin: 10px auto; /* Center button horizontally and add vertical spacing */
-	font-size: calc(1rem + .6vw); /* Responsive font size */
 }
 
 .business-button:hover {
 	background-color: #C2BC80;
 	color: black;
-}
-
-/* Position arrow icon on the right of the text */
-.custom-button i {
-	position: absolute;
-	right: 10px;
-	top: 50%;
-	transform: translateY(-50%);
 }
 
 /* Social media icons*/
@@ -221,69 +257,39 @@ a {
 	margin: 0 10px;
 }
 
-/* centre contents list */
-.bullet-list {
-	display: flex;
-	justify-content: center; /* Center the list horizontally */
-}
-
-.bullet-list ul {
+#bullet-list ul {
 	list-style-type: disc; /* Ensure bullets are displayed */
 }
 
-.bullet-list ul li {
+#bullet-list ul li {
 	display: list-item; /* Retain bullets while keeping items inline */
 	text-align: left; 	/* Ensure text is left-aligned */
 	width: auto; 		/* Prevent items from taking full width */
 	margin-bottom: 0.5rem; /* Add spacing between list items */
 }
 
-ul.custom-bullets {
-	padding-left: 0;
-	/* Remove default padding for small screens */
-}
-
-/* Custom bullet points with wheel icon */
-ul.custom-bullets > li {
-    background-image: url('../images/wheel_bullet.png');
-    background-repeat: no-repeat;
-    background-position: 0 0.3rem; /* Adjust vertical alignment */
-    padding-left: 2rem; /* Space for the image */
-	list-style-type: none;
-	padding-bottom: 0.5rem;
-}
-
-/* Sub bullet points */
-ul.custom-bullets > li > ul > li {
-	padding-top: 0.5rem;
-}
 
 /* Key Features (home) and Problems (partnerships) Section */
 
 main .card {
-    border-color: var(--color-green-3);
-    margin-bottom: 1.5rem;
- /* Add spacing between cards */
+    border-color: var(--color-brown-3);
+    margin-bottom: 1.5rem; /* Add vertical spacing between cards */
 }
 
 /* Section title underlines */
-
-.orange-underline {
-	border-bottom: 0.5rem solid #E09878; /* Custom color */
-	padding-bottom: 5px; /* Adds spacing between the text and line */
+.mm-underline {
+	border-bottom: 0.5rem solid;
+	padding-bottom: 5px; /* Add spacing between the text and line */
 	display: inline-block; /* Ensures the line doesn't stretch full-width */
 	padding: 0 20px 0.5rem 20px; /* makes the line wider than the text */
 }
 
-.green-underline {
-	border-bottom: 0.5rem solid #C1CAB6;
-	/* Custom color */
-	padding-bottom: 5px;
-	/* Adds spacing between the text and line */
-	display: inline-block;
-	/* Ensures the line doesn't stretch full-width */
-	padding: 0 20px 0.5rem 20px;
-	/* makes the line wider than the text */
+.border-bottom-orange {
+	border-bottom-color: var(--color-orange-3);
+}
+
+.border-bottom-green {
+	border-bottom-color: var(--color-green-3)
 }
 
 /* Card title font */
@@ -293,23 +299,7 @@ main .card {
 	text-align: center;
 }
 
-/* Card text font */
-.card-text {
-	font-size: calc(1.1rem + .3vw);
-}
-
-.responsive-p {
-	font-size: calc(1.1rem + .3vw);
-}
-
-/* Emphasise 'Futhermore' to catch the attention of the reader  */
-#furthermore {
-	font-weight: bold;
-}
-
-.green-backround {
-	background-color: rgba(99, 112, 82, 0.8);
-}
+/* Partnerships: Stuck at home section */
 
 #stuck-at-home {
 	width: 100%;
@@ -336,27 +326,47 @@ main .card {
 
 #stuck-at-home h3 {
 	font-size: calc(1rem + .6vw);
-	color: white;
 }
 
-/* Custom borders for market sections */
+/* Partnerships: Our solution section */
+
+/* Mobility Mapper custom bullets */
+
+ul#mm-bullets {
+	padding-left: 0; /* Remove default padding on small screens */
+}
+
+/* Custom bullet points with wheel icon */
+ul#mm-bullets > li {
+    background-image: url('../images/wheel_bullet.png');
+    background-repeat: no-repeat;
+    background-position: 0 0.3rem; /* Adjust vertical alignment */
+    padding-left: 2rem; /* Space for the image */
+	list-style-type: none;
+	padding-bottom: 0.5rem;
+}
+
+/* Add vertical space to text next to sub bullet points */
+ul#mm-bullets > li > ul > li {
+	padding-top: 0.5rem;
+}
+
+/* Partnerships: Market Section */
+
+/* Market Size */
+
 #market-border-green {
-	border: 2px solid #C1CAB6;
+	border: 2px solid var(--color-green-2);
 	border-radius: 10px;
-	height: 100%;
-    display: flex;
-    flex-direction: column;
+	height: 100%; /* Make border takes up full height of container */
+    display: flex; 			/* Stack children */
+    flex-direction: column; /* Stack children */
     justify-content: space-between;	/* Space out children evenly */
-}
-
-#market-border-orange {
-	border: 2px solid #EABAA5;
-	border-radius: 10px;
 }
 
 #market-size-box {
 	max-width: 400px;
-	/* Make the 3 rows equal height */
+	/* Make the 3 rows equal height: */
 	display: grid;
 	grid-auto-rows: 1fr;
     align-items: center; /* Vertically centers the grid items */
@@ -364,28 +374,29 @@ main .card {
     height: 100%;	
 }
 
+/* Boxes with green background for statistics */
 .green-box {
 	padding-top: 1rem; 
 	padding-bottom: 1rem;
 	border: 1px solid var(--color-coffee-6);
 	border-radius: 15px;
-	background-color: #C1CAB6;
+	background-color: var(--color-green-2);
 }
 
-.center-contents {
-    display: flex;
-    justify-content: center;
-	height: 100%
+/* Market validation */
+
+#market-border-orange {
+	border: 2px solid var(--color-orange-2);
+	border-radius: 10px;
 }
 
 /* speech bubble for market validation text */
 .speech-bubble {
     position: relative; /* allows the use of the ::after pseudo-element for the speech bubble tail. */
-    background-color: #EABAA5; /* Bubble background color */
-    border-radius: 15px; /* Rounded corners */
+    background-color: var(--color-orange-2); /* Bubble background color */
+    border-radius: 15px;
     padding: 20px;
     max-width: 400px; 
-    /* margin: 20px auto; Center the bubble */
 }
 
 /* speech bubble tail - Creates the triangular tail using borders */
@@ -396,12 +407,13 @@ main .card {
     left: 40px; /* Adjust this value to move the tail */
     border-width: 25px 20px 0; /* sets the triangle size - top, left/right, bottom */
     border-style: solid;
-    border-color: #EABAA5 transparent transparent transparent; /* Match bubble background color */
+    border-color: var(--color-orange-2) transparent transparent transparent; /* Match bubble background color */
     display: block;
     width: 0;
 }
 
-/* Differentiators section */
+/* Partnerships: Differentiators section */
+
 .equal-height-rows-container {
     display: grid;
     grid-template-rows: repeat(10, 1fr); /* Creates 10 equally sized rows */
@@ -445,9 +457,6 @@ main .card {
 
 
 /* Footer section */
-footer {
-	background-color: var(--color-orange-2);
-}
 
 /* Modal */
 
@@ -458,7 +467,7 @@ footer {
 .modal-button {
 	border: 1px solid var(--color-coffee-6);
 	background-color: var(--color-orange-4);
-	color: white;
+	color: var(--color-white);
 	font-size: calc(1rem + .6vw);
 	/* Responsive font size */
 }
@@ -473,9 +482,6 @@ footer {
 	margin-right: 1rem;
 }
 
-/* Partnerships Page */
-
-
 
 /* Media query: small screen (576px and up) */
 @media screen and (min-width: 576px) {
@@ -484,13 +490,6 @@ footer {
 	.cover-title-sm {
 		display: inline-block;
 		width: auto;
-	}
-}
-
-@media screen and (max-width: 768px) {
-	.container {
-		/* remove max width for small screens */
-		max-width: none;
 	}
 }
 
@@ -507,9 +506,7 @@ footer {
 	/* Navigation */
 
 	.nav-container {
-		/* align logo with cover text box */
-		padding-left: 2vw;
-		padding-right: 2vw;
+		padding-left: 2vw; /* aligns start of logo with start of cover text box */
 	}
 
 	/* Bring cover text up onto hero image */
@@ -520,12 +517,15 @@ footer {
 	}
 
 	/* Hero section */
+
+	/* For hero background image */
 	.hero {
 		height: 740px;
 		padding: 0;
-		position: relative;
+		position: relative; /* For adding hero text relative to the hero image */
 	}
 
+	/* Reposition hero image */
 	#hero-home {
 		background-position: 85% 100%;
 	}
@@ -546,8 +546,9 @@ footer {
         justify-content: space-between; /* Space out children evenly */
 	}
 
+	/* Partnerships cover text */
 	#cover-text-call-partnership {
-		/* Bring upwards into #hero image */
+		/* Bring upwards into hero image */
 		/* Center in container */
 		position: absolute;
 		top: 50%;
@@ -555,19 +556,17 @@ footer {
 		transform: translate(-50%, -50%);
 		z-index: 10; /* Ensure it appears above the hero background */
 		width: 60vw; /* responsive width */
-		background-color: transparent;
-		display: flex;
-        flex-direction: column;
         justify-content: space-between; /* Space out children evenly */
 		padding-top: 4rem;
-		background-color: rgba(189, 88, 44, 0.85);
+		color: white;
 	}
 
 	.cover-text {
-		background-color: rgba(189, 88, 44, 0.85);
-		/* rounded corners */
+		background-color: var(--color-orange-4-a);
 		border-radius: 10px;
 	}
+
+	/* Cover title */
 
 	.cover-title-sm {
 		/* Hide for md screens */
@@ -579,58 +578,36 @@ footer {
 		display: block;
 	}
 
-	.cover-text h2 {
-		font-size: calc(1.3rem + .6vw);
+	/* Partnerships page cover text */
+	#bullet-list a, #bullet-list li::marker {
 		color: white;
 	}
 
-	#thanks{
-		font-size: calc(1rem + .6vw);
-	}
-
-	.business-button {
-		background-color: #865640da;
-	}
-	
-	.business-button:hover {
-		background-color: #C2BC80;
-	}
-
-	/* Center the call-to-action buttons vertically */
-    #cover-call-to-action {
-        margin-top: auto; /* Pushes to the middle by flexbox */
-        margin-bottom: auto; /* Pushes to the middle by flexbox */
-		padding: 0;
-    }
-
-	.cover-text h3 {
-		color: #ffffff;
-	}
-
-	.cover-text-call .custom-button {
-		background-color: rgba(231, 228, 204, 0.90);
+	/* home page cover buttons change colour on md screens */
+	.button-sage-md {
+		background-color: var(--color-sage-2-a);
 		color: black;
 	}
 
-	.cover-text-call .custom-button:hover {
-		background-color: #6D6834;
-		color: white;
+	.button-sage-md:hover {
+		background-color: var(--color-sage-6);
+		color: var(--color-white);
 	}
 
-	/* Push buttons below container so they have no background colour */
-	#cover-call-to-action {
-		background-color: transparent;
+	/* Partnerships page cover buttons change colour on md screens */
+	.business-button {
+		background-color: var(--color-coffee-4-a);
+	}
+	
+	.business-button:hover {
+		background-color: var(--color-sage-4);
 	}
 
-	#follow-social-media {
-		margin: 0;
-		padding: 0;
-	}
-
+	/* Home page cover text social media */
 	#follow-social-media h3,
 	#follow-social-media a {
-		/* Make text easier to read */
-		background-color: rgba(250, 246, 235, 0.8)
+		/* Make social media cover text easier to read by adding background colour similar to image */
+		background-color: #faf6ebcc; /* 80% opacity */
 	}
 
 	#follow-social-media h3 {
@@ -638,7 +615,7 @@ footer {
 		display: inline-block;
 	}
 
-	/* Key features section */
+	/* Home page Key features section */
 
 	/* Make all key features cards the same height for consistency */
 	
@@ -648,23 +625,17 @@ footer {
         flex-wrap: wrap; /* Ensure items wrap if necessary */
         align-items: stretch; /* Make all cards the same height */
     }
-
-	#market {
-		/* display: flex; */
-		/* flex-wrap: wrap; Ensure items wrap if necessary */
-		align-items: stretch; /* Make all cards the same height */
+	
+	/* Make the card-body just under the height of its parent so there is a vertical gap between the cards */
+	#key-features .card {
+		display: flex;
+		flex-direction: column;
+		height: 96%;
 	}
 
-    /* Make the card-body just under the height of its parent so there is a vertical gap between the cards */
-    #key-features .card {
-        display: flex;
-        flex-direction: column;
-        height: 96%;
-    }
-
-    #key-features .card-body {
-        flex-grow: 1; /* Make the card-body take up all available space */
-    }
+	#key-features .card-body {
+		flex-grow: 1; /* Make the card-body take up all available space */
+	}
 
 	/* Partnerships page stuck at home section */
 
@@ -681,10 +652,7 @@ footer {
 /* Media query: desktop layout (992px and up) */
 @media screen and (min-width: 992px) {
 	
-	header.container {
-		--bs-gutter-x: 0; /* Override Bootstrap gutter for the header */
-	}
-
+	/* Limit width of homepage cover text container */
 	#cover-text-call {
 		width: 50%;
 	}
@@ -694,22 +662,27 @@ footer {
 /* Media query: large desktop layout (1200px and up) */
 @media screen and (min-width: 1200px) {
 
+	/* Increase height of hero section and therefore the background image */
 	.hero {
 		height: 900px;
-
 	}
 
+	/* don't let home hero grow any wider */
 	#cover-text-call {
-		width: 550px; /* don't grow any wider */
-		min-height: 700px;
+		width: 550px; /* don't let hero grow any wider */
 	}
 
-	/* Make all key features cards the same height for consistency */
-	#key-features .card-body {
-		min-height: 230px;
+	/* stop text in home her0 growing too */
+	#cover-text-call h2 {
+		font-size: 28px;
 	}
 
-	/* Reduce font-size for card titles and padding for the last card to fit text on one line */
+	#cover-text-call h3 {
+		font-size: 23.2px;
+	}
+
+	/* Partnerships */
+	/* Reduce font-size for card titles and padding to allow last card to fit text on one line */
 	#problem .card-title {
 		font-size: 1.6rem;
 	}
@@ -718,27 +691,33 @@ footer {
 		padding-left: 0;
 		padding-right: 0;
 	}
-
-
 }
 
 /* Media query: extra large desktop layout (1400px and up) */
 @media screen and (min-width: 1400px) {
 
+	/* Max width of all content */
 	.container {
 		max-width: 1140px;
 	}
 
-	#cover-text>h2 {
+	/* Stop fonts continuing to grow with screen width */
+	h2 {
 		font-size: 30px;
 	}
 
-	#cover-text>h3 {
+	h3 {
 		font-size: 25px;
 	}
 
-	.custom-button {
-		font-size: 25px;
+	p, li, .btn {
+		font-size: 22px;
+		color: #432b20;
+	}
+
+	/* don't let partnership hero grow any wider */
+	#cover-text-call-partnership{
+		width: 821px;
 	}
 
 }
