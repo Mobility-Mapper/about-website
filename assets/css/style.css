@@ -17,10 +17,8 @@
 	--color-orange-5: #8e4221; 
 	--color-orange-6: #5f2c16;
 	
-	
-
 	--color-coffee-1: #ebdcd5;
-	--color-coffee-2: #D7B8AB;
+	--color-coffee-2: #D7B8AB; /* key differentiators background-color */
 	--color-coffee-3: #C29580;
 	--color-coffee-4: #865640;
 	--color-coffee-4-a: #865640da; /* business button background-color */
@@ -115,6 +113,16 @@ a {
 	font-size: calc(1.1rem + .3vw);
 }
 
+/* icon - this needs to be before the background colours in this file */
+.icon-svg {
+	height: calc(3rem + .7vw);
+    width: auto;
+    margin-right: 15px; /* Space between the icon and text */
+    object-fit: cover;
+	border: 2px solid;
+    border-radius: 5px;
+}
+
 /* background colours */
 
 .background-orange-2 {
@@ -129,8 +137,43 @@ a {
 background-color: var(--color-orange-4-a);
 }
 
+.background-green-2 {
+	background-color: var(--color-green-2);
+}
+
 .background-green-4-a {
 	background-color: var(--color-green-4-a);
+}
+
+.background-brown-2 {
+	background-color: var(--color-brown-2);
+}
+
+.background-coffee-2 {
+	background-color: var(--color-coffee-2);
+}	
+
+.background-sage-2 {
+	background-color: var(--color-sage-2);
+}	
+
+/* Border colours */
+
+
+.border-orange-3 {
+	border-color: var(--color-orange-3);
+}
+
+.border-brown-3 {
+	border-color: var(--color-brown-3);
+}
+
+.border-green-3 {
+	border-color: var(--color-green-3);
+}
+
+.border-coffee-3 {
+	border-color: var(--color-coffee-3);
 }
 
 
@@ -297,6 +340,7 @@ main .card {
 	color: var(--color-orange-4);
 	font-weight: bold;
 	text-align: center;
+	margin-bottom: 0;
 }
 
 /* Partnerships: Stuck at home section */
@@ -423,39 +467,13 @@ ul#mm-bullets > li > ul > li {
 .row-item {
     display: flex;
     align-items: center; /* Vertically center content within each row */
-    padding-left: 10px;
-	border: 2px solid;
+    padding: 10px 10px 10px 10px; /* top right bottom left */
     border-radius: 5px;
 }
 
-.background-orange-2 {
-	background-color: var(--color-orange-2);
+.row-item p {
+	margin: 0; /* Remove default margin */
 }
-
-.background-brown-2 {
-	background-color: var(--color-brown-2);
-}
-
-
-/* icon */
-.icon-svg {
-    width: 30px;
-    height: 30px;
-    margin-right: 15px; /* Space between the icon and text */
-    object-fit: cover;
-	border: 2px solid;
-    border-radius: 5px;
-}
-
-.border-orange-3 {
-	border-color: var(--color-orange-3);
-}
-
-.border-brown-3 {
-	border-color: var(--color-brown-3);
-}
-
-
 /* Footer section */
 
 /* Modal */
