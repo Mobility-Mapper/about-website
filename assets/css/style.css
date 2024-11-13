@@ -474,7 +474,53 @@ ul#mm-bullets > li > ul > li {
 .row-item p {
 	margin: 0; /* Remove default margin */
 }
+
+/* MM will also benefit section */
+
+.who-else-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+	min-height: 120px; /* Ensures enough space for the circle */
+}
+
+.circle-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100px; /* Ensure icon is not squashed */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+	flex-shrink: 0; /* Prevents icon from shrinking */
+}
+
+.who-else-text {
+	display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically centers the text */
+    flex: 1;
+	padding-left: 1rem;
+}
+
+.who-else-text h3 {
+	font-weight: bold;
+}
+
+.who-else-text p {
+	margin: 0; /* Remove default margin so the text center aligns with that of the circle to its left */
+}
+
+.who-else-icon {
+	height: calc(3rem + .7vw);
+    width: auto;
+    object-fit: cover;
+}
+
 /* Footer section */
+footer a {
+	font-size: calc(1.1rem + .3vw);
+}
 
 /* Modal */
 
@@ -709,6 +755,12 @@ ul#mm-bullets > li > ul > li {
 		padding-left: 0;
 		padding-right: 0;
 	}
+
+	/* MM will aslo benefit section */
+	.who-else-box-xl
+	{
+		height: 170px; /* Ensure both boxes are the same height */
+	}
 }
 
 /* Media query: extra large desktop layout (1400px and up) */
@@ -728,7 +780,7 @@ ul#mm-bullets > li > ul > li {
 		font-size: 25px;
 	}
 
-	p, li, .btn {
+	p, li, .btn, footer a {
 		font-size: 22px;
 		color: #432b20;
 	}
