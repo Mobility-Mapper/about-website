@@ -223,7 +223,7 @@ background-color: var(--color-orange-4-a);
 
 /* Home page hero image */
 #hero-home {
-	background-image: url("../images/woman-wheelchair-using-smartphone-optimised.jpg");
+	background-image: url("../images/home_hero_image.jpg");
 	background-position: 95% 100%;
 }
 
@@ -574,14 +574,6 @@ footer a {
 
 .modal-header h1 {
 	font-size: calc(1.2rem + .6vw);
-}
-
-.modal-button {
-	border: 1px solid var(--color-coffee-6);
-	background-color: var(--color-orange-4);
-	color: var(--color-white);
-	font-size: calc(1rem + .6vw);
-	/* Responsive font size */
 }
 
 .modal-button:hover {
