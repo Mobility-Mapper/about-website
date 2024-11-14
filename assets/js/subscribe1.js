@@ -27,3 +27,10 @@ document.getElementById('subscribe-form').addEventListener('submit', async funct
         responseMessage.innerHTML = '<p class="text-danger">Oops! Something went wrong. Please try again.</p>';
     }
 });
+
+const textarea = document.getElementById('message');
+const charCount = document.getElementById('charCount');
+
+textarea.addEventListener('input', function () {
+    charCount.textContent = this.value.length;
+});

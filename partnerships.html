@@ -508,69 +508,88 @@
             </div>
         </section>
 
-        <section class="mt-6 py-5 mx-1 background-green-2">
-            <div class="container ">
-
-                <div class="col-12 text-center mb-4">
-                    <h2 class="display-6">Get in touch</h2>
-                    <p>If you would like to talk to us about a partnership or funding, please contact us by filling in this form. We look forward to hearing from you.</p>
-                </div>
-
-                <!-- Form -->
-                <form id="business-contact-form" class="row g-3">
-
-                    <!-- Organisation -->
-                    <div class="col-12 col-lg-6">
-                        <label for="name" class="form-label">Organisation</label>
-                        <input type="text" class="form-control" id="name" name="name">
-                    </div>
-
-                    <!-- Contact Name -->
-                    <div class="col-12 col-lg-6">
-                        <label for="name" class="form-label">Contact name</label>
-                        <input type="text" class="form-control" id="name" name="name">
-                    </div>
-
-                    <!-- Email -->
-                    <div class="col-12 col-lg-6">
-                        <label for="email" class="form-label=">Email address</label>
-                        <input type="email" class="form-control" id="email" name="email">
-                    </div>
-
-                    <!-- radio buttons -->
-                    <div class="form-group mb-4">
-                        <h3>We would like to discuss:</h3>
-                    </div>
-                
-                    <div class="form-check">
-                        <input type="radio" class="form-check-input" id="partnership" name="discussion" value="partnership" required>
-                        <label class="form-check-label" for="partnership">Partnership</label>
-                    </div>
-                
-                    <div class="form-check">
-                        <input type="radio" class="form-check-input" id="funding" name="discussion" value="funding">
-                        <label class="form-check-label" for="funding">Funding</label>
-                    </div>
-                
-                    <div class="form-check">
-                        <input type="radio" class="form-check-input" id="both" name="discussion" value="both">
-                        <label class="form-check-label" for="both">Both</label>
-                    </div>
-        
-
-                    <!--Submit button-->
-                    <div class="col-12 mt-4 mb-1">
-                        <button type="submit" class="btn">Submit</button>
-                    </div>
-
-                </form>
-            </div>
-        </section>
-
     </main>
 
     <!-- Footer -->
-    <footer class="background-orange-2 pt-4">
+    <footer class="background-orange-2 mt-5">
+
+        <!-- Business contact form -->
+        <section class="mt-6 py-5 form-background">
+            <div class="container">
+
+                <div class="mb-4">
+                    <h2 class="display-6 text-center">Get in touch</h2>
+                    <h3 class="text-start py-3">If you would like to talk to us about a partnership or funding, please contact us by filling in
+                        the form below, or email hello@mobilitymapper.co.uk. We look forward to hearing from you.</h3>
+                </div>
+
+                <!-- Form -->
+                <form class="business-contact-form">
+
+                    <div class="row g-3">
+                        
+                        <div class="col-12 col-lg-6 mt-0">
+
+                            <!-- Organisation -->
+                            <div>
+                                <label for="name" class="form-label">Organisation</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+
+                            <!-- Contact Name -->
+                            <div>
+                                <label for="name" class="form-label">Contact name</label>
+                                <input type="text" class="form-control" id="name" name="name"  required>
+                            </div>
+
+                            <!-- Email -->
+                            <div>
+                                <label for="email" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+
+                            <!-- radio buttons -->
+                            <div>
+                                <p class="mb-2 mt-4">We would like to discuss:</p>
+                            </div>
+
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="partnership" name="discussion"
+                                    value="partnership" required checked>
+                                <label class="form-check-label" for="partnership">Partnership</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="funding" name="discussion"
+                                    value="funding">
+                                <label class="form-check-label" for="funding">Funding</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="both" name="discussion" value="both">
+                                <label class="form-check-label" for="both">Both</label>
+                            </div>
+
+                        </div>
+
+                        <!-- Message -->
+                        <div class="col-12 col-lg-6 mt-0">
+                            <label for="message" class="form-label">Your message</label>
+                            <textarea class="form-control auto-expand-textarea-md" rows="5" id="message" name="message" maxlength="750" required></textarea>
+                            <div id="passwordHelpBlock" class="form-text">
+                                <span id="charCount">0</span>/750 characters
+                            </div>
+                        </div>
+
+                         <!--Submit button-->
+                        <div class="col-12 mt-md-4 mb-md-1 d-flex justify-content-center">
+                            <button type="submit" class="btn button-coffee">Submit contact form</button>
+                        </div>
+                    </div>
+                   
+                </form>
+            
+        </section>
 
         <!-- Social media icons -->
         <div class="social-media-icons text-center pt-4">
@@ -639,7 +658,7 @@
                         </div>
 
                         <!--Submit button-->
-                        <div class="col-12 mt-4 mb-1">
+                        <div class="col-12 mt-lg-4 mb-lg-1 d-flex justify-content-center">
                             <button type="submit" class="btn modal-button">Submit</button>
                         </div>
 

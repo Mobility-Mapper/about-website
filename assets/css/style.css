@@ -12,8 +12,10 @@
 	--color-orange-2: #eabaa5; 
 	--color-orange-2-b: #ebbaa6d9; /* hero cover text background */
 	--color-orange-3: #e09878; /* svg icon border-color */
+	--color-orange-3-a: #e09878DD; /* svg icon border-color */
 	--color-orange-4: #bd582c; /* main colour */
-	--color-orange-4-a: #bd582ccc; /* hero cover text background */
+	--color-orange-4-a: #bd582cdd; /* hero cover text background */
+	--color-orange-4-b: #bd582cbb; /* Homepage contact us button sm */
 	--color-orange-5: #8e4221; 
 	--color-orange-6: #5f2c16;
 	
@@ -27,7 +29,9 @@
 	--color-coffee-6-a: #432b20cc; /* buton border-color */
 
 	--color-green-1: #E0E4DB;
+	--color-green-1-a: #E0E4DBCC;
 	--color-green-2: #C1CAB6;
+	--color-green-2-a: #C1CAB6CC;
 	--color-green-3: #A2AF92; /* card border-color */
 	--color-green-4: #637052; 
 	--color-green-4-a: #637052cc;/* background-color */
@@ -48,6 +52,16 @@
 	--color-sage-4: #C2BC80;
 	--color-sage-5: #A39B4E;
 	--color-sage-6: #6D6834;
+
+	--color-mango-1: #FBE6CE;
+	--color-mango-2: #F7CE9D;
+	--color-mango-2-a: #F7CE9DF0;
+	--color-mango-3: #F3B56C;
+	--color-mango-3-a: #F3B56CF0;
+	--color-mango-4: #E48312;
+	--color-mango-5: #AB620E;
+	--color-mango-6: #724209;
+
 }
 
 html {
@@ -82,7 +96,7 @@ h3 {
 	font-size: calc(1rem + .6vw);
 }
 
-p, li {
+p, li, label {
 	font-size: calc(1.1rem + .3vw);
 	color: #432b20;
 }
@@ -109,7 +123,7 @@ a {
 
 .btn {
 	cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
 	font-size: calc(1.1rem + .3vw);
 }
 
@@ -254,7 +268,6 @@ background-color: var(--color-orange-4-a);
 
 /* Custom buttons */
 .button-orange {
-	border: 1px solid var(--color-coffee-6-a);
 	border-radius: 5px;
 	background-color: var(--color-orange-4-a);
 	color: white;
@@ -265,7 +278,7 @@ background-color: var(--color-orange-4-a);
 }
 
 .button-orange:hover {
-	background-color: #C2BC80;
+	background-color: var(--color-orange-3);
 	color: black;
 }
 
@@ -281,17 +294,19 @@ background-color: var(--color-orange-4-a);
 	margin: 0 auto; /* Center the button */
 }
 
+/* Partnerships cover */
 .business-button {
-	border: 1px solid var(--color-coffee-6-a);
 	background-color: var(--color-orange-4-a);
 	color: white;
 	margin: 10px auto; /* Center button horizontally and add vertical spacing */
 }
 
 .business-button:hover {
-	background-color: #C2BC80;
-	color: black;
+	background-color: var(--color-orange-4-b);
+	color: white;
 }
+
+
 
 /* Social media icons*/
 .social-media-icon {
@@ -518,6 +533,39 @@ ul#mm-bullets > li > ul > li {
 }
 
 /* Footer section */
+
+/* Business contact form  */
+.form-background {
+	background-color: var(--color-coffee-1);
+}
+
+.form-label {
+	margin-top: 1rem;
+}
+
+.form-check-label {
+    margin-left: 10px;
+}
+
+#business-form-button {
+	/* center */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button-coffee {
+	background-color: var(--color-coffee-4);
+	color: white;
+	font-size: calc(1.1rem + .3vw);
+}
+
+.button-coffee:hover {
+	background-color: var(--color-coffee-4-a);
+	color: white;
+	font-size: calc(1.1rem + .3vw);
+}
+
 footer a {
 	font-size: calc(1.1rem + .3vw);
 }
@@ -642,29 +690,35 @@ footer a {
 		display: block;
 	}
 
+	.font-white-md {
+		color: white;
+	}
+
 	/* Partnerships page cover text */
 	#bullet-list a, #bullet-list li::marker {
 		color: white;
 	}
 
 	/* home page cover buttons change colour on md screens */
-	.button-sage-md {
-		background-color: var(--color-sage-2-a);
+	.button-mango-md {
+		background-color: var(--color-mango-2-a);
 		color: black;
 	}
 
-	.button-sage-md:hover {
-		background-color: var(--color-sage-6);
-		color: var(--color-white);
+	.button-mango-md:hover {
+		background-color: var(--color-mango-3-a);
+		color: black;
 	}
 
 	/* Partnerships page cover buttons change colour on md screens */
 	.business-button {
-		background-color: var(--color-coffee-4-a);
+		background-color: var(--color-green-1-a);
+		color: black;
 	}
 	
 	.business-button:hover {
-		background-color: var(--color-sage-4);
+		background-color: var(--color-green-2-a);
+		color: black;
 	}
 
 	/* Home page cover text social media */
@@ -672,6 +726,7 @@ footer a {
 	#follow-social-media a {
 		/* Make social media cover text easier to read by adding background colour similar to image */
 		background-color: #faf6ebcc; /* 80% opacity */
+		font-weight: 600;
 	}
 
 	#follow-social-media h3 {
@@ -711,6 +766,9 @@ footer a {
 	#stuck-text-2 {
 		width: 65%;
 	}
+
+
+	
 }
 
 /* Media query: desktop layout (992px and up) */
@@ -720,6 +778,15 @@ footer a {
 	#cover-text-call {
 		width: 50%;
 	}
+
+		/* Parnerships contact form - Make textarea fill the container */
+		.auto-expand-textarea-md {
+			width: 100%;
+			resize: none; /* Prevent manual resizing */
+			height: 80%; /* Make it fill the container */
+			box-sizing: border-box;
+			padding: 10px;
+		}
 
 }
 
@@ -761,6 +828,7 @@ footer a {
 	{
 		height: 170px; /* Ensure both boxes are the same height */
 	}
+
 }
 
 /* Media query: extra large desktop layout (1400px and up) */
@@ -780,7 +848,7 @@ footer a {
 		font-size: 25px;
 	}
 
-	p, li, .btn, footer a {
+	p, li, label, .btn, footer a {
 		font-size: 22px;
 	}
 
