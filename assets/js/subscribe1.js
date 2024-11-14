@@ -15,16 +15,23 @@ document.getElementById('subscribe-form').addEventListener('submit', async funct
 
         // Display the success message
         responseMessage.innerHTML = `
-        <p class="text-success p-responsive m-3">Thank you for subscribing!</p>
-        <button type="button" class="btn m-3 modal-button" data-bs-dismiss="modal">
-            Close window 
-        </button>`;
+        <div class="px-4">
+            <p>Thank you for subscribing!</p>
+            <button type="button" class="btn my-4 button-orange" data-bs-dismiss="modal">
+                Close window 
+            </button>
+        </div>
+        `;
 
         // Hide the modal body
         modalBody.style.display = 'none';
 
     } else {
-        responseMessage.innerHTML = '<p class="text-danger">Oops! Something went wrong. Please try again.</p>';
+        responseMessage.innerHTML = `
+        <div class="px-4">
+            <p">Oops! Something went wrong. Please try again.</p>
+        </div>
+        `;
     }
 });
 
