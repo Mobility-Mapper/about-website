@@ -607,6 +607,20 @@ footer a {
 	}
 }
 
+/* Make dropdown menu appear on the right */
+@media (max-width: 768px) {
+    .navbar-collapse {
+        text-align: right;
+        position: absolute;
+        top: 100%;
+        right: 0;
+		padding: 0.5rem 1rem;
+        background-color: var(--color-orange-2); /* Add background color if needed */
+        z-index: 1;
+        border-top: 1px solid #ddd; /* Optional: Adds a border */
+    }
+}
+
 @media screen and (max-width: 992px) {
 	.container {
 		/* remove max width for smaller screens */
@@ -618,10 +632,6 @@ footer a {
 @media screen and (min-width: 768px) {
 
 	/* Navigation */
-
-	.nav-container {
-		padding-left: 2vw; /* aligns start of logo with start of cover text box */
-	}
 
 	/* Bring cover text up onto hero image */
 	header {
