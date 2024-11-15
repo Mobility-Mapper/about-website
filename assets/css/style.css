@@ -557,13 +557,11 @@ ul#mm-bullets > li > ul > li {
 .button-coffee {
 	background-color: var(--color-coffee-4);
 	color: white;
-	font-size: calc(1.1rem + .3vw);
 }
 
 .button-coffee:hover {
 	background-color: var(--color-coffee-4-a);
 	color: white;
-	font-size: calc(1.1rem + .3vw);
 }
 
 footer a {
