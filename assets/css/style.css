@@ -104,6 +104,7 @@ p, li, label {
 a {
 	text-decoration: none;
 	color: var(--color-coffee-6);
+	cursor: pointer;
 }
 
 .font-white {
@@ -544,6 +545,12 @@ ul#mm-bullets > li > ul > li {
 	background-color: var(--color-coffee-1);
 }
 
+#contact-message a {
+	text-decoration: underline;
+	font-size: calc(1rem + .6vw);
+	color: var(--color-coffee-4);
+}
+
 .form-label {
 	margin-top: 1rem;
 }
@@ -778,14 +785,14 @@ footer a {
 		width: 50%;
 	}
 
-		/* Parnerships contact form - Make textarea fill the container */
-		.auto-expand-textarea-md {
-			width: 100%;
-			resize: none; /* Prevent manual resizing */
-			height: 80%; /* Make it fill the container */
-			box-sizing: border-box;
-			padding: 10px;
-		}
+	/* Partnerships contact form - Make textarea fill the container */
+	.auto-expand-textarea-md {
+		width: 100%;
+		resize: none; /* Prevent manual resizing */
+		height: 80%; /* Make it fill the container */
+		box-sizing: border-box;
+		padding: 10px;
+	}
 
 }
 
@@ -799,10 +806,15 @@ footer a {
 
 	/* don't let home hero grow any wider */
 	#cover-text-call {
-		width: 550px; /* don't let hero grow any wider */
+		width: 500px; /* don't let hero grow any wider */
+		min-height: 670px; /* make it taller */
+		left: 4vw; /* Move it to the right a bit */
+		
 	}
 
-	/* stop text in home her0 growing too */
+	
+
+	/* stop text in home hero growing too */
 	#cover-text-call h2 {
 		font-size: 28px;
 	}
@@ -843,7 +855,7 @@ footer a {
 		font-size: 30px;
 	}
 
-	h3 {
+	h3, #contact-message a {
 		font-size: 25px;
 	}
 
