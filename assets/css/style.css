@@ -97,7 +97,7 @@ h3 {
 }
 
 p, li, label {
-	font-size: calc(1.1rem + .3vw);
+	font-size: calc(1rem + .3vw);
 	color: #432b20;
 }
 
