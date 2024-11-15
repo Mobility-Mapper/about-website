@@ -296,8 +296,12 @@ background-color: var(--color-orange-4-a);
 	padding-left: 1rem; /* adds space between icon and text */
 }
 
+/* Center button */
 #seeking-funding .button-orange {
-	margin: 0 auto; /* Center the button */
+	display: inline-flex;  
+    align-items: center;   /* Centers the text and icon vertically */
+    justify-content: center; /* Centers content horizontally */
+    width: auto;           /* Ensures the button width matches its content */
 }
 
 /* Partnerships cover */
