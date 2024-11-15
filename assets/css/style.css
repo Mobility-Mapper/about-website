@@ -266,6 +266,11 @@ background-color: var(--color-orange-4-a);
 	margin: 0 auto; /* centers container */
 }
 
+#cover-call-to-action .btn {
+    width: 100%; /* Makes both buttons full width of their container */
+    max-width: 330px; /* stops buttons stretching too wide on sm*/
+}
+
 /* Custom buttons */
 .button-orange {
 	border-radius: 5px;
@@ -682,6 +687,10 @@ footer a {
 
 	.font-white-md {
 		color: white;
+	}
+
+	#cover-call-to-action .btn {
+		max-width: none; /* remove max width*/
 	}
 
 	/* Partnerships page cover text */
