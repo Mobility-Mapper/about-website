@@ -6,7 +6,7 @@ document.getElementById('subscribe-form').addEventListener('submit', async funct
     const responseMessage = document.getElementById('response-message');
     const modalBody = document.querySelector('.modal-body');
 
-    const response = await fetch("https://script.google.com/macros/s/AKfycbwgmMyjR-TwJYcBME2FoLJllNBG2wGDZ7uLOLICHlxWA5tMdP3lm8H7A-BXVuwCRuVc8Q/exec", {
+    const response = await fetch("https://script.google.com/macros/s/AKfycbwwgoErzc2av7Dvu1GHlYAD0SYvu-hvd6a_tbt4cxhJxp2mXaE7DEP5mJADUb3nncABQw/exec", {
         method: "POST",
         body: JSON.stringify({ name, email })
     });
