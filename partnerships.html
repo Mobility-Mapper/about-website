@@ -19,19 +19,19 @@
 </head>
 
 <body>
+
     <!-- Navbar, expands on tablets-->
     <nav class="navbar navbar-expand-md" id="navbar">
-        <div class="container" id="nav-container">
+        <div class="container nav-container">
             <a class="navbar-brand" href="index.html">
                 <img src="./assets/images/logo.png" alt="Mobility Mapper logo" class="logo">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarContent">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto h5">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
@@ -55,56 +55,93 @@
         <section class="hero" id="hero-partnerships">
             <!-- Cover title only for sm screens -->
             <div class="cover-title-sm background-orange-4-a p-2 mt-2">
+                <!-- This h2 is for sm screens only-->
                 <h2 class="font-white mt-2">Partnerships and Funding</h2>
             </div>
         </section>
 
-        <!-- Below hero image for small screen sizes, moves up onto left-hand-side of hero image for medium screns-->
-        <div class="py-4 px-3 cover-text background-orange-2" id="cover-text-call-partnership">
+        <!-- 
+            Below hero image for small screen sizes, 
+            on hero image for medium screns
+        -->
+        <div class="px-2 py-4 px-md-4 py-md-5 cover-text background-orange-linear background-orange-4-a-md"
+            id="cover-text-call-partnership">
 
             <!-- Cover text -->
-            <div class="px-md-4 py-md-3 text-center">
-                <h2 class="cover-title-md">Partnerships and Funding</h2> <!-- for md screens+ only-->
-                <h3 class="pb-2">Thank you for visiting out partnerships and funding page.</h3>
+            <div class="text-center" id="intro">
+                <!-- This h2 is for md screens+ only-->
+                <h2 class="pb-md-3 show-md display-6 fw-bold letter-spacing-d6">Partnerships and Funding</h2>
+                <div class="px-1 px-md-4 pb-md-3">
+                    <h3 class="h5 pb-1">Thank you for visiting our partnerships and funding page.</h3>
+                    <h3 class="h5 pb-2">We present our business pitch to explain the problem we are solving,
+                        and the potential impact on the market, highlighting not only the primary users but
+                        also the broad range of beneficiaries who will gain from our app.</h3>
+                </div>
             </div>
 
-            <!-- Contents list -->
+            <!-- Button to go to business contact section -->
             <div>
-                <h2 class="pt-3 pb-2 text-center">Contents</h2>
-                <h3 class="d-flex justify-content-center" id="bullet-list">
-                    <ul class="text-start">
-                        <li><a href="#problem">The problem we are solving</a></li>
-                        <li><a href="#solution">Our solution</a></li>
-                        <li><a href="#market-size">Market size</a></li>
-                        <li><a href="#market-validation">Market validation</a></li>
-                        <li><a href="#differentiators">Key differentiators</a></li>
-                        <li><a href="#who-else">Who else can use Mobility Mapper</a></li>
-                        <li><a href="#further-benefits">Further benefits</a></li>
-                    </ul>
-                </h3>
+                <a href="#business-contact-section" class="btn btn-lg business-button">
+                    <i class="bi bi-envelope envelope-icon me-2"></i> Contact us
+                </a>
             </div>
-
-            <!-- Go to business contact section -->
-            <button type="button" class="btn btn-lg business-button" data-bs-target="#partnership-contact">
-                <i class="bi bi-envelope envelope-icon me-2"></i> Contact us
-            </button>
 
         </div>
     </header>
 
     <!-- Main content -->
     <main>
+
+        <!-- Contents list -->
+        <section>
+            <div class="mt-5 mb-4 mx-md-5">
+
+                <div>
+                    <h3 class="pb-3 text-center fw-bold letter-spacing-h3">Contents</h3>
+
+                    <!-- <div class="d-flex justify-content-center"> -->
+                    <div class="container d-flex justify-content-center">
+                        <div class="h5 row" id="contents">
+
+                            <div class="col-12 col-md-6">
+                                <ul class="mb-0 text-start mm-bullets">
+                                    <li><a href="#problem">The problem</a></li>
+                                    <li><a href="#solution">Our solution</a></li>
+                                    <li><a href="#market-size">Market size</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <ul class="text-start mm-bullets">
+                                    <li><a href="#market-validation">Market validation</a></li>
+                                    <li><a href="#differentiators">Key differentiators</a></li>
+                                    <li><a href="#further-benefits">Further benefits</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <hr>
+
         <!-- The problem -->
         <section id="problem">
-
             <div class="container mt-5">
                 <div class="row">
-                    <div class="col-12 text-center mb-4 my-2">
+
+                    <div class="col-12 text-center mb-2">
                         <h2 class="display-6 mm-underline border-bottom-orange">The Problem</h2>
-                        <p class=" my-3 text-start">Popular route-finding and navigation apps are designed
-                            for cars,
-                            two-wheeled cyclists, and pedestrians. This means that their routes often involve a barrier
-                            wheelers can't pass, such as:</p>
+                        <div class="d-flex justify-content-center">
+                            <div class="max-width-500">
+                                <p class="my-3">Popular route-finding and navigation apps are designed
+                                    for cars, two-wheeled cyclists, and pedestrians. This means that the routes they
+                                    generate often involve a barrier wheelers cannot pass, such as:
+                                </p>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="col-12 col-md-6 col-xl-4">
@@ -118,7 +155,7 @@
 
                     <div class="col-12 col-md-6 col-xl-4">
                         <div class="card">
-                            <img src="./assets/images/steep_road.png" class="card-img-top"
+                            <img src="./assets/images/steep_road.jpeg" class="card-img-top"
                                 alt="A steep road with terraced houses on the left, and a path on the right, with a hand rail going part of the way up the hill.">
                             <div class="card-body">
                                 <h3 class="card-title">Steep Hills</h3>
@@ -167,34 +204,38 @@
                         </div>
                     </div>
 
-                    <div class="col-12 text-center mb-4 my-2">
-                        <p class=" text-start">
-                            <strong>Furthermore</strong>, cars, bicyclists, and pedestrians prefer the
-                            fastest or shortest route between two points, whereas wheelers prefer the most
-                            energy-efficient route to conserve their device battery or personal energy and avoid
-                            becoming stranded.
-                        </p>
+                    <div class="d-flex justify-content-center mt-2 mb-3">
+                        <div class="max-width-500">
+                            <p>
+                                <strong>Furthermore</strong>, cars, bicyclists, and pedestrians prefer the
+                                fastest or shortest route between two points, whereas wheelers prefer the most
+                                energy-efficient route to conserve their device battery or personal energy and avoid
+                                becoming stranded.
+                            </p>
+                        </div>
                     </div>
+
+                </div>
+
+                <div id="stuck-at-home" class="container">
+
+                    <!-- Cover text -->
+                    <div class="px-3 pt-2 mt-2 background-green-4-a" id="stuck-text-1">
+                        <p class="font-white">A lack of prior knowledge of accessible routes and facilities often
+                            prevents
+                            disabled people from leaving their home, for fear of coming across barriers that prevent
+                            them
+                            getting to their
+                            destination, or worse, getting lost or stranded due to an empty device battery. </p>
+                    </div>
+
+                    <div class=" px-3 pt-3 pb-1 font-white background-green-4-a" id="stuck-text-2">
+                        <p>Being stuck at home can negatively affect mental health and reduces interaction with other
+                            people and the economy.</p>
+                    </div>
+
                 </div>
             </div>
-
-            <div id="stuck-at-home" class="container">
-
-                <!-- Cover text -->
-                <div class="px-3 py-2 my-2 background-green-4-a" id="stuck-text-1">
-                    <h3 class="font-white">A lack of prior knowledge of accessible routes and facilities often prevents
-                        disabled people
-                        from leaving their home, for fear of coming across barriers that prevent them getting to their
-                        destination, or worse, getting lost or stranded due to an empty device battery. </h2>
-                </div>
-
-                <div class="font-white background-green-4-a px-3 py-3 my-2" id="stuck-text-2">
-                    <h3>Being stuck at home can negatively affect mental health and reduces interaction with other
-                        people and the economy.</h2>
-                </div>
-
-            </div>
-
         </section>
 
         <!-- Our Solution -->
@@ -203,7 +244,7 @@
                 <h2 class="display-6 mm-underline border-bottom-orange">Our Solution</h2>
 
                 <div class="bullet-list d-flex justify-content-center mx-1 mx-md-3">
-                    <ul class="text-start  my-3" id="mm-bullets">
+                    <ul class="text-start my-3 mm-bullets">
                         <li>A route-finder and navigation app designed specifically for wheelers</li>
                         <li>An algorithm that generates accessible, barrier-free routes based on:
                             <ul>
@@ -385,65 +426,15 @@
             </div>
         </section>
 
-        <!-- Who else can use MM -->
-        <section id="who-else">
-            <div class="container mt-5">
-                <div class="row">
-                    <div class="col-12 text-center mb-4 my-2">
-                        <h2 class="display-6 mm-underline border-bottom-orange">Who else can use Mobility Mapper?</h2>
-                        <h3 class="mt-4">Many other people can also make use of Mobility Mapper, including:</h3>
-                    </div>
-
-                    <div class="col-12 col-md-6">
-                        <div class="card">
-                            <img src="./assets/images/pushchair.jpg" class="card-img-top" alt="A set of paved steps">
-                            <div class="card-body">
-                                <h3 class="card-title">Parents and carers with prams and pushchairs</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6">
-                        <div class="card">
-                            <img src="./assets/images/cargo_bike.jpg" class="card-img-top"
-                                alt="A steep road with terraced houses on the left, and a path on the right, with a hand rail going part of the way up the hill.">
-                            <div class="card-body">
-                                <h3 class="card-title">Cargo bike riders</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6">
-                        <div class="card">
-                            <img src="./assets/images/suitcase.jpg" class="card-img-top"
-                                alt="A narrow road with narrow paths either either side of it. There is a pub called the Holly Bush on the left.">
-                            <div class="card-body">
-                                <h3 class="card-title">Travellers with wheeled suitcases</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6">
-                        <div class="card">
-                            <img src="./assets/images/escooter.jpg" class="card-img-top"
-                                alt="A narrow road with narrow paths either either side of it. There is a pub called the Holly Bush on the left.">
-                            <div class="card-body">
-                                <h3 class="card-title">Electric kick scooter users</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </section>
-
         <!-- MM will also benefit section -->
         <section class="my-5 mx-1" id="further-benefits">
             <div class="container">
 
                 <div class="row g-4">
 
-                    <div class="col-12 text-center my-2">
+                    <div class="col-12 text-center mt-2">
                         <h2 class="display-6 mm-underline border-bottom-orange">Further Benefits</h2>
-                        <h3 class="mt-4"> Mobility Mapper will also benefit the following:</h3>     
+                        <h3 class="mt-4"> Mobility Mapper will also benefit the following:</h3>
                     </div>
 
                     <div class="col-12 col-xl-6">
@@ -505,6 +496,56 @@
             </div>
         </section>
 
+        <!-- Who else can use MM -->
+        <section id="who-else">
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-12 text-center mb-4 my-2">
+                        <h3 class="mt-4">Many other people can also make use of Mobility Mapper, including:</h3>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="card">
+                            <img src="./assets/images/pushchair.jpg" class="card-img-top" alt="A set of paved steps">
+                            <div class="card-body">
+                                <h3 class="card-title">Parents and carers with prams and pushchairs</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="card">
+                            <img src="./assets/images/cargo_bike.jpg" class="card-img-top"
+                                alt="A steep road with terraced houses on the left, and a path on the right, with a hand rail going part of the way up the hill.">
+                            <div class="card-body">
+                                <h3 class="card-title">Cargo bike riders</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="card">
+                            <img src="./assets/images/suitcase.jpg" class="card-img-top"
+                                alt="A narrow road with narrow paths either either side of it. There is a pub called the Holly Bush on the left.">
+                            <div class="card-body">
+                                <h3 class="card-title">Travellers with wheeled suitcases</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="card">
+                            <img src="./assets/images/escooter.jpg" class="card-img-top"
+                                alt="A narrow road with narrow paths either either side of it. There is a pub called the Holly Bush on the left.">
+                            <div class="card-body">
+                                <h3 class="card-title">Electric kick scooter users</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+
     </main>
 
     <!-- Footer -->
@@ -517,8 +558,10 @@
                 <div class="mb-4">
                     <h2 class="display-6 text-center">Get in touch</h2>
                     <div id="biz-contact-message">
-                        <h3 class="text-start py-3">If you would like to talk to us about a partnership or funding, please contact us by filling in
-                            the form below, or email hello@mobilitymapper.co.uk. We look forward to hearing from you.</h3>
+                        <h3 class="text-start py-3">If you would like to talk to us about a partnership or funding,
+                            please contact us by filling in
+                            the form below, or email hello@mobilitymapper.co.uk. We look forward to hearing from you.
+                        </h3>
                     </div>
                 </div>
 
@@ -536,7 +579,7 @@
                             <!-- Contact Name -->
                             <div>
                                 <label for="contact-name" class="form-label">Contact name</label>
-                                <input type="text" class="form-control" id="contact-name" name="contact-name"  required>
+                                <input type="text" class="form-control" id="contact-name" name="contact-name" required>
                             </div>
 
                             <!-- Email -->
@@ -572,34 +615,35 @@
                         <!-- Message -->
                         <div class="col-12 col-lg-6 mt-0">
                             <label for="message-biz" class="form-label">Your message</label>
-                            <textarea class="form-control auto-expand-textarea-md" rows="5" id="message-biz" name="message-biz" maxlength="750" required></textarea>
+                            <textarea class="form-control auto-expand-textarea-md" rows="5" id="message-biz"
+                                name="message-biz" maxlength="750" required></textarea>
                             <div id="passwordHelpBlock" class="form-text">
                                 <span id="charCountBiz">0</span>/750 characters
                             </div>
                         </div>
 
-                         <!--Submit button-->
+                        <!--Submit button-->
                         <div class="col-12 mt-md-4 mb-md-1 d-flex justify-content-center">
                             <button type="submit" class="btn button-coffee">Submit contact form</button>
                         </div>
                     </div>
-                   
+
                 </form>
-            
+
         </section>
 
         <!-- Social media icons -->
         <div class="social-media-icons text-center pt-4">
-                <a href="https://www.facebook.com/profile.php?id=61556696245180" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-facebook social-media-icon"></i>
-                </a>
-                <a href="https://www.instagram.com/mobilitymapper/" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-instagram social-media-icon"></i>
-                </a>
-                <a href="https://www.x.com/MobilityMapper" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-twitter-x social-media-icon"></i>
-                </a>
-            </div>
+            <a href="https://www.facebook.com/profile.php?id=61556696245180" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-facebook social-media-icon"></i>
+            </a>
+            <a href="https://www.instagram.com/mobilitymapper/" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-instagram social-media-icon"></i>
+            </a>
+            <a href="https://www.x.com/MobilityMapper" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-twitter-x social-media-icon"></i>
+            </a>
+        </div>
 
         <!-- Footer navigation -->
         <div class="container py-4">

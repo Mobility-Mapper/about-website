@@ -87,20 +87,6 @@ body {
 	color: var(--color-coffee-6);
 }
 
-/* Fonts - override Bootstrap sizes */
-h2 {
-	font-size: calc(1.3rem + .6vw);
-}
-
-h3 {
-	font-size: calc(1rem + .6vw);
-}
-
-p, li, label {
-	font-size: calc(1rem + .3vw);
-	color: #432b20;
-}
-
 a {
 	text-decoration: none;
 	color: var(--color-coffee-6);
@@ -115,6 +101,16 @@ a {
 	color: var(--color-coffee-6);
 }
 
+.letter-spacing-d6 {
+	/* relative to display 6 font-size */
+    letter-spacing: calc((1.375rem + 1.5vw)/30);
+}
+
+.letter-spacing-h3 {
+	/* relative to h3 font-size */
+	letter-spacing: calc((1.3rem + .6vw)/30);
+}
+
 /* Global classes */
 
 /* Visibility */
@@ -125,7 +121,6 @@ a {
 .btn {
 	cursor: pointer;
     transition: background-color 0.3s ease; /* Smooth transition on hover */
-	font-size: calc(1.1rem + .3vw);
 }
 
 /* icon - this needs to be before the background colours in this file */
@@ -202,15 +197,16 @@ background-color: var(--color-orange-4-a);
 
 .navbar-brand {
 	padding: 0;
-	font-size: 1.5rem;
 }
 
 .navbar-nav .nav-link {
-	font-size: 1.3rem;
 	padding-top: 0.3rem;
 	padding-bottom: 0.3rem;
 }
 
+.max-width-500{
+	max-width: 500px;
+}
 /* Hero section */
 
 /* Both pages hero image */
@@ -239,14 +235,19 @@ background-color: var(--color-orange-4-a);
 /* Container for cover text title for small screens */
 .cover-title-sm {
 	position: absolute;
-	width: 170px;
+	width: 180px;
 }
 
 /* Only show cover-title-md on medium screens */
-.cover-title-md {
+.show-md {
 	display: none;
 }
 
+.background-orange-linear {
+	background: linear-gradient(to bottom, var(--color-orange-2), var(--color-orange-3)); /* Soft gradient background */
+}
+
+/* Partnerships page */
 #cover-text-call-partnership {
 	/* Centre contents */
 	display: flex;
@@ -254,6 +255,10 @@ background-color: var(--color-orange-4-a);
     align-items: center;
     gap: 0.3rem;
     margin: 0 auto;
+}
+
+.letter-spacing-1 {
+    letter-spacing: 1px;
 }
 
 /* call-to-action buttons */
@@ -270,6 +275,10 @@ background-color: var(--color-orange-4-a);
 #cover-call-to-action .btn {
     width: 100%; /* Makes both buttons full width of their container */
     max-width: 330px; /* stops buttons stretching too wide on sm*/
+}
+
+#contents {
+	width: 230px;
 }
 
 /* Custom buttons */
@@ -308,15 +317,13 @@ background-color: var(--color-orange-4-a);
 .business-button {
 	background-color: var(--color-orange-4-a);
 	color: white;
-	margin: 10px auto; /* Center button horizontally and add vertical spacing */
+	font-size: calc(1.275rem + .3vw); /* h4 Responsive font size */
 }
 
 .business-button:hover {
 	background-color: var(--color-orange-4-b);
 	color: white;
 }
-
-
 
 /* Social media icons*/
 .social-media-icon {
@@ -325,23 +332,53 @@ background-color: var(--color-orange-4-a);
 	margin: 0 10px;
 }
 
-#bullet-list ul {
-	list-style-type: disc; /* Ensure bullets are displayed */
+/* Mobility Mapper custom bullets */
+
+ul.mm-bullets {
+	padding-left: 0; /* Remove default padding on small screens */
 }
 
-#bullet-list ul li {
+/* Custom bullet points with wheel icon */
+ul.mm-bullets > li {
+    background-image: url('../images/wheel_bullet.png');
+    background-repeat: no-repeat;
+    background-position: 0 0.15rem; /* Adjust vertical alignment */
+    padding-left: 2rem; /* Space for the image */
+	list-style-type: none;
+	padding-bottom: 0.5rem;
 	display: list-item; /* Retain bullets while keeping items inline */
 	text-align: left; 	/* Ensure text is left-aligned */
 	width: auto; 		/* Prevent items from taking full width */
 	margin-bottom: 0.5rem; /* Add spacing between list items */
 }
 
+/* Style sub bullet points */
+ul.mm-bullets > li > ul > li {
+	padding-top: 0.5rem;
+	list-style-type: disc;
+}
+
+/* Colour sub bullet points orange */
+ul.mm-bullets li::marker {
+    color: #8E4221CC;
+}
+
+/* Problem */
+/*
+.problem-border {
+	border: 1px solid var(--color-brown-4);
+	border-radius: 10px;
+	width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), inset 0 0 10px rgba(0, 0, 0, 0.05); /* Outer and inner shadow for depth */
+	/* padding: 10px 10px; */
+/* } */
 
 /* Key Features (home) and Problems (partnerships) Section */
 
 main .card {
     border-color: var(--color-brown-3);
     margin-bottom: 1.5rem; /* Add vertical spacing between cards */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), inset 0 0 10px rgba(0, 0, 0, 0.05); /* Outer and inner shadow for depth */
 }
 
 /* Section title underlines */
@@ -372,14 +409,15 @@ main .card {
 
 #stuck-at-home {
 	width: 100%;
-	height: 1000px;
+	height: 1300px; /* Ensure the section is tall enough to contain the text boxes without covering the person */
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative; /* For adding text relative to the image */
 	background-image: url("../images/wheelchair_indoors.jpg");
-	background-position: 37% 100%;
+	background-position: 39% 100%;
 }
 
+/* media screen makes width 100% for very small screens otherwise text box covers the persons head */
 #stuck-text-1 {
 	position: absolute;
 	left: 0;
@@ -393,32 +431,9 @@ main .card {
 	width: 90%;
 }
 
-#stuck-at-home h3 {
-	font-size: calc(1rem + .6vw);
-}
-
 /* Partnerships: Our solution section */
 
-/* Mobility Mapper custom bullets */
 
-ul#mm-bullets {
-	padding-left: 0; /* Remove default padding on small screens */
-}
-
-/* Custom bullet points with wheel icon */
-ul#mm-bullets > li {
-    background-image: url('../images/wheel_bullet.png');
-    background-repeat: no-repeat;
-    background-position: 0 0.3rem; /* Adjust vertical alignment */
-    padding-left: 2rem; /* Space for the image */
-	list-style-type: none;
-	padding-bottom: 0.5rem;
-}
-
-/* Add vertical space to text next to sub bullet points */
-ul#mm-bullets > li > ul > li {
-	padding-top: 0.5rem;
-}
 
 /* Partnerships: Market Section */
 
@@ -551,7 +566,6 @@ ul#mm-bullets > li > ul > li {
 
 #contact-message a {
 	text-decoration: underline;
-	font-size: calc(1rem + .6vw);
 	color: var(--color-coffee-4);
 }
 
@@ -600,6 +614,16 @@ footer a {
 	margin-right: 1rem;
 }
 
+/* Media query: tiny screen (375px and below) */
+/* Use whole width for text box so it doesnt cover the person's head */
+@media screen and (max-width: 575px) {
+
+	#stuck-text-1 {
+		position: absolute;
+		left: 0;
+		width: 100%;
+	}
+}
 
 /* Media query: small screen (576px and up) */
 @media screen and (min-width: 576px) {
@@ -612,7 +636,7 @@ footer a {
 }
 
 /* Make dropdown menu appear on the right */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .navbar-collapse {
         text-align: right;
         position: absolute;
@@ -634,6 +658,21 @@ footer a {
 
 /* Media query: tablet layout (768px and up) */
 @media screen and (min-width: 768px) {
+
+	/* Fonts */
+	/*
+	h2 {
+		font-size: 1.7rem;
+	}
+	
+	h3 {
+		font-size: 1.5rem;
+	}
+	
+	p, li, label {
+		font-size: 1.35rem;
+	}
+	*/
 
 	/* Navigation */
 
@@ -658,6 +697,12 @@ footer a {
 		background-position: 85% 100%;
 	}
 
+	/* Switch off background for md */
+	.background-orange-linear {
+		/* none */
+		background: none
+	}
+
 	/* Cover text and call to action buttons for md+ screens */
 	#cover-text-call {
 		/* Bring upwards into #hero image */
@@ -679,19 +724,18 @@ footer a {
 		/* Bring upwards into hero image */
 		/* Center in container */
 		position: absolute;
-		top: 50%;
+		top: 40%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		z-index: 10; /* Ensure it appears above the hero background */
-		width: 60vw; /* responsive width */
+		width: 65%;
         justify-content: space-between; /* Space out children evenly */
-		padding-top: 4rem;
 		color: white;
+		border-radius: 10px;
 	}
 
-	.cover-text {
-		background-color: var(--color-orange-4-a);
-		border-radius: 10px;
+	.background-orange-4-a-md {
+		background: var(--color-orange-4-a);
 	}
 
 	/* Cover title */
@@ -701,7 +745,7 @@ footer a {
 		display: none;
 	}
 
-	.cover-title-md {
+	.show-md {
 		/* show  for md screens */
 		display: block;
 	}
@@ -712,11 +756,6 @@ footer a {
 
 	#cover-call-to-action .btn {
 		max-width: none; /* remove max width*/
-	}
-
-	/* Partnerships page cover text */
-	#bullet-list a, #bullet-list li::marker {
-		color: white;
 	}
 
 	/* home page cover buttons change colour on md screens */
@@ -754,6 +793,10 @@ footer a {
 		display: inline-block;
 	}
 
+
+	#contents {
+		width: 486px;
+	}
 	/* Home page Key features section */
 
 	/* Make all key features cards the same height for consistency */
@@ -786,9 +829,6 @@ footer a {
 	#stuck-text-2 {
 		width: 65%;
 	}
-
-
-	
 }
 
 /* Media query: desktop layout (992px and up) */
@@ -828,7 +868,8 @@ footer a {
 
 	
 
-	/* stop text in home hero growing too */
+	/* stop text in home hero growing */
+	/*
 	#cover-text-call h2 {
 		font-size: 28px;
 	}
@@ -836,7 +877,7 @@ footer a {
 	#cover-text-call h3 {
 		font-size: 23.2px;
 	}
-
+*/
 	/* Partnerships */
 	/* Reduce font-size for card titles and padding to allow last card to fit text on one line */
 	#problem .card-title {
@@ -865,6 +906,7 @@ footer a {
 	}
 
 	/* Stop fonts continuing to grow with screen width */
+	/*
 	h2 {
 		font-size: 30px;
 	}
@@ -876,10 +918,5 @@ footer a {
 	p, li, label, .btn, footer a {
 		font-size: 22px;
 	}
-
-	/* don't let partnership hero grow any wider */
-	#cover-text-call-partnership{
-		width: 821px;
-	}
-
+*/
 }
