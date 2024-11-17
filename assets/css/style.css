@@ -101,6 +101,10 @@ a {
 	color: var(--color-coffee-6);
 }
 
+.font-orange-4 {
+	color: var(--color-orange-4);
+}
+
 .letter-spacing-d6 {
 	/* relative to display 6 font-size */
     letter-spacing: calc((1.375rem + 1.5vw)/30);
@@ -277,9 +281,15 @@ background-color: var(--color-orange-4-a);
     max-width: 330px; /* stops buttons stretching too wide on sm*/
 }
 
-#contents {
-	width: 230px;
+.width-250 {
+	width: 250px;
 }
+
+.width-300 {
+	width: 300px;
+}
+
+
 
 /* Custom buttons */
 .button-orange {
@@ -313,6 +323,23 @@ background-color: var(--color-orange-4-a);
     width: auto;           /* Ensures the button width matches its content */
 }
 
+
+.button-white {
+	border-color: var(--color-orange-4);
+	border-radius: 5px;
+	background-color: white;
+	display: flex;
+	align-items: center; 
+    justify-content: center;
+    padding: 10px 20px;
+}
+
+.button-white:hover {
+	background-color: var(--color-orange-3);
+	color: black;
+}
+
+
 /* Partnerships cover */
 .business-button {
 	background-color: var(--color-orange-4-a);
@@ -331,6 +358,8 @@ background-color: var(--color-orange-4-a);
 	color: var(--color-coffee-6);
 	margin: 0 10px;
 }
+
+/* Style for list items using icons as bullet points */
 
 /* Mobility Mapper custom bullets */
 
@@ -361,6 +390,18 @@ ul.mm-bullets > li > ul > li {
 /* Colour sub bullet points orange */
 ul.mm-bullets li::marker {
     color: #8E4221CC;
+}
+
+.styled-link {
+	padding: 0.5rem 1rem;	
+    border: solid 1px var(--color-orange-4);
+	border-radius: 5px;
+}
+
+.styled-link:hover {
+	color: var(--color-orange-4);
+	padding: 0.5rem 0rem;	
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Problem */
@@ -673,6 +714,9 @@ footer a {
 		font-size: 1.35rem;
 	}
 	*/
+	.width-md-550 {
+		width: 550px;
+	}
 
 	/* Navigation */
 
@@ -793,10 +837,6 @@ footer a {
 		display: inline-block;
 	}
 
-
-	#contents {
-		width: 486px;
-	}
 	/* Home page Key features section */
 
 	/* Make all key features cards the same height for consistency */
