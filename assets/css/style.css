@@ -835,20 +835,28 @@ footer a {
 	/* Make all key features cards the same height for consistency */
 	
 	/* Ensure the row uses flexbox to align items */
-    #key-features .row {
+    #key-features .row, #who-else .row {
         display: flex;
         flex-wrap: wrap; /* Ensure items wrap if necessary */
         align-items: stretch; /* Make all cards the same height */
     }
 	
 	/* Make the card-body just under the height of its parent so there is a vertical gap between the cards */
-	#key-features .card {
+	#key-features .card, #who-else .card {
 		display: flex;
 		flex-direction: column;
 		height: 96%;
 	}
 
-	#key-features .card-body {
+	#key-features .card-title, #who-else .card-title {
+		/* Center the title vertically */
+			display: flex;
+			align-items: center; /* Vertically centers the text */
+			justify-content: center; /* Horizontally centers the text */
+			height: 100%; /* Make it take full height of the parent container */
+	}
+
+	#key-features .card-body, #who-else .card-body {
 		flex-grow: 1; /* Make the card-body take up all available space */
 	}
 
