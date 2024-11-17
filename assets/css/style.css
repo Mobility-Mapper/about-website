@@ -360,13 +360,6 @@ background-color: var(--color-orange-4-a);
 	color: white;
 }
 
-/* Social media icons*/
-.social-media-icon {
-	font-size: 1.5rem;
-	color: var(--color-coffee-6);
-	margin: 0 10px;
-}
-
 /* Style for list items using icons as bullet points */
 
 /* Mobility Mapper custom bullets */
