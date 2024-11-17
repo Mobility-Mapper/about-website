@@ -633,10 +633,6 @@ main .card {
 	color: white;
 }
 
-footer a {
-	font-size: calc(1.1rem + .3vw);
-}
-
 /* Modal */
 
 .modal-header h1 {
