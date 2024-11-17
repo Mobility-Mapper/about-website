@@ -286,7 +286,7 @@ background-color: var(--color-orange-4-a);
 
 #cover-call-to-action .btn {
     width: 100%; /* Makes both buttons full width of their container */
-    max-width: 330px; /* stops buttons stretching too wide on sm*/
+    max-width: 335px; /* stops buttons stretching too wide on sm*/
 }
 
 .width-250 {
@@ -883,33 +883,19 @@ main .card {
 /* Media query: large desktop layout (1200px and up) */
 @media screen and (min-width: 1200px) {
 
-	/* Increase height of hero section and therefore the background image */
-	.hero {
+	/* Increase height of home hero section and therefore the background image */
+	#hero-home {
 		height: 900px;
 	}
 
 	/* don't let home hero grow any wider */
 	#cover-text-call {
-		width: 500px; /* don't let hero grow any wider */
-		min-height: 670px; /* make it taller */
-		left: 4vw; /* Move it to the right a bit */
+		width: 500px; 		/* don't let hero  cover text grow any wider */
+		min-height: 670px;  /* make it taller */
+		left: 4vw; 			/* Move it to the right a bit */
 		
 	}
 
-	
-
-	/* stop text in home hero growing */
-	/*
-	#cover-text-call h2 {
-		font-size: 28px;
-	}
-
-	#cover-text-call h3 {
-		font-size: 23.2px;
-	}
-*/
-	/* Partnerships */
-	/* Reduce font-size for card titles and padding to allow last card to fit text on one line */
 	#problem .card-title {
 		font-size: 1.6rem;
 	}
