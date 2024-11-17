@@ -614,10 +614,11 @@
         <section class="mt-6 py-5  px-1 form-background" id="business-contact-section">
             <div class="container">
 
+                <!-- Contact form intro -->
                 <div class="mb-4">
-                    <h2 class="display-6 text-center">Get in touch</h2>
+                    <h3 class="display-6 text-center">Get in touch</h3>
                     <div id="biz-contact-message">
-                        <h3 class="text-start py-3">If you would like to talk to us about a partnership or funding,
+                        <h3 class="text-start py-3 h4">If you would like to talk to us about a partnership or funding,
                             please contact us by filling in
                             the form below, or email hello@mobilitymapper.co.uk. We look forward to hearing from you.
                         </h3>
@@ -647,23 +648,28 @@
                                 <input type="email" class="form-control" id="email-biz" name="email-address" required>
                             </div>
 
-                            <!-- radio buttons -->
+                            <!-- We would like to discuss -->
                             <div>
                                 <p class="mb-2 mt-4">We would like to discuss:</p>
                             </div>
 
+                            <!-- radio buttons -->
+
+                            <!-- Partnership -->
                             <div class="form-check">
                                 <input type="radio" class="form-check-input" id="partnership" name="discussion"
                                     value="partnership" required checked>
                                 <label class="form-check-label" for="partnership">Partnership</label>
                             </div>
 
+                            <!-- Funding -->
                             <div class="form-check">
                                 <input type="radio" class="form-check-input" id="funding" name="discussion"
                                     value="funding">
                                 <label class="form-check-label" for="funding">Funding</label>
                             </div>
 
+                            <!-- Both -->
                             <div class="form-check">
                                 <input type="radio" class="form-check-input" id="both" name="discussion" value="both">
                                 <label class="form-check-label" for="both">Both</label>
@@ -671,11 +677,12 @@
 
                         </div>
 
-                        <!-- Message -->
+                        <!-- Message text area -->
                         <div class="col-12 col-lg-6 mt-0">
                             <label for="message-biz" class="form-label">Your message</label>
                             <textarea class="form-control auto-expand-textarea-md" rows="5" id="message-biz"
                                 name="message-biz" maxlength="750" required></textarea>
+                            <!-- Character count -->
                             <div id="passwordHelpBlock" class="form-text">
                                 <span id="charCountBiz">0</span>/750 characters
                             </div>
