@@ -434,7 +434,6 @@ main .card {
 	color: var(--color-orange-4);
 	font-weight: bold;
 	text-align: center;
-	margin-bottom: 0;
 }
 
 /* Partnerships: Stuck at home section */
@@ -729,13 +728,17 @@ main .card {
 		background: none
 	}
 
+	.cover-text {
+		border-radius: 10px;
+		z-index: 10; /* Ensure it appears above the hero background */
+	}
+
 	/* Cover text and call to action buttons for md+ screens */
 	#cover-text-call {
 		/* Bring upwards into #hero image */
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
-		z-index: 10; /* Ensure it appears above the hero background */
 		left: 2vw;
 		width: calc(60vw - 100px); /* responsive width */
 		background-color: transparent;
@@ -753,12 +756,9 @@ main .card {
 		top: 40%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		z-index: 10; /* Ensure it appears above the hero background */
 		width: 65%;
         justify-content: space-between; /* Space out children evenly */
-		color: white;
-		border-radius: 10px;
-	}
+=	}
 
 	.background-orange-4-a-md {
 		background: var(--color-orange-4-a);
@@ -811,7 +811,6 @@ main .card {
 	#follow-social-media a {
 		/* Make social media cover text easier to read by adding background colour similar to image */
 		background-color: #faf6ebcc; /* 80% opacity */
-		font-weight: 600;
 	}
 
 	#follow-social-media h3 {
