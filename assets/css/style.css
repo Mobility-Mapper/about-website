@@ -807,16 +807,12 @@ main .card {
 	}
 
 	/* Home page cover text social media */
-	#follow-social-media h4,
-	#follow-social-media a {
+	.background-cream-md {
 		/* Make social media cover text easier to read by adding background colour similar to image */
 		background-color: #faf6ebcc; /* 80% opacity */
-	}
-
-	#follow-social-media h3 {
-		/* stop background colour spreading across width of container */
 		display: inline-block;
 	}
+
 
 	/* Home page Key features section */
 
