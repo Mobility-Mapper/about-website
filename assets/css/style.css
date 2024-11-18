@@ -353,7 +353,6 @@ background-color: var(--color-orange-4-a);
 .business-button {
 	background-color: var(--color-orange-4-a);
 	color: white;
-	font-size: calc(1.275rem + .3vw); /* h4 Responsive font size */
 }
 
 .business-button:hover {
