@@ -759,7 +759,7 @@ main .card {
 		transform: translate(-50%, -50%);
 		width: 65%;
         justify-content: space-between; /* Space out children evenly */
-=	}
+	}
 
 	.background-orange-4-a-md {
 		background: var(--color-orange-4-a);
@@ -770,6 +770,10 @@ main .card {
 	.cover-title-sm {
 		/* Hide for md screens */
 		display: none;
+	}
+
+	.cover-title-md {
+		font-weight: 600;
 	}
 
 	.show-md {
