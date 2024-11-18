@@ -93,6 +93,10 @@ a {
 	cursor: pointer;
 }
 
+h3, .h3, h4, .h4, h5, .h5 {
+	font-weight: 400;
+}
+
 .font-white {
 	color: white;
 }
@@ -412,7 +416,7 @@ main .card {
 
 /* Section title underlines */
 .mm-underline {
-	border-bottom: 0.5rem solid;
+	border-bottom: 0.4rem solid;
 	padding-bottom: 5px; /* Add spacing between the text and line */
 	display: inline-block; /* Ensures the line doesn't stretch full-width */
 	padding: 0 20px 0.5rem 20px; /* makes the line wider than the text */
@@ -429,7 +433,7 @@ main .card {
 /* Card title font */
 .card-title {
 	color: var(--color-orange-4);
-	font-weight: bold;
+	font-weight: 500;
 	text-align: center;
 }
 
