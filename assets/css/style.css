@@ -216,8 +216,8 @@ background-color: var(--color-orange-4-a);
 	max-width: 480px;
 }
 
-.max-width-600 {
-	max-width: 600px;
+.max-width-700 {
+	max-width: 700px;
 }
 
 /* Hero section */
@@ -359,6 +359,12 @@ background-color: var(--color-orange-4-a);
 	background-color: var(--color-orange-4-b);
 	color: white;
 }
+
+/* Partnerships - contents */
+.list-group-item {
+	padding-bottom: 0.5rem;
+}
+
 
 /* Style for list items using icons as bullet points */
 
@@ -695,6 +701,17 @@ main .card {
 /* Media query: tablet layout (768px and up) */
 @media screen and (min-width: 768px) {
 
+	:root {
+		/* Increase font-size on md screens */
+		--bs-body-font-size: 1.25rem; 
+		--bs-btn-font-size: 1.25rem;
+	}
+
+	/* Increase size of p elements on md screens */
+	p, .btn {
+		font-size: 1.25rem;
+	}
+	
 	.width-md-550 {
 		width: 550px;
 	}
@@ -773,6 +790,11 @@ main .card {
 
 	.cover-title-md {
 		font-weight: 600;
+	}
+
+	#home-title-md {
+		/* Make font size slightly smaller to fit title on one line from 768 width */
+		font-size: calc(1.3rem + .8vw);
 	}
 
 	.show-md {
@@ -863,6 +885,17 @@ main .card {
 /* Media query: desktop layout (992px and up) */
 @media screen and (min-width: 992px) {
 	
+	:root {
+		/* Increase font-size screens */
+		--bs-body-font-size: 1.5rem; 
+		--bs-btn-font-size: 1.5rem;
+	}
+
+	.container {
+		/* remove side gutter to align sides of containers with sides of cover images  */
+		--bs-gutter-x: 0; /* Override Bootstrap gutter */
+	}
+
 	/* Limit width of homepage cover text container */
 	#cover-text-call {
 		width: 50%;

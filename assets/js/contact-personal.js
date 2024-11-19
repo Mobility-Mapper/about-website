@@ -28,7 +28,7 @@ document.getElementById('contact-form').addEventListener('submit', async functio
 
         // Display the success message
         responseMessage.innerHTML = `
-                 <div class="px-4 pt-4">
+                 <div class="px-4 pt-4 text-center">
                     <p>Thank you for your message, we will get back to you as soon as possible.</p>
                  </div>
                 `;
