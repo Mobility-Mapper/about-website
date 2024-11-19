@@ -23,13 +23,19 @@
     <!-- Navbar, expands on tablets-->
     <nav class="navbar navbar-expand-md" id="navbar">
         <div class="container nav-container">
+
+            <!-- Logo - left aligned-->
             <a class="navbar-brand" href="index.html">
                 <img src="./assets/images/logo.png" alt="Mobility Mapper logo" class="logo">
             </a>
+
+            <!-- Hamburger menu icon for sm screens -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
                 aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
+            <!-- Navbar links - right aligned -->
             <div class="collapse navbar-collapse" id="navbarContent">
                 <ul class="navbar-nav ms-auto h5">
                     <li class="nav-item">
@@ -48,29 +54,31 @@
 
     <!-- Header -->
     <header class="container">
+
         <!-- For SEO only, not visible -->
         <h1 class="invisible">Mobility Mapper - Partnerships and Funding</h1>
 
         <!-- Hero image with cover title -->
         <section class="hero" id="hero-partnerships">
+            
             <!-- Cover title only for sm screens -->
             <div class="cover-title-sm background-orange-4-a p-2 mt-2">
                 <!-- This h2 is for sm screens only-->
                 <h2 class="font-white mx-1 mt-2">Partnerships and Funding</h2>
             </div>
+
         </section>
 
-        <!-- 
-            Below hero image for small screen sizes, 
-            on hero image for medium screns
-        -->
+        <!-- Cover text: Below hero image for small screen sizes, on hero image for medium screns -->
         <div class="px-2 py-4 px-md-4 py-md-5 cover-text background-orange-linear background-orange-4-a-md"
             id="cover-text-call-partnership">
 
             <!-- Cover text -->
             <div class="text-center font-white-md" id="intro">
-                <!-- This h2 is for md screens+ only-->
+                <!-- Cover title for md screens only -->
                 <h2 class="pb-md-3 show-md cover-title-md">Partnerships and Funding</h2>
+
+                <!-- Cover text -->
                 <div class="px-1 px-md-4 pb-md-3">
                     <h3 class="h5 pb-1">Thank you for visiting our partnerships and funding page.</h3>
                     <h3 class="h5 pb-2">We present our business pitch to explain the problem we are solving,
@@ -92,21 +100,23 @@
     <!-- Main content -->
     <main>
 
-        <!-- Contents list -->
+        <!-- Page contents -->
         <section>
             <div class="mt-5 mb-4 mx-md-5">
-
                 <div>
+                    <!-- Page contents title -->
                     <h3 class="pb-3 text-center display-6">Contents</h3>
 
-                    <!-- <div class="d-flex justify-content-center"> -->
+                    <!-- Page contents list -->
                     <div class="container d-flex justify-content-center">
-
                         <div class="h5 row width-300 width-md-550" id="contents">
 
+                            <!-- Contents list split into two halves for responsiveness -->
+                            <!-- Bullets are right arrows in a circle to show they are links -->
+
+                            <!-- Contents first half -->
                             <div class="col-12 col-md-6">
                                 <ul class="mb-0">
-                                    <!-- Replace default bulleted style with Bootstrap icon -->
                                     <li class="list-group-item"><i
                                             class="bi bi-arrow-right-circle font-orange-4 pe-3"></i><a
                                             href="#problem">The problem</a></li>
@@ -119,6 +129,7 @@
                                 </ul>
                             </div>
 
+                            <!-- Contents second half -->
                             <div class="col-12 col-md-6">
                                 <ul>
                                     <li class="list-group-item"><i
@@ -144,9 +155,11 @@
         <!-- The problem section-->
         <section id="problem">
 
-            <!-- Barriers section -->
+            <!-- Intro and barriers sub section -->
             <div class="container mt-5">
                 <div class="row">
+                    
+                    <!-- Problem title and intro -->
                     <div class="col-12 text-center mb-2">
 
                         <!-- Problem Section title -->
@@ -162,6 +175,9 @@
   
                     </div>
 
+                    <!-- Barriers to wheelers cards-->
+
+                    <!-- Steps -->
                     <div class="col-12 col-md-6 col-xl-4">
                         <div class="card">
                             <img src="./assets/images/steps.jpg" class="card-img-top" alt="A set of paved steps">
@@ -171,6 +187,7 @@
                         </div>
                     </div>
 
+                    <!-- Steep hills -->
                     <div class="col-12 col-md-6 col-xl-4">
                         <div class="card">
                             <img src="./assets/images/steep_road.jpeg" class="card-img-top"
@@ -181,6 +198,7 @@
                         </div>
                     </div>
 
+                    <!-- Narrow paths -->
                     <div class="col-12 col-md-6 col-xl-4">
                         <div class="card">
                             <img src="./assets/images/narrow_paths.jpg" class="card-img-top"
@@ -191,6 +209,7 @@
                         </div>
                     </div>
 
+                    <!-- Rough surfaces -->
                     <div class="col-12 col-md-6 col-xl-4">
                         <div class="card">
                             <img src="./assets/images/rough_surface.jpg" class="card-img-top"
@@ -202,6 +221,7 @@
                         </div>
                     </div>
 
+                    <!-- No dropped kerbs -->
                     <div class="col-12 col-md-6 col-xl-4">
                         <div class="card">
                             <img src="./assets/images/no_dropped_curb.jpg" class="card-img-top"
@@ -212,6 +232,7 @@
                         </div>
                     </div>
 
+                    <!-- Motorised vehicle barriers -->
                     <div class="col-12 col-md-6 col-xl-4">
                         <div class="card">
                             <img src="./assets/images/barrier_square.png" class="card-img-top"
@@ -235,19 +256,17 @@
                 </div>
             </div>
 
-            <!-- Stuck at home section -->
+            <!-- Stuck at home section with background image that is full width on small screens-->
             <div id="stuck-at-home" class="container">
-                <!-- Full width on small screens -->
-                <!-- Cover text -->
+
+                <!-- First cover text - top of image -->
                 <div class="px-3 pt-2 mt-2 background-green-4-a" id="stuck-text-1">
                     <p class="font-white">A lack of prior knowledge of accessible routes and facilities often
-                        prevents
-                        disabled people from leaving their home, for fear of coming across barriers that prevent
-                        them
-                        getting to their
-                        destination, or worse, getting lost or stranded due to an empty device battery. </p>
+                        prevents disabled people from leaving their home, for fear of coming across barriers that prevent
+                        them getting to their destination, or worse, getting lost or stranded due to an empty device battery. </p>
                 </div>
 
+                <!-- Second cover text - bottom right on image -->
                 <div class=" px-3 pt-3 pb-1 font-white background-green-4-a" id="stuck-text-2">
                     <p>Being stuck at home can negatively affect mental health and reduces interaction with other
                         people and the economy.</p>
@@ -265,6 +284,9 @@
 
                 <!-- Solution list -->
                 <div class="bullet-list d-flex justify-content-center">
+
+                    <!-- Max width 700 to prevent bulk of text sitting on the RHS of the screen -->
+                    <!-- Uses MM wheel icon as bullets -->
                     <ul class="text-start max-width-700 my-3 mm-bullets">
                         <li>A route-finder and navigation app designed specifically for wheelers</li>
                         <li>An algorithm that generates accessible, barrier-free routes based on:

@@ -383,8 +383,8 @@ ul.mm-bullets {
 ul.mm-bullets > li {
     background-image: url('../images/wheel_bullet.png');
     background-repeat: no-repeat;
-    background-position: 0 0.15rem; /* Adjust vertical alignment */
-    padding-left: 2rem; /* Space for the image */
+    background-position: 0 0.5rem; /* Adjust vertical alignment */
+    padding-left: 2rem; 			/* Space for the wheel image */
 	list-style-type: none;
 	padding-bottom: 0.5rem;
 	display: list-item; /* Retain bullets while keeping items inline */
