@@ -365,6 +365,11 @@ background-color: var(--color-orange-4-a);
 	padding-bottom: 0.5rem;
 }
 
+/* react to mouse hover */
+.list-group-item:hover {
+	text-decoration: underline;	
+}
+
 
 /* Style for list items using icons as bullet points */
 
