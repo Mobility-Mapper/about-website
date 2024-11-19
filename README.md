@@ -7,3 +7,6 @@ To achieve your layout, we'll use a combination of HTML and Bootstrap for respon
 Flexbox for aligning the content.
 Bootstrap grid for responsiveness.
 Media queries to adjust the layout for different screen sizes.
+
+used https://validator.w3.org/#validate_by_input to validate html
+used https://jigsaw.w3.org/css-validator/#validate_by_input to validate css
