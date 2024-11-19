@@ -8,36 +8,45 @@
 	--primary-font: 'Open Sans', sans-serif;
 
 	/* Colour palette */
+	/* Each colour of the main theme has shade and opacity variations */
+	/* Main colour has suffix -4, lower integers indicate lighter shades, higher integers darker shades */
+	/* All variations are included below for completeness and available for later iterations of the website, but not necessarily used */
+	/* Colours with opacity < 1 denoted by suffix -a or -b */
+
+	/* Orange */
 	--color-orange-1: #f5ddd2; 
 	--color-orange-2: #eabaa5; 
-	--color-orange-2-b: #ebbaa6d9; /* hero cover text background */
-	--color-orange-3: #e09878; /* svg icon border-color */
-	--color-orange-3-a: #e09878DD; /* svg icon border-color */
-	--color-orange-4: #bd582c; /* main colour */
-	--color-orange-4-a: #bd582cdd; /* hero cover text background */
-	--color-orange-4-b: #bd582cbb; /* Homepage contact us button sm */
+	--color-orange-2-b: #ebbaa6d9; 
+	--color-orange-3: #e09878;  	
+	--color-orange-3-a: #e09878DD; 
+	--color-orange-4: #bd582c; 	/* main colour */
+	--color-orange-4-a: #bd582cdd; 
+	--color-orange-4-b: #bd582cbb;
 	--color-orange-5: #8e4221; 
 	--color-orange-6: #5f2c16;
 	
+	/* Coffee */
 	--color-coffee-1: #ebdcd5;
-	--color-coffee-2: #D7B8AB; /* key differentiators background-color */
+	--color-coffee-2: #D7B8AB; 	
 	--color-coffee-3: #C29580;
 	--color-coffee-4: #865640;
-	--color-coffee-4-a: #865640da; /* business button background-color */
+	--color-coffee-4-a: #865640da; 
 	--color-coffee-5: #644030;
-	--color-coffee-6: #432b20; /* font-color */
-	--color-coffee-6-a: #432b20cc; /* buton border-color */
+	--color-coffee-6: #432b20; 	/* main font-color */
+	--color-coffee-6-a: #432b20cc; 
 
+	/* Green */
 	--color-green-1: #E0E4DB;
 	--color-green-1-a: #E0E4DBCC;
 	--color-green-2: #C1CAB6;
 	--color-green-2-a: #C1CAB6CC;
-	--color-green-3: #A2AF92; /* card border-color */
+	--color-green-3: #A2AF92; 
 	--color-green-4: #637052; 
-	--color-green-4-a: #637052cc;/* background-color */
+	--color-green-4-a: #637052cc;
 	--color-green-5: #4A543E;
 	--color-green-6: #313829;
 
+	/* Brown */
 	--color-brown-1: #ECE6DD;
 	--color-brown-2: #D8CEBA;
 	--color-brown-3: #C5B598;
@@ -45,14 +54,7 @@
 	--color-brown-5: #746241;
 	--color-brown-6: #4E422C;
 
-	--color-sage-1: #F3F2E6;
-	--color-sage-2: #E7E4CC;
-	--color-sage-2-a: #E7E4CCE6; /* cover text md button background-color */
-	--color-sage-3: #DAD7B3;
-	--color-sage-4: #C2BC80;
-	--color-sage-5: #A39B4E;
-	--color-sage-6: #6D6834;
-
+	/* Mango */
 	--color-mango-1: #FBE6CE;
 	--color-mango-2: #F7CE9D;
 	--color-mango-2-a: #F7CE9DF0;
@@ -64,25 +66,20 @@
 
 }
 
-html {
-    font-size: 16px; /* Ensure 1rem is equal to 16px */
-}
-
 /* Asterisk wildcard selector to override default styles added by the browser */
 * {
 	padding: 0;
 	margin: 0;
-	box-sizing: border-box;
-	/* Ensures that when we set the height or width to an element, it will be applied to the entire element, including the border. */
+	box-sizing: border-box; /* Ensures that when we set the height or width to an element, it will be applied to the entire element, including the border. */
 }
 
-header.container {
-	--bs-gutter-x: 0; /* Override Bootstrap gutter for the header */
-	padding: 0;
+html {
+    font-size: 16px; /* Ensure 1rem is equal to 16px */
 }
+
 
 body {
-	/* Fonts */
+	/* Font family and colour */
 	font-family: var(--primary-font), sans-serif;
 	color: var(--color-coffee-6);
 }
@@ -93,42 +90,35 @@ a {
 	cursor: pointer;
 }
 
-h3, .h3, h4, .h4, h5, .h5 {
+h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 	font-weight: 400;
 }
-
-.font-white {
-	color: white;
-}
-
-.font-dark-brown {
-	color: var(--color-coffee-6);
-}
-
-.font-orange-4 {
-	color: var(--color-orange-4);
-}
-
-
-
-.letter-spacing-h3 {
-	/* relative to h3 font-size */
-	letter-spacing: calc((1.3rem + .6vw)/30);
-}
-
-/* Global classes */
 
 /* Visibility */
 .invisible {
 	display: none;
 }
 
+/* Buttons */
 .btn {
 	cursor: pointer;
     transition: background-color 0.3s ease; /* Smooth transition on hover */
 }
 
-/* icon - this needs to be before the background colours in this file */
+/* Custom font classes */
+
+/* For text on background images */
+.font-white {
+	color: white;
+}
+
+/* Partnershps contents list bullets */
+.font-orange-4 {
+	color: var(--color-orange-4);
+}
+
+/* Parnerships differentiators list icons */
+/* This needs to be before the background colours in this file to work */
 .icon-svg {
 	height: calc(3rem + .7vw);
     width: auto;
@@ -140,24 +130,25 @@ h3, .h3, h4, .h4, h5, .h5 {
 
 /* background colours */
 
+/* Used in footer */
 .background-orange-2 {
 	background-color: var(--color-orange-2);
 }
 
-.background-orange-2-b {
-	background-color: var(--color-orange-2-b); /* opacity 85% */
-}
-
+/* Cover text hero image background */
 .background-orange-4-a {
 background-color: var(--color-orange-4-a);
 }
 
-.background-green-2 {
-	background-color: var(--color-green-2);
-}
-
+/* Stuck at home cover text background */
 .background-green-4-a {
 	background-color: var(--color-green-4-a);
+}
+
+/* Differentiators list item backgrounds */
+
+.background-green-2 {
+	background-color: var(--color-green-2);
 }
 
 .background-brown-2 {
@@ -168,11 +159,9 @@ background-color: var(--color-orange-4-a);
 	background-color: var(--color-coffee-2);
 }	
 
-.background-sage-2 {
-	background-color: var(--color-sage-2);
-}	
-
 /* Border colours */
+
+/* Differentiators list icon borders */
 
 .border-orange-3 {
 	border-color: var(--color-orange-3);
@@ -190,6 +179,76 @@ background-color: var(--color-orange-4-a);
 	border-color: var(--color-coffee-3);
 }
 
+/* Constrain width of content  */
+
+.width-300 {
+	width: 300px;
+}
+
+.max-width-700 {
+	max-width: 700px;
+}
+
+/* Custom buttons */
+
+.button-orange {
+	border-radius: 5px;
+	background-color: var(--color-orange-4-a);
+	color: white;
+	display: flex;
+	align-items: center; 
+    justify-content: center;
+    padding: 10px 20px;
+}
+
+.button-orange:hover {
+	background-color: var(--color-orange-3);
+	color: black;
+}
+
+/* Position arrow icon on the right of the text */
+.button-orange i {
+	margin-left: auto; /* Pushes the icon to the right */
+	display: flex;
+    align-items: center;
+	padding-left: 1rem; /* adds space between icon and text */
+}
+
+.business-button {
+	background-color: var(--color-orange-4-a);
+	color: white;
+}
+
+.business-button:hover {
+	background-color: var(--color-orange-4-b);
+	color: white;
+}
+
+.button-coffee {
+	background-color: var(--color-coffee-4);
+	color: white;
+}
+
+.button-coffee:hover {
+	background-color: var(--color-coffee-4-a);
+	color: white;
+}
+
+/* Cards */
+.card {
+    border-color: var(--color-brown-3);
+    margin-bottom: 1.5rem; /* Add vertical spacing between cards */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), inset 0 0 10px rgba(0, 0, 0, 0.05); /* Outer and inner shadow for depth */
+}
+
+/* Header */
+
+header.container {
+	--bs-gutter-x: 0; /* Remove Bootstrap gutter for the header */
+	padding: 0;
+}
+
+/* Navbar */
 
 .navbar {
 	min-height: 70px;
@@ -206,18 +265,6 @@ background-color: var(--color-orange-4-a);
 .navbar-nav .nav-link {
 	padding-top: 0.3rem;
 	padding-bottom: 0.3rem;
-}
-
-.max-width-510 {
-	max-width: 510px;
-}
-
-.max-width-480 {
-	max-width: 480px;
-}
-
-.max-width-700 {
-	max-width: 700px;
 }
 
 /* Hero section */
@@ -256,11 +303,12 @@ background-color: var(--color-orange-4-a);
 	display: none;
 }
 
+/* Background for cover text for sm screens */
 .background-orange-linear {
 	background: linear-gradient(to bottom, var(--color-orange-2), var(--color-orange-3)); /* Soft gradient background */
 }
 
-/* Partnerships page */
+/* Partnerships page cover text */
 #cover-text-call-partnership {
 	/* Centre contents */
 	display: flex;
@@ -270,13 +318,9 @@ background-color: var(--color-orange-4-a);
     margin: 0 auto;
 }
 
-.letter-spacing-1 {
-    letter-spacing: 1px;
-}
-
 /* call-to-action buttons */
 
-/* Container for call-toaction-buttons */
+/* Container for call-to-action-buttons */
 #cover-call-to-action {
 	display: flex;
     flex-direction: column;
@@ -290,77 +334,7 @@ background-color: var(--color-orange-4-a);
     max-width: 335px; /* stops buttons stretching too wide on sm*/
 }
 
-.width-250 {
-	width: 250px;
-}
-
-.width-300 {
-	width: 300px;
-}
-
-
-
-/* Custom buttons */
-.button-orange {
-	border-radius: 5px;
-	background-color: var(--color-orange-4-a);
-	color: white;
-	display: flex;
-	align-items: center; 
-    justify-content: center;
-    padding: 10px 20px;
-}
-
-.button-orange:hover {
-	background-color: var(--color-orange-3);
-	color: black;
-}
-
-/* Position arrow icon on the right of the text */
-.button-orange i {
-	margin-left: auto; /* Pushes the icon to the right */
-	display: flex;
-    align-items: center;
-	padding-left: 1rem; /* adds space between icon and text */
-}
-
-/* Center button */
-#seeking-funding .button-orange {
-	display: inline-flex;  
-    align-items: center;   /* Centers the text and icon vertically */
-    justify-content: center; /* Centers content horizontally */
-    width: auto;           /* Ensures the button width matches its content */
-}
-
-
-.button-white {
-	border-color: var(--color-orange-4);
-	border-radius: 5px;
-	background-color: white;
-	display: flex;
-	align-items: center; 
-    justify-content: center;
-    padding: 10px 20px;
-}
-
-.button-white:hover {
-	background-color: var(--color-orange-3);
-	color: black;
-}
-
-
-/* Partnerships cover */
-.business-button {
-	background-color: var(--color-orange-4-a);
-	color: white;
-}
-
-.business-button:hover {
-	background-color: var(--color-orange-4-b);
-	color: white;
-}
-
-/* Partnerships - contents */
+/* Partnerships - contents section */
 .list-group-item {
 	padding-bottom: 0.5rem;
 }
@@ -370,8 +344,69 @@ background-color: var(--color-orange-4-a);
 	text-decoration: underline;	
 }
 
+/* Key Features (home) and Problems (partnerships) Section */
 
-/* Style for list items using icons as bullet points */
+
+
+/* Section title underlines */
+.mm-underline {
+	border-bottom: 0.4rem solid;
+	padding-bottom: 5px; /* Add spacing between the text and line */
+	display: inline-block; /* Ensures the line doesn't stretch full-width */
+	padding: 0 20px 0.5rem 20px; /* makes the line wider than the text */
+}
+
+.border-bottom-orange {
+	border-bottom-color: var(--color-orange-3);
+}
+
+.border-bottom-green {
+	border-bottom-color: var(--color-green-3)
+}
+
+/* Card title font */
+.card-title {
+	color: var(--color-orange-4);
+	font-weight: 500;
+	text-align: center;
+}
+
+/* Home page seeking funding section */
+
+/* Center button */
+#seeking-funding .button-orange {
+	display: inline-flex;  
+    align-items: center;   /* Centers the text and icon vertically */
+    justify-content: center; /* Centers content horizontally */
+    width: auto;           /* Ensures the button width matches its content */
+}
+
+/* Partnerships: Stuck at home section */
+
+#stuck-at-home {
+	width: 100%;
+	height: 1000px; /* Ensure the section is tall enough to contain the text boxes without covering the person */
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative; /* For adding text relative to the image */
+	background-image: url("../images/wheelchair_indoors.jpg");
+	background-position: 39% 100%;
+}
+
+#stuck-text-1 {
+	position: absolute;
+	left: 0;
+	width: 95%;
+}
+
+#stuck-text-2 {
+	position: absolute;
+	bottom: 1rem;
+	right: 0;
+	width: 90%;
+}
+
+/* Our solution section */
 
 /* Mobility Mapper custom bullets */
 
@@ -403,79 +438,6 @@ ul.mm-bullets > li > ul > li {
 ul.mm-bullets li::marker {
     color: #8E4221CC;
 }
-
-.styled-link {
-	padding: 0.5rem 1rem;	
-    border: solid 1px var(--color-orange-4);
-	border-radius: 5px;
-}
-
-.styled-link:hover {
-	color: var(--color-orange-4);
-	padding: 0.5rem 0rem;	
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Key Features (home) and Problems (partnerships) Section */
-
-main .card {
-    border-color: var(--color-brown-3);
-    margin-bottom: 1.5rem; /* Add vertical spacing between cards */
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), inset 0 0 10px rgba(0, 0, 0, 0.05); /* Outer and inner shadow for depth */
-}
-
-/* Section title underlines */
-.mm-underline {
-	border-bottom: 0.4rem solid;
-	padding-bottom: 5px; /* Add spacing between the text and line */
-	display: inline-block; /* Ensures the line doesn't stretch full-width */
-	padding: 0 20px 0.5rem 20px; /* makes the line wider than the text */
-}
-
-.border-bottom-orange {
-	border-bottom-color: var(--color-orange-3);
-}
-
-.border-bottom-green {
-	border-bottom-color: var(--color-green-3)
-}
-
-/* Card title font */
-.card-title {
-	color: var(--color-orange-4);
-	font-weight: 500;
-	text-align: center;
-}
-
-/* Partnerships: Stuck at home section */
-
-#stuck-at-home {
-	width: 100%;
-	height: 1000px; /* Ensure the section is tall enough to contain the text boxes without covering the person */
-	background-size: cover;
-	background-repeat: no-repeat;
-	position: relative; /* For adding text relative to the image */
-	background-image: url("../images/wheelchair_indoors.jpg");
-	background-position: 39% 100%;
-}
-
-/* media screen makes width 100% for very small screens otherwise text box covers the persons head */
-#stuck-text-1 {
-	position: absolute;
-	left: 0;
-	width: 95%;
-}
-
-#stuck-text-2 {
-	position: absolute;
-	bottom: 1rem;
-	right: 0;
-	width: 90%;
-}
-
-/* Partnerships: Our solution section */
-
-
 
 /* Partnerships: Market Section */
 
@@ -599,7 +561,7 @@ main .card {
     object-fit: cover;
 }
 
-/* Footer section */
+/* Footer */
 
 /* Business contact form  */
 .form-background {
@@ -626,17 +588,7 @@ main .card {
 	align-items: center;
 }
 
-.button-coffee {
-	background-color: var(--color-coffee-4);
-	color: white;
-}
-
-.button-coffee:hover {
-	background-color: var(--color-coffee-4-a);
-	color: white;
-}
-
-/* Modal */
+/* Email sign-up modal */
 
 .modal-header h1 {
 	font-size: calc(1.2rem + .6vw);
@@ -652,10 +604,12 @@ main .card {
 	margin-right: 1rem;
 }
 
-/* Media query: tiny screen (375px and below) */
+/* Media queries
+
 /* Use whole width for text box so it doesnt cover the person's head */
 @media screen and (max-width: 575px) {
 
+	/* make width 100% for very small screens otherwise text box covers the persons head */
 	#stuck-text-1 {
 		position: absolute;
 		left: 0;
@@ -716,12 +670,8 @@ main .card {
 	p, .btn {
 		font-size: 1.25rem;
 	}
-	
-	.width-md-550 {
-		width: 550px;
-	}
 
-	/* Navigation */
+	/* Header hero section */
 
 	/* Bring cover text up onto hero image */
 	header {
@@ -729,8 +679,6 @@ main .card {
 		display: grid;
 		grid-template-rows: auto;
 	}
-
-	/* Hero section */
 
 	/* For hero background image */
 	.hero {
@@ -744,10 +692,15 @@ main .card {
 		background-position: 85% 100%;
 	}
 
-	/* Switch off background for md */
+	/* Switch off linear cover text background */
 	.background-orange-linear {
 		/* none */
 		background: none
+	}
+
+	/* Cover text background */
+	.background-orange-4-a-md {
+		background: var(--color-orange-4-a);
 	}
 
 	.cover-text {
@@ -755,7 +708,7 @@ main .card {
 		z-index: 10; /* Ensure it appears above the hero background */
 	}
 
-	/* Cover text and call to action buttons for md+ screens */
+	/* Cover text and call to action buttons */
 	#cover-text-call {
 		/* Bring upwards into #hero image */
 		position: absolute;
@@ -780,10 +733,6 @@ main .card {
 		transform: translate(-50%, -50%);
 		width: 65%;
         justify-content: space-between; /* Space out children evenly */
-	}
-
-	.background-orange-4-a-md {
-		background: var(--color-orange-4-a);
 	}
 
 	/* Cover title */
@@ -844,6 +793,10 @@ main .card {
 		display: inline-block;
 	}
 
+	/* Constrain contents section width */
+	.width-md-550 {
+		width: 550px;
+	}
 
 	/* Home page Key features section */
 
@@ -891,7 +844,7 @@ main .card {
 @media screen and (min-width: 992px) {
 	
 	:root {
-		/* Increase font-size screens */
+		/* Increase font-size */
 		--bs-body-font-size: 1.5rem; 
 		--bs-btn-font-size: 1.5rem;
 	}
@@ -957,19 +910,4 @@ main .card {
 	.container {
 		max-width: 1140px;
 	}
-
-	/* Stop fonts continuing to grow with screen width */
-	/*
-	h2 {
-		font-size: 30px;
-	}
-
-	h3, #contact-message a {
-		font-size: 25px;
-	}
-
-	p, li, label, .btn, footer a {
-		font-size: 22px;
-	}
-*/
 }
