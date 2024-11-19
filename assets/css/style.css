@@ -911,3 +911,12 @@ ul.mm-bullets li::marker {
 		max-width: 1140px;
 	}
 }
+
+@media screen and (min-width: 1800px) {
+	/* Increase contact us top and bottom padding */
+	.form-xxl-padding {
+		padding-top: 5rem !important;
+		padding-bottom: 5rem !important;
+	}
+
+}
