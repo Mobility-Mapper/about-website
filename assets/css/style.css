@@ -927,6 +927,14 @@ ul.mm-bullets li::marker {
 		height: 170px; /* Ensure both boxes are the same height */
 	}
 
+	#who-else .row {
+		--bs-gutter-x: 1rem; /* Reduce Bootstrap gutter */
+	}
+	
+	/* Decrease card title font-size as four cards in one row */
+	#who-else .card-title {
+		font-size: 1.3rem;
+	}
 }
 
 /* Media query: extra large desktop layout (1400px and up) */
