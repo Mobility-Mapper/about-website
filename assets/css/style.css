@@ -372,6 +372,11 @@ header.container {
 	text-align: center;
 }
 
+/* Card body text */
+.card-text {
+	text-align: center;
+}
+
 /* Home page seeking funding section */
 
 /* Center button */
@@ -634,13 +639,14 @@ ul.mm-bullets li::marker {
 /* Media queries
 
 /* Extra small screen (380px and below) */
-/* Home page cover title must be smaller to not cover the persons head */
 @media screen and (max-width: 380px) {
 
+	/* Reduce navbar logo size */
 	.navbar .logo {
 		height: 35px
 	}
 	
+	/* Home page cover title must be smaller to not cover the persons head */
 	/* Reposition home page hero image */
 	#hero-home {
 		background-image: url("../images/home_hero_image.jpg");
