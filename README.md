@@ -1,11 +1,17 @@
 # Mobility Mapper
 
+TODO
 ![Mobility Mapper mockup images](assets/readme-files/mockup-image.png)
 images of website on different screens
 
 Mobility Mapper is a route finder and navigation app for users of wheelchairs, mobility scooters, tricycles and other wheeled mobility devices (referred to as wheelers). 
 
-The purpose of this website is to make people aware that Mobility Mapper is being developed, and presents the key features of the app. It invites potential users to ...
+The purpose of this website is to gain the support needed to successfully develop and launch the app. It will generate interest by informing potential users, partners, and funders about its key features, and how it solves real-world wayfinding problems for wheelers. 
+
+To build a mailing list and social media following, the home page encourages visitors to subscribe to updates and follow our Facebook, Instagram and X pages. In addition, a contact form invites potential users to get in touch and provide feedback or ask questions about the app.
+
+A page dedicated to partnerships and funding presents a business pitch, and invites those whose goals align with our to contact us via a form or email.
+
 
 Visit the deployed website [here](https://sonyajane.github.io/mobility-mapper/).
 
@@ -118,6 +124,11 @@ Partnerships | ![Partnerships mobile wireframe image](assets/readme-files/wirefr
     - [Responsive Design Checker](https://www.responsivedesignchecker.com/) was used to...
     
     - Chrome DevTools ...
+
+    amiresponsive: revealed the cover title covers the head of the person in the image at screen size 320px
+    was ok up to 380
+    also hamburger menu did not fit on same line as logo
+
 
 ### Manual Testing
 

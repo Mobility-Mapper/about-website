@@ -260,6 +260,7 @@ header.container {
 
 .navbar-brand {
 	padding: 0;
+	margin-right: 0;
 }
 
 .navbar-nav .nav-link {
@@ -632,7 +633,34 @@ ul.mm-bullets li::marker {
 
 /* Media queries
 
-/* Use whole width for text box so it doesnt cover the person's head */
+/* Extra small screen (380px and below) */
+/* Home page cover title must be smaller to not cover the persons head */
+@media screen and (max-width: 380px) {
+
+	.navbar .logo {
+		height: 35px
+	}
+	
+	/* Reposition home page hero image */
+	#hero-home {
+		background-image: url("../images/home_hero_image.jpg");
+		background-position: 93% 100%;
+	}
+
+	/* Container for cover text title for small screens */
+	.cover-title-sm {
+		position: absolute;
+		width: 140px;
+	}
+
+	#hero-home h2 {
+		font-size: 1.2rem;
+		margin: 0 0 0.15rem 0 !important; /* margin top right bottom left */
+	}
+}
+
+
+/* For partnerships page, on stuck-at-home image: */
 @media screen and (max-width: 575px) {
 
 	/* make width 100% for very small screens otherwise text box covers the persons head */
