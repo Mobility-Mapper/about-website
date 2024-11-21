@@ -56,6 +56,10 @@ Finally, the yellow-brown provides additional variety for the background colours
 ### Typography
 
 The main font used on the website is Open Sans
+pairs well with  
+
+Figma
+Bitter, Source Sans Pro, Domine, and Alegreya.
 
 ### Wireframes
 
