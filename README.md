@@ -55,7 +55,7 @@ Finally, the yellow-brown provides additional variety for the background colours
 
 ### Typography
 
-The main font used on the website is Open Sans
+The main font used on the website is Open Sans with Sans Serif as the backup in case the former is not imported successfully. Bitter is used for the headings, as suggested by Figma as a complementary pairing with Open Sans, with Serif as the backup.
 pairs well with  
 
 Figma
