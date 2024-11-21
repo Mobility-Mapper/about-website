@@ -1,16 +1,14 @@
 # Mobility Mapper
 
-TODO
-![Mobility Mapper mockup images](assets/readme-files/mockup-image.png)
-images of website on different screens
+![Mobility Mapper mockup images](assets/readme-files/mockup.png)
 
 Mobility Mapper is a route finder and navigation app for users of wheelchairs, mobility scooters, tricycles and other wheeled mobility devices (referred to as wheelers). 
 
 The purpose of this website is to gain the support needed to successfully develop and launch the app. It will generate interest by informing potential users, partners, and funders about its key features, and how it solves real-world wayfinding problems for wheelers. 
 
-To build a mailing list and social media following, the home page encourages visitors to subscribe to updates and follow our Facebook, Instagram and X pages. In addition, a contact form invites potential users to get in touch and provide feedback or ask questions about the app.
+In order to build a mailing list and social media following, the home page encourages visitors to subscribe to updates and follow our Facebook, Instagram and X pages. In addition, a contact form invites potential users to get in touch and provide feedback or ask questions about the app.
 
-A page dedicated to partnerships and funding presents a business pitch, and invites those whose goals align with our to contact us via a form or email.
+A page dedicated to partnerships and funding presents a business pitch, and invites those whose goals align with ours to contact us via a form or email.
 
 
 Visit the deployed website [here](https://sonyajane.github.io/mobility-mapper/).
@@ -23,29 +21,41 @@ TODO
 
 ## User Experience (UX)
 
-### Project Goals
+### Business Goals
 
-* 
-*
-*
-*
+* Gain the support needed to successfully develop and launch the Mobility Mapper app.
+* Generate interest by informing potential users about its key features.
+* Build a mailing list and social media following. 
+* Encourage potential users to submit feedback or ask questions about the app.
+* Attract partners and funding by presenting our business pitch, and inviting those whose goals align with ours to contact us.
 
 ### User Stories
 
-*
-*
-*
-*
+* As a first-time visitor, I need a user-friendly design with a responsive layout for my device so that I can easily access information and browse the site without frustration, regardless of the device or screen size I'm using.
+* As a first-time visitor, I need clear, easy-to-use navigation so I can find the information I need quickly.
+* As a busy carer of a mobility impaired person, I want to quick overview of mobility mapper so that I can determine if it's the kind of tool I'm looking for, and if it's worth my time learning more about it.
+* As a user of a wheeled mobility device, I want to learn about all the features of Mobility Mapper so that I can decide if the app will suit my needs.
+* As a potential funder, partner, or stakeholder, I want to understand the value, impact, and business potential of the Mobility Mapper app so that I can evaluate whether it aligns with my goals and is worth my support or aligns with our funding objectives.
+* As a potential user or supporter, I want to sign up for updates about the app’s progress and launch so I can stay informed and be notified when the app is available.
+* As a social media user, I want to easily follow the Mobility Mapper app’s progress on platforms like Facebook so I can engage with the community and get regular updates.
+
 
 ### Color Scheme
 ![Color scheme image](assets/readme-files/palette.png)
 
+The primary colour used on the website is burnt orange, which is the same colour used for the app logo. Orange was chosen because it is associated with energy, happiness, and vitality. Since orange lends itself well to other colours found in nature, it is complmented with a muted yellow, coffee brown, khaki green, and a light shade of yellow-brown. 
 
-The colors used in the site are....
+The muted yellow is used for the call-to-action buttons that sit on the cover image, to differentiate them from the cover text background. 
+
+Coffee brown is the colour theme of the contact forms, with a submit button of the same colour, and a lighter shade for the background, which nicely complements the light shade of orange that colours the footer directly below.
+
+The khaki green adds variety, and is used as a complementary background for text on an image on the partnerships page. It also appears in a lighter shade as a text background in two sections further down the page.
+
+Finally, the yellow-brown provides additional variety for the background colours of a set of list items.
 
 ### Typography
 
-The font used on the website is...
+The main font used on the website is Open Sans
 
 ### Wireframes
 
@@ -126,8 +136,9 @@ Partnerships | ![Partnerships mobile wireframe image](assets/readme-files/wirefr
     - Chrome DevTools ...
 
     amiresponsive: revealed the cover title covers the head of the person in the image at screen size 320px
-    was ok up to 380
-    also hamburger menu did not fit on same line as logo
+    was ok up to 380 - added media quire for < 380 to reposition image slightly and make text smaller
+    also hamburger menu did not fit on same line as logo, so removed margin-right from
+    .navbar-brand, and reduced logo size for tiney screens
 
 
 ### Manual Testing
