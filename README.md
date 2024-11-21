@@ -43,7 +43,11 @@ The font used on the website is...
 
 ### Wireframes
 
-[Balsamiq](https://balsamiq.com/) has been used to ...
+Wireframes were created using [Balsamiq](https://balsamiq.com/) to plan the design of the website for mobile, tablet and desktop screens.
+Page | Mobile | Tablet | Desktop
+--- | --- | --- | ---
+Home | ![Home mobile wireframe image](assets/readme-files/wireframes/home-mobile.png) | ![Home Tablet wireframe image](assets/readme-files/wireframes/home-tablet.png) | ![Home desktop wireframe image](assets/readme-files/wireframes/home-desktop.png)
+Partnerships | ![Partnerships mobile wireframe image](assets/readme-files/wireframes/partnerships-mobile.png) | ![Partnerships tablet wireframe image](assets/readme-files/wireframes/partnerships-tablet.png) | ![Partnerships desktop wireframe image](assets/readme-files/wireframes/partnerships-desktop.png)
 
 ## Features
 
