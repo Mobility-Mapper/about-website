@@ -68,11 +68,11 @@ Partnerships | ![Partnerships mobile wireframe image](assets/readme-files/wirefr
 
 ## Features
 
-**General**
+### General
 * Responsive design across all device sizes.
 * Similar color scheme and design throughout both pages to effectively structure, categorise and present the information to the visitors.
 
-**Navbar**
+### Navbar
 
 The navbar contains the Mobility Mapper logo on the left, which functions as a link to the home page.
 
@@ -91,7 +91,7 @@ The navigation bar is the same on both pages. It contains links to both pages to
 
 The navigation links have a hover effect that changes their colour to orange, to provide feedback to the user for a better user experience. In addition, the current page is indicated by bold font.
 
-**Footer**
+### Footer
 
 The footers contain links to the social media channels, and convenient, relevant links for easy navigation.
 
@@ -106,7 +106,67 @@ The partnerships page footer contains links to the home page, the top of the pag
 
 ### Home Page
 
+The home page consists of four sections.
+
+#### 1. Hero cover image and text
+
+| Desktop and tablet | Mobile |
+| --- | --- |
+| ![Home page cover image](assets/readme-files/home-cover.png) | ![Home page cover image](assets/readme-files/home-cover-mobile.png) |
+
+#### 2. Key features section
+
+![Home page key features section](assets/readme-files/home-key-features.png)
+
+#### 3. Seeking partnerships section
+
+![Home page seeking partnerships](assets/readme-files/home-seeking-partnerships.png)
+
+#### 4. Contact section
+
+![Home page contact section](assets/readme-files/home-contact.png)
+
 ### Partnerships Page
+
+The partnerships consists of seven sections.
+Hero cover image and text
+
+#### 1. Hero cover image and text
+
+| Desktop and tablet | Mobile |
+| --- | --- |
+| ![Partnerships page cover image](assets/readme-files/partnerships-cover.png) | ![Partnerships page cover image](assets/readme-files/partnerships-cover-mobile.png) |
+
+
+
+#### 2. Contents
+
+![Partnerships page contents image](assets/readme-files/partnerships-contents.png)
+
+#### 3. The Problem
+
+![Partnerships page problem image](assets/readme-files/partnerships-problem.png)
+
+#### 4. Our Solution
+
+![Partnerships page solution image](assets/readme-files/partnerships-solution.png)
+
+#### 5. Market
+
+![Partnerships page market image](assets/readme-files/partnerships-market.png)
+
+
+#### 6. Key Differentiators
+
+![Partnerships page key differentiators image](assets/readme-files/partnerships-key-differentiators.png)
+
+#### 7. Further Benefits
+
+![Partnerships page key differentiators image](assets/readme-files/partnerships-further-benefits.png)
+
+#### 8. Contact section
+
+![Partnerships page cover image](assets/readme-files/partnerships-contact.png)
 
 ## Technologies Used
 
