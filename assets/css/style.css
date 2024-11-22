@@ -34,7 +34,7 @@
 	--color-coffee-4: #865640;
 	--color-coffee-4-a: #865640da; 
 	--color-coffee-5: #644030;
-	--color-coffee-6: #432b20; 	/* main font-color */
+	--color-coffee-6: rgb(67, 43, 32); 	/* main font-color */
 	--color-coffee-6-a: #432b20cc; 
 
 	/* Green */
@@ -273,6 +273,15 @@ header.container {
 .navbar-brand {
 	padding: 0;
 	margin-right: 0;
+}
+
+/* Hamburger menu icon */
+.navbar-toggler-icon { 
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath stroke='rgba(67,43,32,0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24' /%3E%3C/svg%3E");
+}
+
+.navbar-toggler {
+	border-color: var(--color-coffee-6-a);
 }
 
 .navbar-nav .nav-link {
