@@ -67,26 +67,30 @@ Home | ![Home mobile wireframe image](assets/readme-files/wireframes/home-mobile
 Partnerships | ![Partnerships mobile wireframe image](assets/readme-files/wireframes/partnerships-mobile.png) | ![Partnerships tablet wireframe image](assets/readme-files/wireframes/partnerships-tablet.png) | ![Partnerships desktop wireframe image](assets/readme-files/wireframes/partnerships-desktop.png)
 
 ## Features
+
+**General**
 * Responsive design across all device sizes.
 * Similar color scheme and design throughout both pages to effectively structure, categorise and present the information to the visitors.
 
-* **Navbar**
+**Navbar**
 
-    - The navbar contains the Mobility Mapper logo on the left, and responsive navigation links on the right.
+The navbar contains the Mobility Mapper logo on the left, and responsive navigation links on the right.
 
-    - On tablet and desktop screens the navigation links are visible
-    <img src="assets/readme-files/navbar-expanded.png" height="40">
+On tablets and desktop screens the navigation links are visible:
 
-    - On mobile screens the navigation links can be revealed by a toggle button with a hamburger icon 
+<img src="assets/readme-files/navbar-expanded.png" height="40">
 
-    <img src="assets/readme-files/navbar.png" height="40">
+On mobile screens the navigation links can be revealed by clicking a toggle button with a hamburger icon:
 
+| | |
+|--- | ---|
+|<img src="assets/readme-files/navbar.png" width="270"> | toggle button unclicked |
+|<img src="assets/readme-files/navbar-active.png" width="270"> | toggle button clicked |
+| | |
 
+The logo functions as a link to the home page.
 
-
-    - The logo functions as a link to the home page.
-
-    - The navigation bar is identical in all pages and contains links to all pages to facilitate navigation across the site. It also has a hover effect that changes color to provide feedback to the customer for a better user experience.
+The navigation bar is identical in all pages and contains links to all pages to facilitate navigation across the site. It also has a hover effect that changes color to provide feedback to the customer for a better user experience.
 
 * **Footer**
 ![Footer image](assets/readme-files/footer.png)
