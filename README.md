@@ -58,9 +58,6 @@ Finally, the yellow-brown provides additional variety for the background colours
 The main font used on the website is Open Sans with Sans Serif as the backup in case the former is not imported successfully. Bitter is used for the headings, as suggested by Figma as a complementary pairing with Open Sans, with Serif as the backup.
 pairs well with  
 
-Figma
-Bitter, Source Sans Pro, Domine, and Alegreya.
-
 ### Wireframes
 
 Wireframes were created using [Balsamiq](https://balsamiq.com/) to plan the design of the website for mobile, tablet and desktop screens.
@@ -70,6 +67,32 @@ Home | ![Home mobile wireframe image](assets/readme-files/wireframes/home-mobile
 Partnerships | ![Partnerships mobile wireframe image](assets/readme-files/wireframes/partnerships-mobile.png) | ![Partnerships tablet wireframe image](assets/readme-files/wireframes/partnerships-tablet.png) | ![Partnerships desktop wireframe image](assets/readme-files/wireframes/partnerships-desktop.png)
 
 ## Features
+* Responsive design across all device sizes.
+* Similar color scheme and design throughout both pages to effectively structure, categorise and present the information to the visitors.
+
+* **Navbar**
+
+    - The navbar contains the Mobility Mapper logo on the left, and responsive navigation links on the right.
+
+    - On tablet and desktop screens the navigation links are visible
+    <img src="assets/readme-files/navbar-expanded.png" height="40">
+
+    - On mobile screens the navigation links can be revealed by a toggle button with a hamburger icon 
+
+    <img src="assets/readme-files/navbar.png" height="40">
+
+
+
+
+    - The logo functions as a link to the home page.
+
+    - The navigation bar is identical in all pages and contains links to all pages to facilitate navigation across the site. It also has a hover effect that changes color to provide feedback to the customer for a better user experience.
+
+* **Footer**
+![Footer image](assets/readme-files/footer.png)
+
+    - The footer includes a smaller version of the logo and link to the business' social media channels.
+
 
 ### Home Page
 
