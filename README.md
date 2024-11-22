@@ -89,13 +89,19 @@ On mobile screens the navigation links can be revealed by clicking a toggle butt
 
 The navigation bar is the same on both pages. It contains links to both pages to facilitate navigation across the site. It also contains a link to the contact form on the same page, so the contact link on the home page takes you to the personal contact form at the bottom of the home page, and the contact link on the partnerships page takes you to the business contact form at the bottom of the partnerships page. 
 
-The navigation links have a hover effect that changes their color to orange, to provide feedback to the user for a better user experience. In addition, the current page is indicated by bold font.
+The navigation links have a hover effect that changes their colour to orange, to provide feedback to the user for a better user experience. In addition, the current page is indicated by bold font.
 
+**Footer**
 
-* **Footer**
-![Footer image](assets/readme-files/footer.png)
+The footers contain links to the social media channels, and convenient, relevant links for easy navigation.
 
-    - The footer includes a smaller version of the logo and link to the business' social media channels.
+The home page footer contains links to the top of the page, the email subsciption modal, the home contact form, and the partnerships page.
+
+![Home footer image](assets/readme-files/footer-home.png)
+
+The partnerships page footer contains links to the home page, the top of the page, and the partnerships contact form.
+
+![Partnerships footer image](assets/readme-files/footer-partnerships.png)
 
 
 ### Home Page
