@@ -74,23 +74,23 @@ Partnerships | ![Partnerships mobile wireframe image](assets/readme-files/wirefr
 
 **Navbar**
 
-The navbar contains the Mobility Mapper logo on the left, and responsive navigation links on the right.
+The navbar contains the Mobility Mapper logo on the left, which functions as a link to the home page.
 
-On tablets and desktop screens the navigation links are visible:
+Responsive navigation links are on the right of the navbar. On tablets and desktop screens the navigation links are visible:
 
 <img src="assets/readme-files/navbar-expanded.png" height="40">
 
 On mobile screens the navigation links can be revealed by clicking a toggle button with a hamburger icon:
 
-| | |
-|--- | ---|
-|<img src="assets/readme-files/navbar.png" width="270"> | toggle button unclicked |
-|<img src="assets/readme-files/navbar-active.png" width="270"> | toggle button clicked |
-| | |
+|  |  |
+| --- | --- |
+| <img src="assets/readme-files/navbar.png" width="270"> | toggle button unclicked |
+| <img src="assets/readme-files/navbar-active.png" width="270"> | toggle button clicked |
 
-The logo functions as a link to the home page.
+The navigation bar is the same on both pages. It contains links to both pages to facilitate navigation across the site. It also contains a link to the contact form on the same page, so the contact link on the home page takes you to the personal contact form at the bottom of the home page, and the contact link on the partnerships page takes you to the business contact form at the bottom of the partnerships page. 
 
-The navigation bar is identical in all pages and contains links to all pages to facilitate navigation across the site. It also has a hover effect that changes color to provide feedback to the customer for a better user experience.
+The navigation links have a hover effect that changes their color to orange, to provide feedback to the user for a better user experience. In addition, the current page is indicated by bold font.
+
 
 * **Footer**
 ![Footer image](assets/readme-files/footer.png)
