@@ -39,6 +39,7 @@ TODO
 * As a potential user or supporter, I want to sign up for updates about the app’s progress and launch so I can stay informed and be notified when the app is available.
 * As a social media user, I want to easily follow the Mobility Mapper app’s progress on platforms like Facebook so I can engage with the community and get regular updates.
 
+[Back to top ⇧](#mobility-mapper)
 
 ### Color Scheme
 ![Color scheme image](assets/readme-files/palette.png)
@@ -219,9 +220,23 @@ To make the list more visually appealing, each list item is presented on one of 
 
 #### 7. Further Benefits
 
+This section showcases who else will benefit from the app, starting with four large-scale entities, and followed by four different groups of people using wheeled devices.
+
+Both sets are displayed in a single column on mobile screens. The first set expands to two columns on desktops. The second set expands to two columns on tablets, and four on desktops.
+
+The large-scale entities are presented with large, complementary icons, and for variety, the user groups as cards with an image and title.
+
 ![Partnerships page key differentiators image](assets/readme-files/partnerships-further-benefits.png)
 
-#### 8. Contact section
+#### 8. Business contact section
+
+Similar to the contact section home page in location and style, the form sits above the footer. 
+
+The introductory text makes it clear that this form is for potential partners and funders (as opposed to potential users of the app) to get in touch to initiate a discussion about partnerships or funding. 
+
+The message text area has a maximum length of 750 characters. A [Javascript event listener](assets/js/contact-business.js#L1) counts the number of characters and displays that number below the text box, providing helpful feedback.
+
+When the "Submit contact form" button is clicked, the inputs are validated and another [Javascript event listener](assets/js/contact-business.js#L11) gets the form inputs and posts them to a Google Sheets spredsheet via a Google Apps script.
 
 ![Partnerships page cover image](assets/readme-files/partnerships-contact.png)
 
