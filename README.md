@@ -106,30 +106,60 @@ The partnerships page footer contains links to the home page, the top of the pag
 
 ### Home Page
 
-The home page consists of four sections.
+The home page consists of four sections and a subscribe modal.
 
 #### 1. Hero cover image and text
 
+Visitors are greeted by a light and sunny hero image, which stretches with the screen width.
+
+On mobile screens the image is accompanied by a prominent cover title, and the cover text sits below it, followed by two call-to-action buttons and a set of social media links. These features sit ontop of the hero image on tablet and desktop screens.
+
+- The hero image shows a happy wheelchair user using the app on her mobile phone.
+
+- The cover text consists of a concise overview of the purpose of Mobility Mapper and how it benefits users of wheeled mobility devices. 
+
+- The first call-to-action button invites the visitor to subscribe to email updates, and the second to learn more about how they can help fund the development of the app.
+
+- The social media buttons take the visitor to the Mobility Mapper Facebook page, Instagram account, or X page.
+
 | Desktop and tablet | Mobile |
 | --- | --- |
-| ![Home page cover image](assets/readme-files/home-cover.png) | ![Home page cover image](assets/readme-files/home-cover-mobile.png) |
+| ![Home page cover image](assets/readme-files/home-cover.png) | ![Home page cover image](assets/readme-files/home-cover-mobile.png) <br> |
 
 #### 2. Key features section
+
+This section describes the key features of the app. It consists of six cards, one for each feature, with an image, feature title and description.
 
 ![Home page key features section](assets/readme-files/home-key-features.png)
 
 #### 3. Seeking partnerships section
 
+The purpose of this section is to guide potential partners and funders to the partnerships page.
+
 ![Home page seeking partnerships](assets/readme-files/home-seeking-partnerships.png)
 
 #### 4. Contact section
 
+This contact form is for potential users of the app to get in touch with us, with the option to subscribe to the email updates.
+
+The message text area has a maximum length of 750 characters. A [Javascript event listener](assets/js/contact-personal.js#L1) counts the number of characters and displays that number below the text box, providing helpful feedback to the visitor.
+
+When the "Submit contact form" button is clicked, another [Javascript event listener](assets/js/contact-personal.js#L11)gets the form inputs and posts them to a Google Sheets spredsheet via a Google Apps script.
+
 ![Home page contact section](assets/readme-files/home-contact.png)
+
+#### Subscribe Modal
+
+This modal is opened when the subscribe to email updates call-to-action button is clicked, or the subscribe link in the footer is clicked.
+
+Clicking submit calls a Javascript 
+
+![Home page susbcribe modal](assets/readme-files/modal.png)
+
 
 ### Partnerships Page
 
-The partnerships consists of seven sections.
-Hero cover image and text
+The partnerships consists of eight sections.
 
 #### 1. Hero cover image and text
 
