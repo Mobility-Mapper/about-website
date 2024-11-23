@@ -260,23 +260,34 @@ When the "Submit contact form" button is clicked, the inputs are validated and a
 
 * [Bootstrap](https://getbootstrap.com/) is an extensive library of CSS and JavaScript utilities. This website makes use of a wide range of pre-styled components such as buttons, forms, a modal, and navigation bar, along with a responsive grid system that simplifies the development of layouts for different screen sizes. Bootstrap enables consistent styling and behaviour across browsers, while also reducing the time and effort required to write custom code. 
 
-Bootstrap’s compiled CSS and JS was included via CDN by placing the jsdeliver `link` tag in the `head` for the CSS, and the `script` tag for the JavaScript bundle before the closing `body` tag.
+    Bootstrap’s compiled CSS and JS was included via CDN by placing the jsdeliver `link` tag in the `head` for the CSS, and the `script` tag for the JavaScript bundle before the closing `body` tag.
 
+* [Bootstrap Icons](https://icons.getbootstrap.com/) were imported into the style.css file. The Facebook, Instagram and X social media icons were used, as well as the right arrow in a circle to indicate a link, and the up arrow to provide a floating "back to top" button on both pages.
 
+* [GIMP](https://www.gimp.org/) (GNU Image Manipulation Program) was used to:
+    - reduce the file size of the images for the website;
+    - crop and edit images.
 
-* [Bootstrap Icons](https://icons.getbootstrap.com/) was used to import icons into the style.css file. The Facebook, Instagram and X social media icons were used, as well as the right arrow in a circle ro indicate a link, and the up arrow to provide a floating "back to top" button.
+* [Inkscape](https://inkscape.org/) was used to create the Mobility Mapper logo, and the wheel bullet icons.
 
-* [GitHub](https://github.com/)
-     - GitHub was used to ...
+* [GitHub](https://github.com/) was used as follows:
+    - Together with Git for version control and code hosting.
+    - The projects tool was used to help manage tasks and organise feature development. 
+    - This README file serves as the main documentation for the project. 
+    - GitHub Pages hosts this website directly from this GitHub repository.
 
-* [Balsamiq](https://balsamiq.com/)
-     - Balsamiq was used to create the wireframes during the design phase of the project.
+* [Balsamiq](https://balsamiq.com/) was used to create the wireframes during the design phase of the project.
+
+* [Am I Responsive?](https://ui.dev/amiresponsive) was used to view the  responsiveness of the website throughout the development process, and to generate the mockup images used at the top of this README.
 
 * [Responsive Design Checker](https://www.responsivedesignchecker.com/)
     - Responsive Design Checker was used in the testing process to check responsiveness on various devices.
 
-* [Chrome DevTools](https://developer.chrome.com/docs/devtools/)
-    - Chrome DevTools was used during the development process for...
+* [Chrome DevTools](https://developer.chrome.com/docs/devtools/) was used during the development process to:
+    - view how the code renders in a web browser
+    - evaluate how the code functions and ensure it behaves as expected
+    - test responsiveness
+    - debug and refine code
 
 * [W3C Markup Validator](https://validator.w3.org/)
     - W3C Markup Validator was used to validate the HTML code.
