@@ -67,6 +67,8 @@ Page | Mobile | Tablet | Desktop
 Home | ![Home mobile wireframe image](assets/readme-files/wireframes/home-mobile.png) | ![Home Tablet wireframe image](assets/readme-files/wireframes/home-tablet.png) | ![Home desktop wireframe image](assets/readme-files/wireframes/home-desktop.png)
 Partnerships | ![Partnerships mobile wireframe image](assets/readme-files/wireframes/partnerships-mobile.png) | ![Partnerships tablet wireframe image](assets/readme-files/wireframes/partnerships-tablet.png) | ![Partnerships desktop wireframe image](assets/readme-files/wireframes/partnerships-desktop.png)
 
+[Back to top ⇧](#mobility-mapper)
+
 ## Features
 
 ### General
@@ -104,6 +106,7 @@ The partnerships page footer contains links to the home page, the top of the pag
 
 ![Partnerships footer image](assets/readme-files/footer-partnerships.png)
 
+[Back to top ⇧](#mobility-mapper)
 
 ### Home Page
 
@@ -158,6 +161,8 @@ A small Mobility Mapper icon on the right of the header, and a submit button of 
 When the "Submit" button is clicked, the inputs are validated and a [Javascript event listener](assets/js/subscribe.js) gets the form inputs and posts them to a Google Sheets spredsheet via a Google Apps script.
 
 ![Home page susbcribe modal](assets/readme-files/modal.png)
+
+[Back to top ⇧](#mobility-mapper)
 
 ### Partnerships Page
 
@@ -240,6 +245,8 @@ When the "Submit contact form" button is clicked, the inputs are validated and a
 
 ![Partnerships page cover image](assets/readme-files/partnerships-contact.png)
 
+[Back to top ⇧](#mobility-mapper)
+
 ## Technologies Used
 
 ### Languages Used
@@ -249,8 +256,15 @@ When the "Submit contact form" button is clicked, the inputs are validated and a
 
 ### Frameworks, Libraries and Programs Used
 
-* [Google Fonts](https://fonts.google.com/)
-    - Google Fonts was used to import the fonts ...
+* [Google Fonts](https://fonts.google.com/) was used to import the fonts Open Sans and Bitter into the style.css file. Bitter was used for headings, and Open Sans for other text, including paragraphs, labels and links. 
+
+* [Bootstrap](https://getbootstrap.com/) is an extensive library of CSS and JavaScript utilities. This website makes use of a wide range of pre-styled components such as buttons, forms, a modal, and navigation bar, along with a responsive grid system that simplifies the development of layouts for different screen sizes. Bootstrap enables consistent styling and behaviour across browsers, while also reducing the time and effort required to write custom code. 
+
+Bootstrap’s compiled CSS and JS was included via CDN by placing the jsdeliver `link` tag in the `head` for the CSS, and the `script` tag for the JavaScript bundle before the closing `body` tag.
+
+
+
+* [Bootstrap Icons](https://icons.getbootstrap.com/) was used to import icons into the style.css file. The Facebook, Instagram and X social media icons were used, as well as the right arrow in a circle ro indicate a link, and the up arrow to provide a floating "back to top" button.
 
 * [GitHub](https://github.com/)
      - GitHub was used to ...
@@ -270,11 +284,13 @@ When the "Submit contact form" button is clicked, the inputs are validated and a
 * [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
     - W3C CSS Validator was used to validate the CSS code.
 
+[Back to top ⇧](#mobility-mapper)
 
 ## Testing
 
 ### Testing User Stories
 
+[Back to top ⇧](#mobility-mapper)
 
 ### Code Validation
 
@@ -291,6 +307,8 @@ When the "Submit contact form" button is clicked, the inputs are validated and a
     - **Home Page**
 
     - **Partnerships Page**
+
+[Back to top ⇧](#mobility-mapper)
 
 ### Tools Testing
 
@@ -347,6 +365,7 @@ When the "Submit contact form" button is clicked, the inputs are validated and a
     - Home Page
 
     - Partnerships Page
+[Back to top ⇧](#mobility-mapper)
 
 ## Finished Product
 
@@ -362,6 +381,7 @@ Partnerships | ![Mobile partnerships page image](assets/readme-files/partnership
 * This website was developed using [Visual Studio Code](https://code.visualstudio.com/), which was then committed and pushed to GitHub using the terminal.
 
 ### GitHub Pages
+[Back to top ⇧](#mobility-mapper)
 
 ## Credits 
 
@@ -372,7 +392,7 @@ Partnerships | ![Mobile partnerships page image](assets/readme-files/partnership
 ### Media
 
 * [Pexels](https://www.pexels.com/)
-
+[Back to top ⇧](#mobility-mapper)
 ### Code
 
 The introduction text is positioned below the hero image on small screens, and moves up onto it for medium screens and above.
@@ -384,3 +404,4 @@ To achieve the layout, we uses a combination of HTML and Bootstrap for responsiv
 Flexbox for aligning the content.
 Bootstrap grid for responsiveness.
 Media queries to adjust the layout for different screen sizes.
+[Back to top ⇧](#mobility-mapper)
