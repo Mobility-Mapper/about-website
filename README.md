@@ -338,11 +338,12 @@ When the "Submit contact form" button is clicked, the inputs are validated and a
 
 ### Code Validation
 
-* The [W3C Markup Validator](https://validator.w3.org/) website was used to validate the CSS file to ensure there were no syntax errors. No errors or warnings were found.
+* The [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) website was used to validate the CSS style.css file to ensure there were no syntax errors. No errors or warnings were found.
 
-* The [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) website was used to validate both pages to ensure there were no syntax errors.
+* The [W3C Markup Validator](https://validator.w3.org/) website was used to validate the HTML files to ensure there were no syntax errors. The validator found the following errors, which were corrected:
+    - An unclosed `div` tag 
+    - A rogue " was found next to a closing one
 
-    -  list errors and warnings
 
 ### Accessibility
 

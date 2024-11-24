@@ -207,17 +207,32 @@ background-color: var(--color-orange-4-a);
 
 /* Custom buttons */
 
-.button-orange {
+.button-orange, .button-orange-light {
 	border-radius: 5px;
-	background-color: var(--color-orange-4-a);
-	color: white;
 	display: flex;
 	align-items: center; 
     justify-content: center;
     padding: 10px 20px;
 }
 
+.button-orange {
+	background-color: var(--color-orange-4-a);
+	color: white;
+}
+
+.button-orange-light {
+	background-color: var(--color-orange-2);
+	color: black;
+	border: 1px solid var(--color-orange-4);
+}
+
+
 .button-orange:hover {
+	background-color: var(--color-mango-3-a);
+	color: black;
+}
+
+.button-orange-light:hover {
 	background-color: var(--color-mango-3-a);
 	color: black;
 }
@@ -227,8 +242,13 @@ background-color: var(--color-orange-4-a);
 	color: black;
 }
 
+.button-orange-light:active {
+	background-color: var(--color-orange-1);
+	color: black;
+}
+
 /* Position arrow icon on the right of the text */
-.button-orange i {
+.button-orange i, .button-orange-light i {
 	margin-left: auto; /* Pushes the icon to the right */
 	display: flex;
     align-items: center;
@@ -432,7 +452,7 @@ header.container {
 /* Home page seeking funding section */
 
 /* Center button */
-#seeking-funding .button-orange, #key-features-text .button-orange {
+#seeking-funding .button-orange, #key-features-text .button-orange, .button-orange-light {
 	display: inline-flex;  
     align-items: center;   /* Centers the text and icon vertically */
     justify-content: center; /* Centers content horizontally */
