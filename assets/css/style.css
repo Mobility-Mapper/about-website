@@ -17,7 +17,8 @@
 	/* Colours with opacity < 1 denoted by suffix -a or -b */
 
 	/* Orange */
-	--color-orange-1: #f5ddd2; 
+	--color-orange-1: #f5ddd2;
+	--color-orange-1-a: #f5ddd2DD; 
 	--color-orange-2: #eabaa5; 
 	--color-orange-2-b: #ebbaa6d9; 
 	--color-orange-3: #e09878;  	
@@ -59,6 +60,7 @@
 
 	/* Mango */
 	--color-mango-1: #FBE6CE;
+	--color-mango-1-a: #FBE6CEF0;
 	--color-mango-2: #F7CE9D;
 	--color-mango-2-a: #F7CE9DF0;
 	--color-mango-3: #F3B56C;
@@ -216,7 +218,12 @@ background-color: var(--color-orange-4-a);
 }
 
 .button-orange:hover {
-	background-color: var(--color-orange-3);
+	background-color: var(--color-mango-3-a);
+	color: black;
+}
+
+.button-orange:active {
+	background-color: var(--color-orange-1);
 	color: black;
 }
 
@@ -387,8 +394,6 @@ header.container {
 
 /* Key Features (home) and Problems (partnerships) Section */
 
-
-
 /* Section title underlines */
 .mm-underline {
 	border-bottom: 0.4rem solid;
@@ -417,10 +422,17 @@ header.container {
 	text-align: center;
 }
 
+#key-features-text {
+	font-weight: 500;
+	border: 0.5px solid var(--color-orange-1);
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px var(--color-orange-1-a); /* left top  */
+}
+
 /* Home page seeking funding section */
 
 /* Center button */
-#seeking-funding .button-orange {
+#seeking-funding .button-orange, #key-features-text .button-orange {
 	display: inline-flex;  
     align-items: center;   /* Centers the text and icon vertically */
     justify-content: center; /* Centers content horizontally */
