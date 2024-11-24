@@ -302,44 +302,38 @@ When the "Submit contact form" button is clicked, the inputs are validated and a
 ### Testing User Stories
 
 1. As a first-time visitor, I need a user-friendly design with a responsive layout for my device so that I can easily access information and browse the site without frustration, regardless of the device or screen size I'm using.
-
-- The website is fully responsive across various devices and screen sizes.
+    - The website is fully responsive across various devices and screen sizes.
 
 2. As a first-time visitor, I need clear, easy-to-use navigation so I can find the information I need quickly.
-
-- Navigation is intuitive and easy to understand, allowing users to quickly access key sections.
-- The navigation structure is consistent across all pages and does not require more than two clicks to reach important information.
-- The navigation is accessible on both desktop and mobile, with a responsive design that adapts to different screen sizes (including a hamburger menu for mobile).
-- The navigation links and buttons are clearly labeled and distinguishable, making it easy to navigate even for first-time visitors.
+    - Navigation is intuitive and easy to understand, allowing users to quickly access key sections.
+    - The navigation structure is consistent across all pages and does not require more than two clicks to reach important information.
+    - The navigation is accessible on both desktop and mobile, with a responsive design that adapts to different screen sizes (including a hamburger menu for mobile).
+    - The navigation links and buttons are clearly labeled and distinguishable, making it easy to navigate even for first-time visitors.
 
 3. As a busy carer of a mobility impaired person, I want to quick overview of mobility mapper so that I can determine if it's the kind of tool I'm looking for, and if it's worth my time learning more about it.
-
-- The top of the home page features a concise overview that explains the app’s purpose and how it benefits users of wheeled mobility devices.
-- A prominent call-to-action is available to enable the visitor to subscribe to email updates, which will provide them with both more information about Mobility Mapper, and a reminder to return to the website when they have more time to dive deeper.
+    - The top of the home page features a concise overview that explains the app’s purpose and how it benefits users of wheeled mobility devices.
+    - A prominent call-to-action is available to enable the visitor to subscribe to email updates, which will provide them with both more information about Mobility Mapper, and a reminder to return to the website when they have more time to dive deeper.
 
 4. As a user of a wheeled mobility device, I want to learn about all the features of Mobility Mapper so that I can decide if the app will suit my needs.
-
-- The home page includes a description of the app's key features.
-- The partnerships page provides further details on the problems the app solves, including a list of features that make Mobilty Mapper different from existing mapping apps.
+    - The home page includes a description of the app's key features followed by an invitation to read further details on the partnerships page.
+    - The partnerships page provides further details on the problems the app solves, including a list of features that make Mobilty Mapper different from existing mapping apps.
 
 5. As a potential funder, partner, or stakeholder, I want to understand the value, impact, and business potential of the Mobility Mapper app so that I can evaluate whether it aligns with my goals and is worth my support or aligns with our funding objectives.
-
-- A dedicated page on the website provides a clear and compelling pitch for Mobility Mapper.
-- An introduction describes the problems the app solves for wheelers and how it solves them
-- There is a section on market potential, and the app’s expected social and economic impact
-- There is content differentiating Mobility Mapper from other navigation apps.
-- The page includes clear, compelling visuals that highlight the app’s purpose and impact.
-- Clear calls to action for funding inquiries and contact information are present
-- Clear links on the homepage inviting the visitor to go to the partnerships page
+    - A dedicated page on the website provides a clear and compelling pitch for Mobility Mapper.
+    - An introduction describes the problems the app solves for wheelers and how it solves them
+    - There is a section on market potential and validation,
+    - There is content differentiating Mobility Mapper from other navigation apps.
+    - A section outlines the app's expected social and economic impact
+    - The page includes clear, compelling visuals that highlight the app’s purpose and impact.
+    - Clear calls to action for funding inquiries and contact information are present
+    - Clear links on the homepage inviting the visitor to go to the partnerships page
 
 6. As a potential user or supporter, I want to sign up for updates about the app's progress and launch so I can stay informed and be notified when the app is available.
-
-- A prominent call-to-action is available to enable the visitor to subscribe to email updates.
-- A confirmation of subscription is shown on clicking the submit button
+    - A prominent call-to-action is available to enable the visitor to subscribe to email updates.
+    - A confirmation of subscription is shown on clicking the submit button
 
 7. As a social media user, I want to easily follow the Mobility Mapper app’s progress on platforms like Facebook so I can engage with the community and get regular updates.
-
-- Clear, visible social media buttons (e.g., Facebook) are placed on the homepage and other key pages.
+    - Clear, visible social media buttons (e.g., Facebook) are placed on the homepage and partnerships page.
 
 
 ### Code Validation
