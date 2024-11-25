@@ -492,15 +492,15 @@ ul.mm-bullets {
 
 /* Custom bullet points with wheel icon */
 ul.mm-bullets > li {
-    background-image: url('../images/wheel_bullet.png');
+    background-image: url('../images/wheel_no_background_300_x_300.png');
+	background-size: var(--bs-body-font-size); /* Adjust size of the wheel image */
     background-repeat: no-repeat;
-    background-position: 0 0.5rem; /* Adjust vertical alignment */
-    padding-left: 2rem; 			/* Space for the wheel image */
+    background-position: 0 calc(var(--bs-body-font-size)/4); /* Adjust vertical alignment */
+    padding-left: calc(1.65*var(--bs-body-font-size)); 			/* Space for the wheel image */
 	list-style-type: none;
 	padding-bottom: 0.5rem;
 	display: list-item; /* Retain bullets while keeping items inline */
 	text-align: left; 	/* Ensure text is left-aligned */
-	width: auto; 		/* Prevent items from taking full width */
 	margin-bottom: 0.5rem; /* Add spacing between list items */
 }
 
