@@ -410,8 +410,22 @@ The website has been tested on the following devices, with no rendering, respons
             - On mobile screens, tapping the hamburger menu icon shows the navigation links
             - Hovering over the navigation links triggers the hover effect, changing the font colour to orange to highlight it
             - Clicking a navigation link takes you to the corresponding page or contact form
+
+        - Contact form
+            - Hovering over an input field triggers the appearance of a "Please fill in this field" tooltip
+            - Clicking in a text input field shows a list of autocomplete options
+            - Clicking the submit button without filling in a text or text-area input field triggers the appearance of a "Please fill in this field" tooltip below the empty field
+            - Clicking the submit button without including an @ symbol in the email address field triggers the appearance of a tooltip reminding the user to include one
+            - Hovering over the submit buttons triggers the hover effect, changing the colour to light coffee
+            - Clicking the submit button when all fields have been validated posts the data to a Google Sheets spreadsheet
+
         - Footer
             - Clicking a social media link opens the corresponding website in a new tab.
+            - Clicking a navigation link takes you to the corresponding location in the website.
+
+        - Back to top arrow
+            - Hovering over the orange back to top arrow triggers the Back to top tooltip.
+            - Clicking the orange back to top arrow takes you to the top of the page.
         
     - Home Page
         - Header
@@ -424,10 +438,25 @@ The website has been tested on the following devices, with no rendering, respons
             - Hovering over the "Funding and Partnerships" buttons triggers the hover effect, changing the  colour to light mango, letting the user know it is a clickable button that will take you to the corresponding page.   
             - Clicking the "Funding and Partnerships" buttons takes you to the Funding and Partnerships page
       
+        - Contact form
+            - Hovering over the brown link "separate form for potential partners and funders" triggers the hover effect, changing the font colour to orange
+            - Clicking the brown link "separate form for potential partners and funders" link takes you to the contact form on the Partnerships and Funding page
+            
         - Modal
+            - Hovering over an input field triggers the appearance of a "Please fill in this field" tooltip
+            - Clicking in a text input field shows a list of autocomplete options
+            - Clicking the submit button without filling in a text input field triggers the appearance of a "Please fill in this field" tooltip below the empty field
+            - Clicking the submit button without including an @ symbol in the email address field triggers the appearance of a tooltip reminding the user to include one
+            - Hovering over the submit buttons triggers the hover effect, changing the colour to light mango and the font colour to black.
+            - Clicking the submit button when all fields have been validated posts the data to a Google Sheets spreadsheet
 
     - Partnerships Page
-        - 
+        - Header
+            - Hovering over the "Contact Us" button triggers the hover effect, changing the colour to a darker coffee colour
+            - Clicking the "Contact Us" takes you to the business contact form at the bottom of the page
+        - Contents
+            - Hovering over a list item triggers the hover effect, adding an underline to the text
+            - Clicking a list item link takes you to the corresponding section of the page
 
 
 [Back to top ⇧](#mobility-mapper)
