@@ -405,16 +405,31 @@ The website has been tested on the following devices, with no rendering, respons
 * Common Elements Testing
 
     - Both Pages
+        - Navigation Bar
+            - Clicking the logo takes you back to the home page.
+            - On mobile screens, tapping the hamburger menu icon shows the navigation links
+            - Hovering over the navigation links triggers the hover effect, changing the font colour to orange to highlight it
+            - Clicking a navigation link takes you to the corresponding page or contact form
+        - Footer
+            - Clicking a social media link opens the corresponding website in a new tab.
         
-        - **Header**
-
-        - **Navigation Bar**
-        
-        - **Footer**
-
     - Home Page
+        - Header
+            - Hovering over the call-to-action buttons triggers the hover effect, changing the colour to light mango and the font colour to black, letting the user know it is a clickable button
+            - Clicking the "Subscribe to email updates" button opens a modal containing a sign up form
+            - Clicking the "Help fund Mobility Mapper" button takes you to the Funding and Partnerships page
+            - Clicking a social media link will open the corresponding website in a new tab.
+
+        - Key Features and Seeking Funding Section
+            - Hovering over the "Funding and Partnerships" buttons triggers the hover effect, changing the  colour to light mango, letting the user know it is a clickable button that will take you to the corresponding page.   
+            - Clicking the "Funding and Partnerships" buttons takes you to the Funding and Partnerships page
+      
+        - Modal
 
     - Partnerships Page
+        - 
+
+
 [Back to top ⇧](#mobility-mapper)
 
 ## Finished Product
