@@ -348,13 +348,13 @@ When the "Submit contact form" button is clicked, the inputs are validated and a
 
 Lighthouse in Chrome DevTools was used to confirm that the website is accessible. We have ensured that there is:
 
-    - sufficient contrast between the text and background
-    - meaningful alt text for images
-    - semantic HTML (e.g., `header`, `nav`, `section`)
-    - consistent navigation and interface design across pages
-    - valid and well-structured HTML to ensure compatibility with screen readers
-    - appropriate form labels
-    - strategically incorporated ARIA attributes
+ - sufficient contrast between the text and background
+ - meaningful alt text for images
+ - semantic HTML (e.g., `header`, `nav`, `section`)
+ - consistent navigation and interface design across pages
+ - valid and well-structured HTML to ensure compatibility with screen readers
+ - appropriate form labels
+ - strategically incorporated ARIA attributes
 
 **Lighthouse Reports**
 
@@ -367,20 +367,26 @@ Lighthouse in Chrome DevTools was used to confirm that the website is accessible
 
 ### Tools Testing
 
-* [Chrome DevTools](https://developer.chrome.com/docs/devtools/)
-
-    - Chrome DevTools was used during the development process to ...
+* [Chrome DevTools](https://developer.chrome.com/docs/devtools/) was used during the development process to:
+    - view how the code renders in a web browser
+    - evaluate how the code functions and ensure it behaves as expected
+    - test responsiveness
+    - debug and refine code
 
 * Responsiveness
     
-    - [Responsive Design Checker](https://www.responsivedesignchecker.com/) was used to...
-    
-    - Chrome DevTools ...
+    - [Am I Responsive?](http://ami.responsivedesign.is/#) was used to check responsiveness of the pages across different devices. The tool revealed the following issues:
 
-    amiresponsive: revealed the cover title covers the head of the person in the image at screen size 320px
-    was ok up to 380 - added media quire for < 380 to reposition image slightly and make text smaller
-    also hamburger menu did not fit on same line as logo, so removed margin-right from
-    .navbar-brand, and reduced logo size for tiney screens
+      - the cover title overlapped the head of the person in the home page hero image at screen size 320px. To fix this, a media query was added for screen sizes < 380px to reposition the image slightly, and the cover title text was made smaller.
+      - the hamburger menu did not fit on same line as the logo at screen size 320px. To fix this the we added to the new media query creadted about, such that the right hand margin was removed from the navbar-brand, and the logo size was reduced.
+
+    - [Responsive Design Checker](https://www.responsivedesignchecker.com/) was used to check responsiveness of the pages on different screen sizes.
+    
+    - Chrome DevTools was used to test responsiveness on different screen sizes during the development process.
+    
+
+
+    
 
 
 ### Manual Testing
