@@ -492,7 +492,7 @@ ul.mm-bullets {
 
 /* Custom bullet points with wheel icon */
 ul.mm-bullets > li {
-    background-image: url('../images/wheel_bullet.webp');
+    background-image: url('../images/wheel_bullet.png');
     background-repeat: no-repeat;
     background-position: 0 0.5rem; /* Adjust vertical alignment */
     padding-left: 2rem; 			/* Space for the wheel image */

@@ -384,11 +384,6 @@ Lighthouse in Chrome DevTools was used to confirm that the website is accessible
     
     - Chrome DevTools was used to test responsiveness on different screen sizes during the development process.
     
-
-
-    
-
-
 ### Manual Testing
 
 * Browser Compatibility
