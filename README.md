@@ -388,25 +388,19 @@ Lighthouse in Chrome DevTools was used to confirm that the website is accessible
 
 * Browser Compatibility
 
-    - The website has been tested on the following browsers:
+The website has been tested on the following browsers, with no rendering, responsiveness or functionality issues:
 
-        - **Google Chrome**
-        
-        - **Safari**
-        
-        - **Mozilla Firefox**
-        
-        - **Microsoft Edge**
+ - Google Chrome          
+ - Mozilla Firefox
+ - Microsoft Edge
         
 * Device compatibility
 
-    - The website has been tested on multiple devices, including:
+The website has been tested on the following devices, with no rendering, responsiveness or functionality issues:
 
-        - **Lenovo Legion 7**
-
-        - **iPad Pro XX"**
-
-        - **Samsung Galaxy Ultra 22**
+        - Lenovo Legion Slim 7 laptop
+        - iPad Pro XX"** tablet
+        - Samsung Galaxy Ultra 22 mobile phone
 
 * Common Elements Testing
 
