@@ -347,7 +347,17 @@ When the "Submit contact form" button is clicked, the inputs are validated and a
 
 ### Accessibility
 
-* Lighthouse in Chrome DevTools. Reports:
+* Lighthouse in Chrome DevTools was used to confirm that the website is accessible. This means that there is 
+    - sufficient contrast between the text and background
+    - meaningful alt text for images
+    - semantic HTML (e.g., <header>, <nav>, <section>)
+    - consistent navigation and interface design across pages.
+    - valid and well-structured HTML to ensure compatibility with screen readers
+    - used appropriate form labels
+    - strategically incorporated ARIA attributes
+
+
+Reports:
 
 Converted images to webp format and reduced size using my own Python scripts
 

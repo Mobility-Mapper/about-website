@@ -21,7 +21,7 @@
 <body>
 
     <!-- Navbar, expands on tablets-->
-    <nav class="navbar navbar-expand-md" id="navbar">
+    <nav class="navbar navbar-expand-md" id="navbar" role="navigation" aria-label="main navigation">
         <div class="container nav-container">
 
             <!-- Logo - left aligned-->
@@ -59,7 +59,7 @@
         <h1 class="invisible">Mobility Mapper - Partnerships and Funding</h1>
 
         <!-- Hero image with cover title -->
-        <section class="hero" id="hero-partnerships">
+        <section class="hero" id="hero-partnerships" role="banner">
 
             <!-- Cover title only for sm screens -->
             <div class="cover-title-sm background-orange-4-a p-2 mt-2">
@@ -623,7 +623,7 @@
             </div>
         </section>
 
-        <button id="backToTop" title="Back to Top"><i class="bi bi-arrow-up-circle"></i></button>
+        <button id="backToTop" title="Back to Top" aria-label="Scroll back to the top of the page"><i class="bi bi-arrow-up-circle"></i></button>
 
     </main>
 
@@ -700,7 +700,7 @@
                         <div class="col-12 col-lg-6 mt-0">
                             <label for="message-biz" class="form-label">Your message</label>
                             <textarea class="form-control auto-expand-textarea-md" rows="5" id="message-biz"
-                                name="message-biz" maxlength="750" required></textarea>
+                                name="message-biz" maxlength="750" aria-describedby="charCountInfo" required></textarea>
                             <!-- Character count -->
                             <div id="passwordHelpBlock" class="form-text">
                                 <span id="charCountBiz">0</span>/750 characters
