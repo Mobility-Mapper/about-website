@@ -349,6 +349,10 @@ When the "Submit contact form" button is clicked, the inputs are validated and a
 
 * Lighthouse in Chrome DevTools. Reports:
 
+Converted images to webp format and reduced size using my own Python scripts
+
+IMages:
+COnverting images from jpg and png to webp reduced the Largest Contentful Paint from 27ms to 11ms
     - **Home Page**
 
     - **Partnerships Page**
@@ -439,6 +443,7 @@ Partnerships | ![Mobile partnerships page image](assets/readme-files/partnership
 * [Pexels](https://www.pexels.com/)
 [Back to top ⇧](#mobility-mapper)
 ### Code
+
 
 The introduction text is positioned below the hero image on small screens, and moves up onto it for medium screens and above.
 

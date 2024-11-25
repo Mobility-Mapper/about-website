@@ -339,13 +339,13 @@ header.container {
 
 /* Home page hero image */
 #hero-home {
-	background-image: url("../images/home_hero_image.jpg");
+	background-image: url("../images/home_hero_image.webp");
 	background-position: 95% 100%;
 }
 
 /* Partnerships page hero image */
 #hero-partnerships {
-	background-image: url("../images/partnerships.jpg");
+	background-image: url("../images/partnerships.webp");
 	background-position: 100% 100%;
 }
 
@@ -464,7 +464,7 @@ header.container {
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative; /* For adding text relative to the image */
-	background-image: url("../images/wheelchair_indoors.jpg");
+	background-image: url("../images/wheelchair_indoors.webp");
 	background-position: 39% 100%;
 }
 
@@ -491,7 +491,7 @@ ul.mm-bullets {
 
 /* Custom bullet points with wheel icon */
 ul.mm-bullets > li {
-    background-image: url('../images/wheel_bullet.png');
+    background-image: url('../images/wheel_bullet.webp');
     background-repeat: no-repeat;
     background-position: 0 0.5rem; /* Adjust vertical alignment */
     padding-left: 2rem; 			/* Space for the wheel image */
@@ -718,7 +718,7 @@ ul.mm-bullets li::marker {
 	/* Home page cover title must be smaller to not cover the persons head */
 	/* Reposition home page hero image */
 	#hero-home {
-		background-image: url("../images/home_hero_image.jpg");
+		background-image: url("../images/home_hero_image.webp");
 		background-position: 93% 100%;
 	}
 
