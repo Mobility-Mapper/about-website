@@ -342,30 +342,26 @@ When the "Submit contact form" button is clicked, the inputs are validated and a
 
 * The [W3C Markup Validator](https://validator.w3.org/) website was used to validate the HTML files to ensure there were no syntax errors. The validator found the following errors, which were corrected:
     - An unclosed `div` tag 
-    - A rogue " was found next to a closing one
-
+    - A rogue \" was found next to a closing one
 
 ### Accessibility
 
-* Lighthouse in Chrome DevTools was used to confirm that the website is accessible. This means that there is 
+Lighthouse in Chrome DevTools was used to confirm that the website is accessible. We have ensured that there is:
+
     - sufficient contrast between the text and background
     - meaningful alt text for images
-    - semantic HTML (e.g., <header>, <nav>, <section>)
-    - consistent navigation and interface design across pages.
+    - semantic HTML (e.g., `header`, `nav`, `section`)
+    - consistent navigation and interface design across pages
     - valid and well-structured HTML to ensure compatibility with screen readers
-    - used appropriate form labels
+    - appropriate form labels
     - strategically incorporated ARIA attributes
 
+**Lighthouse Reports**
 
-Reports:
+| Home page | Partnerships page |
+| --- | --- |
+| ![Home page Lighthouse report](assets/readme-files/lighthouse_home.png) | ![Partnerships page Lighthouse report](assets/readme-files/lighthouse_partnerships.png) |
 
-Converted images to webp format and reduced size using my own Python scripts
-
-IMages:
-COnverting images from jpg and png to webp reduced the Largest Contentful Paint from 27ms to 11ms
-    - **Home Page**
-
-    - **Partnerships Page**
 
 [Back to top ⇧](#mobility-mapper)
 
