@@ -117,6 +117,7 @@ h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .btn {
 	cursor: pointer;
     transition: background-color 0.3s ease; /* Smooth transition on hover */
+	font-family: var(--primary-font), sans-serif;
 }
 
 /* Custom font classes */
@@ -220,11 +221,13 @@ background-color: var(--color-orange-4-a);
 .button-orange {
 	background-color: var(--color-orange-4-a);
 	color: white;
+	font-size: 1.25rem;
 }
 
 .button-orange-light {
 	background-color: var(--color-orange-2);
 	color: black;
+	font-size: 1.2rem; /* To fit text on one line */
 }
 
 .button-orange:hover {
@@ -781,6 +784,27 @@ ul.mm-bullets li::marker {
 		margin: 0 0 0.15rem 0 !important; /* margin top right bottom left */
 	}
 
+	/* Fit button text on one line on tiny screens */
+	.button-orange, .button-orange-light {
+		font-size: calc(1rem + .6vw);
+	}
+
+	/* Reuce width of button */
+	#cover-call-to-action .btn {
+		width: auto; 
+	}
+
+	/* Remove border and box-shadow */
+	#key-features-text {
+		border: none;
+		box-shadow: none;
+		padding: 0 !important;
+	}
+
+	#key-features {
+		margin-bottom: 0 !important;
+	}
+
 	/* Parterships Page Key Differentiators */
 
 	/* Reduce padding on tiny screens */
@@ -789,15 +813,18 @@ ul.mm-bullets li::marker {
 		padding-right: 0.5;
 	}
 
+	/* Move icon up (more visually appealing) */
 	.who-else-box {
 		align-items: flex-start;
 	}
 	
+	/* Reduce icon container size */
 	.circle-icon {
 		width: 80px;
 		height: 80px;
 	}
 
+	/* Reduce distance between icon and text */
 	.who-else-text {
 		padding-left: 0.3rem;
 	}
