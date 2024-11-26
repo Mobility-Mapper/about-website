@@ -672,9 +672,8 @@ ul.mm-bullets li::marker {
 }
 
 .who-else-icon {
-	height: calc(3rem + .7vw);
-    width: auto;
-    object-fit: cover;
+	font-size: calc(1.8rem + .7vw);
+	color: var(--color-orange-4);
 }
 
  /* Back to Top Button */
