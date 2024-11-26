@@ -225,7 +225,6 @@ background-color: var(--color-orange-4-a);
 .button-orange-light {
 	background-color: var(--color-orange-2);
 	color: black;
-	border: 1px solid var(--color-orange-4);
 }
 
 .button-orange:hover {

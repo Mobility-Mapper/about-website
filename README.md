@@ -262,7 +262,7 @@ When the "Submit contact form" button is clicked, the inputs are validated and a
 
     Bootstrap’s compiled CSS and JS was included via CDN by placing the jsdeliver `link` tag in the `head` for the CSS, and the `script` tag for the JavaScript bundle before the closing `body` tag.
 
-* [Bootstrap Icons](https://icons.getbootstrap.com/) were imported into the style.css file. The Facebook, Instagram and X social media icons were used, as well as the right arrow in a circle to indicate a link, and the up arrow to provide a floating "back to top" button on both pages.
+* [Bootstrap Icons](https://icons.getbootstrap.com/) and [Font Awesome Icons](https://fontawesome.com/) were imported into the style.css file and used in both pages to create a better visual experience for UX purposes. 
 
 * [GIMP](https://www.gimp.org/) (GNU Image Manipulation Program) was used to:
     - reduce the file size of the images for the website;
@@ -510,31 +510,8 @@ Partnerships | ![Mobile partnerships page image](assets/readme-files/partnership
     - Travellers with wheeled suitcases: [Pexels](https://www.pexels.com/)
     - Electric kick scooter: [Pexels](https://www.pexels.com/)
 
-- Icons
-    - Bootstrap Icons (https://icons.getbootstrap.com)
-        - social media icons
-        - arrow icons
-        - envelope icon
-    - Font Awesome
-    
-    - Mobility Mapper wheel icon: reated by the developer in Inkscape
-    - Key differentiators icons
-    - Further Benefits icons
-
-
-
-[Back to top ⇧](#mobility-mapper)
-
 ### Code
 
+* [Bootstrap Docs](https://getbootstrap.com/docs/5.3/getting-started/introduction/) and [W3Schools](https://www.w3schools.com/) were consulted on a regular basis for inspiration.
 
-The introduction text is positioned below the hero image on small screens, and moves up onto it for medium screens and above.
-
-The subscribe form posts the name and email to a Google spreadsheet. This is done by the subscribe.js script.
-
-To achieve the layout, we uses a combination of HTML and Bootstrap for responsiveness, along with some custom CSS for styling. The solution includes:
-
-Flexbox for aligning the content.
-Bootstrap grid for responsiveness.
-Media queries to adjust the layout for different screen sizes.
 [Back to top ⇧](#mobility-mapper)
