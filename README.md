@@ -1,6 +1,6 @@
 # Mobility Mapper
 
-![Mobility Mapper mockup images](assets/readme-files/mockup.png)
+![Mobility Mapper mockup images](assets/readme-files/Am-I-Responsive.png)
 
 Mobility Mapper is a route finder and navigation app for users of wheelchairs, mobility scooters, tricycles and other wheeled mobility devices (referred to as wheelers). 
 
@@ -79,7 +79,7 @@ Partnerships | ![Partnerships mobile wireframe image](assets/readme-files/wirefr
 
 The navbar contains the Mobility Mapper logo on the left, which functions as a link to the home page.
 
-Responsive navigation links are on the right of the navbar. On tablets and desktop screens the navigation links are visible:
+Responsive navigation links are on the right of the navbar. On tablets and desktop screens the navigation links are visible, with the current page highlighted in orange with an orange font colour:
 
 <img src="assets/readme-files/navbar-expanded.png" height="40">
 
