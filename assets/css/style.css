@@ -811,7 +811,13 @@ ul.mm-bullets li::marker {
 		margin-bottom: 0 !important;
 	}
 
-	/* Parterships Page Key Differentiators */
+	/* Parterships Page */
+
+	.green-box {
+		font-size: 1.2rem;
+	}
+
+	/* Key Differentiators */
 
 	/* Reduce padding on tiny screens */
 	#further-benefits .container {
