@@ -1,6 +1,6 @@
 # Mobility Mapper
 
-![Mobility Mapper mockup images](assets/readme-files/Am-I-Responsive.png)
+![Mobility Mapper mockup images](assets/readme-files/am-i-responsive.png)
 
 Mobility Mapper is a route finder and navigation app for users of wheelchairs, mobility scooters, tricycles and other wheeled mobility devices (referred to as wheelers). 
 
