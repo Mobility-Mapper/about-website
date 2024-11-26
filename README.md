@@ -87,8 +87,8 @@ On mobile screens the navigation links can be revealed by clicking a toggle butt
 
 |  |  |
 | --- | --- |
-| <img src="assets/readme-files/navbar.png" width="270"> | toggle button unclicked |
-| <img src="assets/readme-files/navbar-active.png" width="270"> | toggle button clicked |
+|<img src="assets/readme-files/navbar.png" width="270"> | toggle button unclicked |
+|<img src="assets/readme-files/navbar-active.png" width="270"> | toggle button clicked |
 
 The navigation bar is the same on both pages. It contains links to both pages to facilitate navigation across the site. It also contains a link to the contact form on the same page, so the contact link on the home page takes you to the personal contact form at the bottom of the home page, and the contact link on the partnerships page takes you to the business contact form at the bottom of the partnerships page. 
 
@@ -199,7 +199,8 @@ Six types of barriers are presented as cards with an image and card title. On mo
 
 To prevent the monotony of multiple contiguous, plain blocks of text, two paragraphs are presented on a large image, which stretches with the screen size. The image shows a lady in a wheelchair looking out of the window, while stuck at home, due to a lack of knowledge of accessible routes.
 
-![Partnerships page problem image](assets/readme-files/partnerships-problem.png)
+![Partnerships page problem image](assets/readme-files/partnerships-problem-1.png)
+![Partnerships page problem image](assets/readme-files/partnerships-problem-2.png)
 
 #### 4. Our Solution
 

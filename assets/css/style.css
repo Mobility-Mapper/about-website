@@ -448,9 +448,15 @@ header.container {
 
 #key-features-text {
 	font-weight: 500;
-	border: 0.5px solid var(--color-orange-1);
+	border: 0.5px solid var(--color-brown-3);
 	border-radius: 10px;
-	box-shadow: 5px 5px 5px var(--color-orange-1-a); /* left top  */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), inset 0 0 10px rgba(0, 0, 0, 0.05); /* Outer and inner shadow for depth */
+	/* box-shadow: 5px 5px 5px var(--color-orange-1-a); left top  */
+}
+
+/* Partnerships page: problem cars titles */
+#problem .card-title {
+	margin-bottom: 0;
 }
 
 /* Home page seeking funding section */
@@ -1114,6 +1120,14 @@ ul.mm-bullets li::marker {
 	#home-title-md {
 		/* Return to h2 size */
 		font-size: 2rem;
+	}
+
+	/* Make height of key features titles the same for all cards */
+	#key-features .card-title {
+		/* font-size: 1.6rem; */
+		min-height: 68px;
+		display: flex; 
+		align-items: center;
 	}
 
 	#problem .card-title {
