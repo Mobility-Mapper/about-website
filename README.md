@@ -472,9 +472,8 @@ Partnerships | ![Mobile partnerships page image](assets/readme-files/partnership
 
 ## Deployment
 
-* This website was developed using [Visual Studio Code](https://code.visualstudio.com/), which was then committed and pushed to GitHub using the terminal.
+* This website was developed using [Visual Studio Code](https://code.visualstudio.com/), which was then committed and pushed to GitHub using the terminal. It was deployed from the Github repository to GitHub Pages.
 
-### GitHub Pages
 [Back to top ⇧](#mobility-mapper)
 
 ## Credits 
@@ -485,8 +484,46 @@ Partnerships | ![Mobile partnerships page image](assets/readme-files/partnership
 
 ### Media
 
-* [Pexels](https://www.pexels.com/)
+- Both pages
+    - Mobility Mapper logo: Created by the developer in Inkscape
+
+- Home page images
+    - Home page cover: "Woman in wheelchair in the city using smartphone" by [Freepik]{www.freepik.com)
+    - Avoid Barriers: [Jewish Special Needs Blog](https://jewishspecialneeds.blogspot.com/)
+    - Tailor routes to your needs: GH Photography
+    - Locate dropped kerbs and ramps: Sonya Ridden
+    - Locate accessible points of interest: Torbay Council
+    - Report barriers and dropped kerbs: Created by Sonya Ridden in Inkscape with a screenshot from [Open Street Maps](https://www.openstreetmap.org/)
+    - Connect with other wheelers: by Matt Walker
+
+- Partnerships page images
+    - Partnerships page cover image: "Hands holding puzzle business problem solving concept" by [Freepik]{www.freepik.com)
+    - Steps: [Pixabay](https://pixabay.com/)
+    - Steep Hills: [Pexels](https://www.pexels.com/)
+    - Narrow paths: Sonya Ridden
+    - Rough Surfaces: [Pixabay](https://pixabay.com/)
+    - No Dropped Kerbs: [Pexels](https://www.pexels.com/)
+    - Motorised Vehicle Barriers: University of Westminster
+    - Stuck-at-home image: [Pexels](https://www.pexels.com/)
+    - Parents and carers with prams and pushchairs: [Pexels](https://www.pexels.com/)
+    - Cargo bike riders: [Pexels](https://www.pexels.com/)
+    - Travellers with wheeled suitcases: [Pexels](https://www.pexels.com/)
+    - Electric kick scooter: [Pexels](https://www.pexels.com/)
+
+- Icons
+    - Bootstrap Icons (https://icons.getbootstrap.com)
+        - social media icons
+        - arrow icons
+        - envelope icon
+        
+    - Mobility Mapper wheel icon: reated by the developer in Inkscape
+    - Key differentiators icons
+    - Further Benefits icons
+
+
+
 [Back to top ⇧](#mobility-mapper)
+
 ### Code
 
 
