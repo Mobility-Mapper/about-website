@@ -466,7 +466,6 @@ The website has been tested on the following devices, with no rendering, respons
  | Page |  Mobile | Tablet | Desktop | 
  | --- | --- | --- | --- |
  | Home | ![Mobile home page image](assets/readme-files/home-mobile.png)  | ![Tablet home page image](assets/readme-files/home-tablet.png) | ![Desktop home page image](assets/readme-files/home-desktop.png) |
-
 | Partnerships | ![Mobile partnerships page image](assets/readme-files/partnerships-mobile.png)  | ![Tablet home partnerships image](assets/readme-files/partnerships-tablet.png) | ![Desktop partnerships page image](assets/readme-files/partnerships-desktop.png) |
 
 ## Deployment
