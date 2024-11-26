@@ -515,7 +515,8 @@ Partnerships | ![Mobile partnerships page image](assets/readme-files/partnership
         - social media icons
         - arrow icons
         - envelope icon
-        
+    - Font Awesome
+    
     - Mobility Mapper wheel icon: reated by the developer in Inkscape
     - Key differentiators icons
     - Further Benefits icons

@@ -133,13 +133,17 @@ h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
 /* Parnerships differentiators list icons */
 /* This needs to be before the background colours in this file to work */
-.icon-svg {
+.icon-container {
 	height: calc(3rem + .7vw);
-    width: auto;
+    width: calc(3rem + .7vw);
     margin-right: 15px; /* Space between the icon and text */
-    object-fit: cover;
 	border: 2px solid;
     border-radius: 5px;
+	text-align: center; /* Optional: Align content horizontally */
+    vertical-align: middle; /* Optional: Align content vertically */
+    display: flex; /* To manage child alignment */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
 
 /* background colours */
@@ -593,6 +597,42 @@ ul.mm-bullets li::marker {
 
 .row-item p {
 	margin: 0; /* Remove default margin */
+}
+
+/* Icons */
+
+#wheel-icon {
+	height: calc(2.2rem + .7vw);
+    width: calc(2.2rem + .7vw);
+    object-fit: cover;
+}
+
+/* Icon size */
+#differentiators-list i {
+	font-size: calc(2rem + .7vw);
+}
+
+#differentiators-list i.fa-desktop, 
+#differentiators-list i.fa-map-location-dot,
+#differentiators-list i.fa-database {
+	font-size: calc(1.8rem + .7vw);
+}
+
+/* Icon colours */
+.fa-route, .fa-mobile-screen, .fa-share-nodes {
+	color: var(--color-brown-4);
+}
+
+.fa-mountain, .fa-map-location-dot {
+	color: var(--color-coffee-4);
+}
+
+.fa-rotate-right, .fa-database {
+	color: var(--color-green-4);
+}
+
+.fa-desktop, .fa-bus {
+	color: var(--color-orange-4);
 }
 
 /* MM will also benefit section */

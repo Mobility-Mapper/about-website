@@ -11,6 +11,8 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-touch-icon.webp">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicons/favicon-32x32.webp">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicons/favicon-16x16.webp">
+    <!-- Font awesome kit for icons -->
+    <script src="https://kit.fontawesome.com/9c1d6e3a1b.js" crossorigin="anonymous"></script>
     <!-- Bootstrap CSS Link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -263,7 +265,8 @@
                 <div class="px-3 pt-2 mt-2 background-green-4-a" id="stuck-text-1">
                     <p class="font-white">A lack of prior knowledge of accessible routes and facilities often
                         prevents disabled people from leaving their home, for fear of coming across barriers that
-                        prevent them getting to their destination, or worse, getting lost or stranded due to an empty device
+                        prevent them getting to their destination, or worse, getting lost or stranded due to an empty
+                        device
                         battery. </p>
                 </div>
 
@@ -409,70 +412,102 @@
             </div>
 
             <!-- Differentiators list -->
-            <div class="container mt-0">
+            <div class="container mt-0" id="differentiators-list">
                 <div class="equal-height-rows-container">
 
                     <div class="row-item background-orange-2">
-                        <img src="./assets/images/wheel_no_background_300_x_300.png" alt="Mobility Mapper wheel icon"
-                            class="icon-svg border-orange-3">
+                        <div>
+                            <div class="icon-container border-orange-3">
+                                <img src="./assets/images/wheel_no_background_300_x_300.png"
+                                    alt="Mobility Mapper wheel icon" id="wheel-icon">
+                            </div>
+                        </div>
                         <p>Dedicated to wheelers</p>
                     </div>
 
                     <div class="row-item background-brown-2">
-                        <img src="./assets/icons/map.svg"
-                            alt="Route icon - two markers joing by an s-shaped dashed line"
-                            class="icon-svg border-brown-3">
+                        <div>
+                            <div class="icon-container border-brown-3">
+                                <i class="fa-solid fa-route"></i>
+                            </div>
+                        </div>
+                        <!-- alt="Route icon - two markers joing by an s-shaped dashed line"-->
                         <p>Barrier-free routes based on the specific needs of the user and limitations of the mobility
                             device</p>
                     </div>
 
                     <div class="row-item background-coffee-2">
-                        <img src="./assets/icons/mountain.svg" alt="Mountain icon" class="icon-svg border-coffee-3">
+                        <div>
+                            <div class="icon-container border-coffee-3">
+                                <i class="fa-solid fa-mountain"></i>
+                            </div>
+                        </div>
                         <p> High resolution elevation data - essential for accurate incline calculation</p>
                     </div>
 
                     <div class="row-item background-green-2">
-                        <img src="./assets/icons/cycle.svg" alt="reload icon - one arrow forming a circle"
-                            class="icon-svg border-green-3">
+                        <div>
+                            <div class="icon-container border-green-3">
+                                <i class="fa-solid fa-rotate-right"></i>
+                                <!-- "reload icon - one arrow forming a circle" -->
+                            </div>
+                        </div>
                         <p>Locations of barriers, ramps and dropped kerbs continuously updated and reported by users</p>
                     </div>
 
                     <div class="row-item background-orange-2">
-                        <img src="./assets/icons/ai.svg"
-                            alt="AI icon - computer screen with two squares connected by a curved line, and an arrow pointing at a circle that is connected to one of the squares by another curved line."
-                            class="icon-svg border-orange-3">
+                        <div>
+                            <div class="icon-container border-orange-3">
+                                <i class="fa-solid fa-desktop"></i>
+                            </div>
+                        </div>
                         <p>Locations of barriers, ramps and dropped kerbs identified using AI with street-level images
-                            and
-                            video</p>
+                            and video</p>
                     </div>
 
                     <div class="row-item background-brown-2">
-                        <img src="./assets/icons/phone.svg" alt="smart phone icon" class="icon-svg border-brown-3">
+                        <div>
+                            <div class="icon-container border-brown-3">
+                                <i class="fa-solid fa-mobile-screen"></i>
+                            </div>
+                        </div>
                         <p>Surface classification continuously improved and updated using smartphone vertical
-                            acceleration
-                            data</p>
+                            acceleration data</p>
                     </div>
 
                     <div class="row-item background-coffee-2">
-                        <img src="./assets/icons/map.svg" alt="map icon - unfolded map with a marker off-centre"
-                            class="icon-svg border-coffee-3">
+                        <div>
+                            <div class="icon-container border-coffee-3">
+                                <i class="fa-solid fa-map-location-dot"></i>
+                            </div>
+                        </div>
                         <p>OpenStreetMap data enhanced with Ordnance Survey Data</p>
                     </div>
 
                     <div class="row-item background-green-2">
-                        <img src="./assets/icons/database.svg" alt="database icon" class="icon-svg border-green-3">
+                        <div>
+                            <div class="icon-container border-green-3">
+                                <i class="fa-solid fa-database"></i>
+                            </div>
+                        </div>
                         <p>Incorporates multiple accessibility databases</p>
                     </div>
 
                     <div class="row-item background-orange-2">
-                        <img src="./assets/icons/bus.svg" alt="bus icon" class="icon-svg border-orange-3">
+                        <div>
+                            <div class="icon-container border-orange-3">
+                                <i class="fa-solid fa-bus"></i>
+                            </div>
+                        </div>
                         <p>Multimodal routing with accessible public transport</p>
                     </div>
 
                     <div class="row-item background-brown-2">
-                        <img src="./assets/icons/social-network.svg"
-                            alt="social network icon - six people icons connected by lines"
-                            class="icon-svg border-brown-3">
+                        <div>
+                            <div class="icon-container border-brown-3">
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </div>
+                        </div>
                         <p>Integrated social network</p>
                     </div>
 
@@ -623,7 +658,8 @@
             </div>
         </section>
 
-        <button id="backToTop" title="Back to Top" aria-label="Scroll back to the top of the page"><i class="bi bi-arrow-up-circle"></i></button>
+        <button id="backToTop" title="Back to Top" aria-label="Scroll back to the top of the page"><i
+                class="bi bi-arrow-up-circle"></i></button>
 
     </main>
 
@@ -639,7 +675,8 @@
                     <h3 class="display-6 text-center">Get in touch</h3>
                     <div id="biz-contact-message">
                         <p class="text-start py-3">If you would like to talk to us about a partnership or funding,
-                            please contact us by filling in the form below, or email hello@mobilitymapper.co.uk. We look forward to hearing from you.
+                            please contact us by filling in the form below, or email hello@mobilitymapper.co.uk. We look
+                            forward to hearing from you.
                         </p>
                     </div>
                 </div>
@@ -652,19 +689,22 @@
                             <!-- Organisation -->
                             <div>
                                 <label for="org" class="form-label">Organisation</label>
-                                <input type="text" class="form-control" id="org" name="org" autocomplete="organization" required>
+                                <input type="text" class="form-control" id="org" name="org" autocomplete="organization"
+                                    required>
                             </div>
 
                             <!-- Contact Name -->
                             <div>
                                 <label for="contact-name" class="form-label">Contact name</label>
-                                <input type="text" class="form-control" id="contact-name" name="contact-name" autocomplete="name" required>
+                                <input type="text" class="form-control" id="contact-name" name="contact-name"
+                                    autocomplete="name" required>
                             </div>
 
                             <!-- Email -->
                             <div>
                                 <label for="email-biz" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="email-biz" name="email-address" autocomplete="email" required>
+                                <input type="email" class="form-control" id="email-biz" name="email-address"
+                                    autocomplete="email" required>
                             </div>
 
                             <!-- We would like to discuss -->
@@ -726,10 +766,12 @@
                     rel="noopener noreferrer" aria-label="Go to the Mobility Mapper Facebook page">
                     <i class="bi bi-facebook mx-2"></i>
                 </a>
-                <a href="https://www.instagram.com/mobilitymapper/" target="_blank" rel="noopener noreferrer" aria-label="Go to the Mobility Mapper Instagram page">
+                <a href="https://www.instagram.com/mobilitymapper/" target="_blank" rel="noopener noreferrer"
+                    aria-label="Go to the Mobility Mapper Instagram page">
                     <i class="bi bi-instagram mx-2"></i>
                 </a>
-                <a href="https://www.x.com/MobilityMapper" target="_blank" rel="noopener noreferrer" aria-label="Go to the Mobility Mapper X page">
+                <a href="https://www.x.com/MobilityMapper" target="_blank" rel="noopener noreferrer"
+                    aria-label="Go to the Mobility Mapper X page">
                     <i class=" bi bi-twitter-x mx-2"></i>
                 </a>
             </div>
