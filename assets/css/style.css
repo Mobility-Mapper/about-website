@@ -722,10 +722,10 @@ ul.mm-bullets li::marker {
 	color: var(--color-coffee-4);
 }
 
-#contact-message a:hover {
+#contact-message a:hover,
+.footer-nav a:hover {
 	color: var(--color-orange-4);
 }
-
 
 .form-label {
 	margin-top: 1rem;
