@@ -395,7 +395,7 @@ The website has been tested on the following browsers, with no rendering, respon
 The website has been tested on the following devices, with no rendering, responsiveness or functionality issues:
 
 - Lenovo Legion Slim 7 laptop
-- iPad Pro XX"** tablet
+- iPad Pro 11" tablet
 - Samsung Galaxy Ultra 22 mobile phone
 
 #### Common Elements Testing
@@ -417,7 +417,8 @@ The website has been tested on the following devices, with no rendering, respons
 
 - Footer
     - Clicking a social media link opens the corresponding website in a new tab.
-    - Clicking a navigation link takes you to the corresponding location in the website.
+    - Hovering over a navigation links triggers the hover effect, changing the font colour to orange to highlight it
+    - Clicking a navigation link takes you to the corresponding location on the website.
 
 - Back to top arrow
     - Hovering over the orange back to top arrow triggers the Back to top tooltip.
@@ -450,7 +451,7 @@ The website has been tested on the following devices, with no rendering, respons
 ##### Partnerships Page
 - Header
     - Hovering over the "Contact Us" button triggers the hover effect, changing the colour to a darker coffee colour
-    - Clicking the "Contact Us" takes you to the business contact form at the bottom of the page
+    - Clicking the "Contact Us" button takes you to the business contact form at the bottom of the page
 - Contents
     - Hovering over a list item triggers the hover effect, adding an underline to the text
     - Clicking a list item link takes you to the corresponding section of the page
