@@ -10,14 +10,7 @@ In order to build a mailing list and social media following, the home page encou
 
 A page dedicated to partnerships and funding presents a business pitch, and invites those whose goals align with ours to contact us via a form or email.
 
-
 Visit the deployed website [here](https://sonyajane.github.io/mobility-mapper/).
-
-## Table of Contents
-
-TODO
-
-***
 
 ## User Experience (UX)
 
@@ -50,14 +43,13 @@ The muted yellow is used for the call-to-action buttons that sit on the cover im
 
 Coffee brown is the colour theme of the contact forms, with a submit button of the same colour, and a lighter shade for the background, which nicely complements the light shade of orange that colours the footer directly below.
 
-The khaki green adds variety, and is used as a complementary background for text on an image on the partnerships page. It also appears in a lighter shade as a text background in two sections further down the page.
+The khaki green adds visual variety, and is used as a complementary background for text on an image on the partnerships page. It also appears in a lighter shade as a text background in two sections further down the page.
 
 Finally, the yellow-brown provides additional variety for the background colours of a set of list items.
 
 ### Typography
 
-The main font used on the website is Open Sans with Sans Serif as the backup in case the former is not imported successfully. Bitter is used for the headings, as suggested by Figma as a complementary pairing with Open Sans, with Serif as the backup.
-pairs well with  
+The main font used on the website is Open Sans with Sans Serif as the backup in case the former is not imported successfully. Bitter is used for the headings, as suggested by Figma as a complementary pairing with Open Sans, with Serif as the backup. 
 
 ### Wireframes
 
@@ -74,12 +66,13 @@ Partnerships | ![Partnerships mobile wireframe image](assets/readme-files/wirefr
 ### General
 * Responsive design across all device sizes.
 * Similar color scheme and design throughout both pages to effectively structure, categorise and present the information to the visitors.
+* Hovering over a link or button changes the cursor to a pointer to let the user know it is clickable.
 
 ### Navbar
 
 The navbar contains the Mobility Mapper logo on the left, which functions as a link to the home page.
 
-Responsive navigation links are on the right of the navbar. On tablets and desktop screens the navigation links are visible, with the current page highlighted in orange with an orange font colour:
+Responsive navigation links are on the right of the navbar. On tablets and desktop screens the navigation links are visible, with the current page indicated by bold font. A hover effect that changes the link text colour to orange, to provide feedback to the user for a better user experience.
 
 <img src="assets/readme-files/navbar-expanded.png" height="40">
 
@@ -90,13 +83,11 @@ On mobile screens the navigation links can be revealed by clicking a toggle butt
 |<img src="assets/readme-files/navbar.png" width="270"> | toggle button unclicked |
 |<img src="assets/readme-files/navbar-active.png" width="270"> | toggle button clicked |
 
-The navigation bar is the same on both pages. It contains links to both pages to facilitate navigation across the site. It also contains a link to the contact form on the same page, so the contact link on the home page takes you to the personal contact form at the bottom of the home page, and the contact link on the partnerships page takes you to the business contact form at the bottom of the partnerships page. 
-
-The navigation links have a hover effect that changes their colour to orange, to provide feedback to the user for a better user experience. In addition, the current page is indicated by bold font.
+The navigation bar is the same on both pages. It contains links to both pages to facilitate navigation across the site. It also contains a link to the contact form on the same page, i.e. the contact link on the home page takes you to the personal contact form at the bottom of the home page, and the contact link on the partnerships page takes you to the business contact form at the bottom of the partnerships page. 
 
 ### Footer
 
-The footers contain links to the social media channels, and convenient, relevant links for easy navigation.
+The footers on both pages contain links to the social media channels, and convenient, relevant links for easy navigation.
 
 The home page footer contains links to the top of the page, the email subsciption modal, the home contact form, and the partnerships page.
 
