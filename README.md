@@ -63,6 +63,8 @@ Partnerships | ![Partnerships mobile wireframe image](assets/readme-files/wirefr
 
 ## Features
 
+Please note that this is a two-page website, where the home page has three distinct areas, and the partnerships page has eight distinct areas.
+
 ### General
 * Responsive design across all device sizes.
 * Similar color scheme and design throughout both pages to effectively structure, categorise and present the information to the visitors.
@@ -382,79 +384,72 @@ Lighthouse in Chrome DevTools was used to confirm that the website is accessible
     
 ### Manual Testing
 
-#### Browser Compatibility
+* Browser Compatibility
 
-The website has been tested on the following browsers, with no rendering, responsiveness or functionality issues:
+Browser | Outcome | Pass/Fail  
+--- | --- | ---
+Google Chrome | No appearance, responsiveness nor functionality issues.| Pass
+Mozilla Firefox | No appearance, responsiveness nor functionality issues. | Pass
+Microsoft Edge | No appearance, responsiveness nor functionality issues. | Pass
 
-- Google Chrome          
-- Mozilla Firefox
-- Microsoft Edge
-        
-#### Device compatibility
+* Device compatibility
 
-The website has been tested on the following devices, with no rendering, responsiveness or functionality issues:
+Device | Outcome | Pass/Fail
+--- | --- | ---
+Lenovo Legion Slim 7 | No appearance, responsiveness nor functionality issues. | Pass
+iPad Pro 11" | No appearance, responsiveness nor functionality issues. | Pass
+Samsung Galaxy Ultra 22 | No appearance, responsiveness nor functionality issues. | Pass
 
-- Lenovo Legion Slim 7 laptop
-- iPad Pro 11" tablet
-- Samsung Galaxy Ultra 22 mobile phone
+* Common Elements Testing
 
-#### Common Elements Testing
+    - General
 
-##### Both Pages
-- Navigation Bar
-    - Clicking the logo takes you back to the home page.
-    - On mobile screens, tapping the hamburger menu icon shows the navigation links
-    - Hovering over the navigation links triggers the hover effect, changing the font colour to orange to highlight it
-    - Clicking a navigation link takes you to the corresponding page or contact form
+    Feature | Outcome | Pass/Fail
+    --- | --- | ---
+    Navigation Bar | Hover effects and links are working as expected. | Pass
+    Social media links | Opens the corresponding website in a new tab. | | Pass
+    Back to top button | Scrolls up to the top of the page | Pass
+    Footer | Hover effects and links are working as expected. | Pass
 
-- Contact form
-    - Hovering over an input field triggers the appearance of a "Please fill in this field" tooltip
-    - Clicking in a text input field shows a list of autocomplete options
-    - Clicking the submit button without filling in a text or text-area input field triggers the appearance of a "Please fill in this field" tooltip below the empty field
-    - Clicking the submit button without including an @ symbol in the email address field triggers the appearance of a tooltip reminding the user to include one
-    - Hovering over the submit buttons triggers the hover effect, changing the colour to light coffee
-    - Clicking the submit button when all fields have been validated posts the data to a Google Sheets spreadsheet
+    - Contact Forms
 
-- Footer
-    - Clicking a social media link opens the corresponding website in a new tab.
-    - Hovering over a navigation links triggers the hover effect, changing the font colour to orange to highlight it
-    - Clicking a navigation link takes you to the corresponding location on the website.
-
-- Back to top arrow
-    - Hovering over the orange back to top arrow triggers the Back to top tooltip.
-    - Clicking the orange back to top arrow takes you to the top of the page.
+    Feature | Outcome | Pass/Fail
+    --- | --- | ---
+    Input fields | All fields required and in the correct format before submission | Pass
+    Submit button | Hover effect works as expected and form data is submitted to Google Sheets when clicked | Pass
     
-##### Home Page
+    - Home Page Header
 
-- Header
-    - Hovering over the call-to-action buttons triggers the hover effect, changing the colour to light mango and the font colour to black, letting the user know it is a clickable button
-    - Clicking the "Subscribe to email updates" button opens a modal containing a sign up form
-    - Clicking the "Help fund Mobility Mapper" button takes you to the Funding and Partnerships page
-    - Clicking a social media link will open the corresponding website in a new tab.
+    Feature | Outcome | Pass/Fail
+    --- | --- | ---
+    Subscribe button | Hover effects are working as expected, and opens subscribe modal when clicked | Pass
+    Help fund button  | Hover effects are working as expected, and navigates to partnerships page | Pass
 
-- Key Features and Seeking Funding Section
-    - Hovering over the "Funding and Partnerships" buttons triggers the hover effect, changing the  colour to light mango, letting the user know it is a clickable button that will take you to the corresponding page.   
-    - Clicking the "Funding and Partnerships" buttons takes you to the Funding and Partnerships page
+    - Key Features and Seeking Funding Section
 
-- Contact form
-    - Hovering over the brown link "separate form for potential partners and funders" triggers the hover effect, changing the font colour to orange
-    - Clicking the brown link "separate form for potential partners and funders" link takes you to the contact form on the Partnerships and Funding page
+    Feature | Outcome | Pass/Fail
+    --- | --- | ---
+    Funding and partnerships button  | Hover effects are working as expected, and navigates to partnerships page | Pass
+ 
+    - Subscribe modal
+
+    Feature | Outcome | Pass/Fail
+    --- | --- | ---
+    Input fields | All fields required and in the correct format before submission | Pass
+    Submit button | Hover effect works as expected and form is submitted to Google Sheets when clicked | Pass
+    Close button | Hover effect works as expected and closes modal when clicked. | Pass
     
-- Modal
-    - Hovering over an input field triggers the appearance of a "Please fill in this field" tooltip
-    - Clicking in a text input field shows a list of autocomplete options
-    - Clicking the submit button without filling in a text input field triggers the appearance of a "Please fill in this field" tooltip below the empty field
-    - Clicking the submit button without including an @ symbol in the email address field triggers the appearance of a tooltip reminding the user to include one
-    - Hovering over the submit buttons triggers the hover effect, changing the colour to light mango and the font colour to black.
-    - Clicking the submit button when all fields have been validated posts the data to a Google Sheets spreadsheet
+    - Partnerships Page Header
+    
+    Feature | Outcome | Pass/Fail
+    --- | --- | ---
+    Contact us button  | Hover effects are working as expected, and navigates to the business contact form at the bottom of the page | Pass
 
-##### Partnerships Page
-- Header
-    - Hovering over the "Contact Us" button triggers the hover effect, changing the colour to a darker coffee colour
-    - Clicking the "Contact Us" button takes you to the business contact form at the bottom of the page
-- Contents
-    - Hovering over a list item triggers the hover effect, adding an underline to the text
-    - Clicking a list item link takes you to the corresponding section of the page
+    - Contents section
+
+    Feature | Outcome | Pass/Fail
+    --- | --- | ---
+    Links  | Hover effects are working as expected, and navigates to the corresponding section of the page | Pass
 
 
 [Back to top ⇧](#mobility-mapper)
