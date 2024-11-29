@@ -12,6 +12,53 @@ A page dedicated to partnerships and funding presents a business pitch, and invi
 
 Visit the deployed website [here](https://sonyajane.github.io/mobility-mapper/).
 
+## Table of Contents
+
+- [Mobility Mapper](#mobility-mapper)
+  - [User Experience (UX)](#user-experience-(ux))
+    - [Business Goals](#business-goals)
+    - [User Stories](#user-stories)
+    - [Color Scheme](#color-scheme)
+    - [Typography](#typography)
+    - [Wireframes](#wireframes)
+  - [Features](#features)
+    - [General](#general)
+    - [Navbar](#navbar)
+    - [Footer](#footer)
+    - [Home Page](#home-page)
+      - [1. Hero cover image and text](#1.-hero-cover-image-and-text)
+      - [2. Key features section](#2.-key-features-section)
+      - [3. Seeking partnerships section](#3.-seeking-partnerships-section)
+      - [4. Contact section](#4.-contact-section)
+      - [Subscribe Modal](#subscribe-modal)
+    - [Partnerships Page](#partnerships-page)
+      - [1. Hero cover image and text](#1.-hero-cover-image-and-text)
+      - [2. Contents](#2.-contents)
+      - [3. The Problem](#3.-the-problem)
+      - [4. Our Solution](#4.-our-solution)
+      - [5. Market](#5.-market)
+      - [6. Key Differentiators](#6.-key-differentiators)
+      - [7. Further Benefits](#7.-further-benefits)
+      - [8. Business contact section](#8.-business-contact-section)
+  - [Technologies Used](#technologies-used)
+    - [Languages Used](#languages-used)
+    - [Frameworks, Libraries and Programs Used](#frameworks,-libraries-and-programs-used)
+  - [Testing](#testing)
+    - [Testing User Stories](#testing-user-stories)
+    - [Code Validation](#code-validation)
+    - [Accessibility](#accessibility)
+    - [Tools Testing](#tools-testing)
+    - [Manual Testing](#manual-testing)
+  - [Deployment](#deployment)
+    - [Deploying on GitHub Pages](#deploying-on-github-pages)
+    - [Forking the Repository](#forking-the-repository)
+    - [Creating a Clone](#creating-a-clone)
+  - [Finished Product](#finished-product)
+  - [Credits](#credits)
+    - [Content](#content)
+    - [Media](#media)
+    - [Code](#code)
+
 ## User Experience (UX)
 
 ### Business Goals
@@ -469,7 +516,6 @@ To deploy this website to GitHub Pages from its GitHub repository, take followin
 5. Under "branch" select "main"
 6. Click the "save" button
 7. After a few moments, refresh the page and a link to your deployed page will appear
-
 
 ### Forking the Repository
 Forking a GitHub Repository makes a copy of the original repository on your GitHub account, which you can view and/or make changes without affecting the original repository. To fork a repository:
