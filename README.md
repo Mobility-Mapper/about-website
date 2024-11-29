@@ -4,7 +4,7 @@
 
 Mobility Mapper is a route finder and navigation app for users of wheelchairs, mobility scooters, tricycles and other wheeled mobility devices (referred to as wheelers). 
 
-The purpose of this website is to gain the support needed to successfully develop and launch the app. It will generate interest by informing potential users, partners, and funders about its key features, and how it solves real-world wayfinding problems for wheelers. 
+The purpose of this website is to gain the support needed to successfully develop and launch the app. It will generate interest by informing potential users, partners, and funders about its key features, and how it solves real-world way-finding problems for wheelers. 
 
 In order to build a mailing list and social media following, the home page encourages visitors to subscribe to updates and follow our Facebook, Instagram and X pages. In addition, a contact form invites potential users to get in touch and provide feedback or ask questions about the app.
 
@@ -18,7 +18,7 @@ Visit the deployed website [here](https://sonyajane.github.io/mobility-mapper/).
   - [User Experience (UX)](#user-experience-(ux))
     - [Business Goals](#business-goals)
     - [User Stories](#user-stories)
-    - [Color Scheme](#color-scheme)
+    - [colour Scheme](#colour-scheme)
     - [Typography](#typography)
     - [Wireframes](#wireframes)
   - [Features](#features)
@@ -81,10 +81,10 @@ Visit the deployed website [here](https://sonyajane.github.io/mobility-mapper/).
 
 [Back to top ⇧](#mobility-mapper)
 
-### Color Scheme
-![Color scheme image](assets/readme-files/palette.png)
+### Colour Scheme
+![Colour scheme image](assets/readme-files/palette.png)
 
-The primary colour used on the website is burnt orange, which is the same colour used for the app logo. Orange was chosen because it is associated with energy, happiness, and vitality. Since orange lends itself well to other colours found in nature, it is complmented with a muted yellow, coffee brown, khaki green, and a light shade of yellow-brown. 
+The primary colour used on the website is burnt orange, which is the same colour used for the app logo. Orange was chosen because it is associated with energy, happiness, and vitality. Since orange lends itself well to other colours found in nature, it is complemented with a muted yellow, coffee brown, khaki green, and a light shade of yellow-brown. 
 
 The muted yellow is used for the call-to-action buttons that sit on the cover image, to differentiate them from the cover text background. 
 
@@ -114,7 +114,7 @@ Please note that this is a two-page website, where the home page has three disti
 
 ### General
 * Responsive design across all device sizes.
-* Similar color scheme and design throughout both pages to effectively structure, categorise and present the information to the visitors.
+* Similar colour scheme and design throughout both pages to effectively structure, categorise and present the information to the visitors.
 * Hovering over a link or button changes the cursor to a pointer to let the user know it is clickable.
 * Since the partnerships page is so long, to prevent the need to manually scroll  all the way back to the top of the page, an orange back to top up arrow icon appears on the bottom right of the screen. Clicking it scrolls to the top. 
 
@@ -139,7 +139,7 @@ The navigation bar is the same on both pages. It contains links to both pages to
 
 The footers on both pages contain links to the social media channels, and convenient, relevant links for easy navigation.
 
-The home page footer contains links to the top of the page, the email subsciption modal, the home contact form, and the partnerships page.
+The home page footer contains links to the top of the page, the email subscription modal, the home contact form, and the partnerships page.
 
 ![Home footer image](assets/readme-files/footer-home.png)
 
@@ -189,7 +189,7 @@ This contact form is for potential users of the app to get in touch with us, wit
 
 The message text area has a maximum length of 750 characters. A [Javascript event listener](assets/js/contact-personal.js#L1) counts the number of characters and displays that number below the text box, providing helpful feedback to the visitor.
 
-When the "Submit contact form" button is clicked, the inputs are validated and another [Javascript event listener](assets/js/contact-personal.js#L11) gets the form inputs and posts them to a Google Sheets spredsheet via a Google Apps script.
+When the "Submit contact form" button is clicked, the inputs are validated and another [Javascript event listener](assets/js/contact-personal.js#L11) gets the form inputs and posts them to a Google Sheets spreadsheet via a Google Apps script.
 
 ![Home page contact section](assets/readme-files/home-contact.png)
 
@@ -199,9 +199,9 @@ This modal is opened when the "Subscribe to email updates" call-to-action button
 
 A small Mobility Mapper icon on the right of the header, and a submit button of the same colour reassures the visitor that the form belongs to the Mobility Mapper website.
 
-When the "Submit" button is clicked, the inputs are validated and a [Javascript event listener](assets/js/subscribe.js) gets the form inputs and posts them to a Google Sheets spredsheet via a Google Apps script.
+When the "Submit" button is clicked, the inputs are validated and a [Javascript event listener](assets/js/subscribe.js) gets the form inputs and posts them to a Google Sheets spreadsheet via a Google Apps script.
 
-![Home page susbcribe modal](assets/readme-files/modal.png)
+![Home page subscribe modal](assets/readme-files/modal.png)
 
 [Back to top ⇧](#mobility-mapper)
 
@@ -254,7 +254,7 @@ The solution section is presented as bullet points, with the Mobility Mapper whe
 
 Both the market size and validation sections are included here, since they are relatively small. On mobile screens the validation section sits below the market size section, and they appear side-by-side on tablets upwards.
 
-The green-filled, rounded rectagles highlight the market size statistics, making them both easy to find and visually appealing. The maket validation text is contained in a speech bubble to represent the fact that disabled people were consulted on their view of the usefulness of an accessible wayfinding app. 
+The green-filled, rounded rectangles highlight the market size statistics, making them both easy to find and visually appealing. The market validation text is contained in a speech bubble to represent the fact that disabled people were consulted on their view of the usefulness of an accessible way-finding app. 
 
 ![Partnerships page market image](assets/readme-files/partnerships-market.png)
 
@@ -284,7 +284,7 @@ The introductory text makes it clear that this form is for potential partners an
 
 The message text area has a maximum length of 750 characters. A [Javascript event listener](assets/js/contact-business.js#L1) counts the number of characters and displays that number below the text box, providing helpful feedback.
 
-When the "Submit contact form" button is clicked, the inputs are validated and another [Javascript event listener](assets/js/contact-business.js#L11) gets the form inputs and posts them to a Google Sheets spredsheet via a Google Apps script.
+When the "Submit contact form" button is clicked, the inputs are validated and another [Javascript event listener](assets/js/contact-business.js#L11) gets the form inputs and posts them to a Google Sheets spreadsheet via a Google Apps script.
 
 ![Partnerships page cover image](assets/readme-files/partnerships-contact.png)
 
@@ -361,7 +361,7 @@ When the "Submit contact form" button is clicked, the inputs are validated and a
 
 4. As a user of a wheeled mobility device, I want to learn about all the features of Mobility Mapper so that I can decide if the app will suit my needs.
     - The home page includes a description of the app's key features followed by an invitation to read further details on the partnerships page.
-    - The partnerships page provides further details on the problems the app solves, including a list of features that make Mobilty Mapper different from existing mapping apps.
+    - The partnerships page provides further details on the problems the app solves, including a list of features that make Mobility Mapper different from existing mapping apps.
 
 5. As a potential funder, partner, or stakeholder, I want to understand the value, impact, and business potential of the Mobility Mapper app so that I can evaluate whether it aligns with my goals and is worth my support or aligns with our funding objectives.
     - A dedicated page on the website provides a clear and compelling pitch for Mobility Mapper.
@@ -422,8 +422,8 @@ Lighthouse in Chrome DevTools was used to confirm that the website is accessible
     
     - [Am I Responsive?](http://ami.responsivedesign.is/#) was used to check responsiveness of the pages across different devices. The tool revealed the following issues:
 
-      - the cover title overlapped the head of the person in the home page hero image at screen size 320px. To fix this, a media query was added for screen sizes < 380px to reposition the image slightly, and the cover title text was made smaller.
-      - the hamburger menu did not fit on same line as the logo at screen size 320px. To fix this the we added to the new media query creadted about, such that the right hand margin was removed from the navbar-brand, and the logo size was reduced.
+      - the cover title overlapped the head of the person in the home page hero image at screen size 320px. To fix this, we created a media query for screen sizes < 380px and repositioned the image slightly, and the cover title text was made smaller.
+      - the hamburger menu did not fit on same line as the logo at screen size 320px. To fix this the we added to the new media query created above, such that the right hand margin was removed from the navbar-brand, and the logo size was reduced.
 
     - [Responsive Design Checker](https://www.responsivedesignchecker.com/) was used to check responsiveness of the pages on different screen sizes.
     
