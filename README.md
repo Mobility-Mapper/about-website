@@ -454,15 +454,64 @@ Samsung Galaxy Ultra 22 | No appearance, responsiveness nor functionality issues
 
 [Back to top ⇧](#mobility-mapper)
 
+## Deployment
+
+This website was developed using [Visual Studio Code](https://code.visualstudio.com/), which was then committed and pushed to GitHub using the terminal. It was deployed from the Github repository to GitHub Pages.
+
+### Deploying on GitHub Pages
+
+To deploy this website to GitHub Pages from its GitHub repository, take following steps:
+
+1. Fork the repository (see [below](# Forking the Repository) for instructions on how to do this).
+2. Go to the repository and click "Settings" (at the top of the page)
+3. On the left-hand-side of the page, under "Code and automation", click "Pages"
+4. Under "Build and deployment" > "Source", from the dropdown box select "Deploy from a branch"
+5. Under "branch" select "main"
+6. Click the "save" button
+7. After a few moments, refresh the page and a link to your deployed page will appear
+
+
+### Forking the Repository
+Forking a GitHub Repository makes a copy of the original repository on your GitHub account, which you can view and/or make changes without affecting the original repository. To fork a repository:
+
+1. Log into [GitHub](https://github.com/login) or [create an account](https://github.com/join).
+2. Locate the [GitHub Repository](https://github.com/SonyaJane/mobility-mapper).
+3. At the top of the repository, on the right side of the page, select "Fork"
+4. You should now have a copy of the original repository in your GitHub account.
+
+### Creating a Clone
+How to run this project locally:
+1. Install the [GitPod Browser](https://www.gitpod.io/docs/browser-extension/ "Link to Gitpod Browser extension download") Extension for Chrome.
+2. After installation, restart the browser.
+3. Log into [GitHub](https://github.com/login "Link to GitHub login page") or [create an account](https://github.com/join "Link to GitHub create account page").
+2. Locate the [GitHub Repository](https://github.com/SonyaJane/mobility-mapper).
+5. Click the green "GitPod" button in the top right corner of the repository.
+This will trigger a new gitPod workspace to be created from the code in github where you can work locally.
+
+How to run this project within a local IDE, such as VSCode:
+
+1. Log into [GitHub](https://github.com/login) or [create an account](https://github.com/join).
+2. Locate the [GitHub Repository](https://github.com/SonyaJane/mobility-mapper).
+3. Under the repository name, click "Clone or download".
+4. In the Clone under the HTTPs section, copy the clone URL for the repository.
+5. In your local IDE open the terminal.
+6. Change the current working directory to the location where you want the cloned directory to be made.
+7. Type 'git clone', and then paste the URL you copied in Step 3.
+
+```
+git clone https://github.com/SonyaJane/mobility-mapper
+```
+8. Press Enter. Your local clone will be created.
+
+Further reading and troubleshooting on cloning a repository from GitHub [here](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
+
+
 ## Finished Product
  | Page |  Mobile | Tablet | Desktop | 
  | --- | --- | --- | --- |
  | Home | ![Mobile home page image](assets/readme-files/home-mobile.png)  | ![Tablet home page image](assets/readme-files/home-tablet.png) | ![Desktop home page image](assets/readme-files/home-desktop.png) |
 | Partnerships | ![Mobile partnerships page image](assets/readme-files/partnerships-mobile.png)  | ![Tablet home partnerships image](assets/readme-files/partnerships-tablet.png) | ![Desktop partnerships page image](assets/readme-files/partnerships-desktop.png) |
 
-## Deployment
-
-* This website was developed using [Visual Studio Code](https://code.visualstudio.com/), which was then committed and pushed to GitHub using the terminal. It was deployed from the Github repository to GitHub Pages.
 
 [Back to top ⇧](#mobility-mapper)
 
