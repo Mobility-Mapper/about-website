@@ -66,8 +66,6 @@
 	--color-mango-4: #E48312;
 	--color-mango-5: #AB620E;
 	--color-mango-6: #724209;
-
-
 }
 
 /* Asterisk wildcard selector to override default styles added by the browser */
@@ -80,7 +78,6 @@
 html {
     font-size: 16px; /* Ensure 1rem is equal to 16px */
 }
-
 
 body {
 	/* Font family and colour */
@@ -127,12 +124,12 @@ h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 	color: white;
 }
 
-/* Partnershps contents list bullets */
+/* Partnerships contents list bullets */
 .font-orange-4 {
 	color: var(--color-orange-4);
 }
 
-/* Parnerships differentiators list icons */
+/* Partnerships differentiators list icons */
 /* This needs to be before the background colours in this file to work */
 .icon-container {
 	height: calc(3rem + .7vw);
@@ -140,8 +137,8 @@ h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     margin-right: 15px; /* Space between the icon and text */
 	border: 2px solid;
     border-radius: 5px;
-	text-align: center; /* Optional: Align content horizontally */
-    vertical-align: middle; /* Optional: Align content vertically */
+	text-align: center; 
+    vertical-align: middle; 
     display: flex; /* To manage child alignment */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
@@ -451,7 +448,6 @@ header.container {
 	border: 0.5px solid var(--color-brown-3);
 	border-radius: 10px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), inset 0 0 10px rgba(0, 0, 0, 0.05); /* Outer and inner shadow for depth */
-	/* box-shadow: 5px 5px 5px var(--color-orange-1-a); left top  */
 }
 
 /* Partnerships page: problem cars titles */
@@ -795,7 +791,7 @@ ul.mm-bullets li::marker {
 		font-size: calc(1rem + .6vw);
 	}
 
-	/* Reuce width of button */
+	/* Reduce width of button */
 	#cover-call-to-action .btn {
 		width: auto; 
 	}
@@ -811,7 +807,7 @@ ul.mm-bullets li::marker {
 		margin-bottom: 0 !important;
 	}
 
-	/* Parterships Page */
+	/* Partnerships Page */
 
 	.green-box {
 		font-size: 1.2rem;
@@ -888,7 +884,6 @@ ul.mm-bullets li::marker {
 @media screen and (max-width: 1200px) {
 
 	/* constrain width on screens up to 1200 (xl) */
-
 	.max-width-md-690 {
 		max-width: 690px;
 	}
@@ -931,7 +926,6 @@ ul.mm-bullets li::marker {
 
 	/* Switch off linear cover text background */
 	.background-orange-linear {
-		/* none */
 		background: none
 	}
 
@@ -1130,7 +1124,6 @@ ul.mm-bullets li::marker {
 
 	/* Make height of key features titles the same for all cards */
 	#key-features .card-title {
-		/* font-size: 1.6rem; */
 		min-height: 68px;
 		display: flex; 
 		align-items: center;
@@ -1145,7 +1138,7 @@ ul.mm-bullets li::marker {
 		padding-right: 0;
 	}
 
-	/* MM will aslo benefit section */
+	/* MM will also benefit section */
 	.who-else-box-xl
 	{
 		height: 170px; /* Ensure both boxes are the same height */
